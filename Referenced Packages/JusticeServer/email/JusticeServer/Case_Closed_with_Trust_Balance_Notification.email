@@ -1,3 +1,0 @@
-Case #{!Case.CaseNumber} has been closed with a trust balance remaining of {!Case.Trust_Balance__c}.
-
-{!Case.Link}

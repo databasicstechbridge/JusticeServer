@@ -1,5 +1,0 @@
-{!Contact.Name},<br/><br/>
-
-{!Organization.Name} has assigned a case to you in the JusticeServer Portal. Please review the case to confirm there are no conflicts and that you are willing to take the case.
-
-<a href={!$Setup.JusticeServer_Settings__c.Case_Portal_URL__c}{!Case.00N0a00000CfwUh}&isAssign=true>Review Case in Portal</a>

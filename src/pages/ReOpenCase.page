@@ -1,0 +1,97 @@
+<apex:page standardController="Case" extensions="ReOpenCaseController" sidebar="false" showHeader="false">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+        <head>  
+            <!-- STYLE SHEET -->  
+            <apex:stylesheet value="{!URLFOR($Resource.JS01__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.css')}"/>  
+        </head>
+        
+        <body> 
+            
+            <!-- REQUIRED SLDS WRAPPER - CUSTOM SCOPING CLASS USED WHEN GENERATING CUSTOM CSS -->  
+            <div class="LScope">
+        
+                <!-- ADD GLOBAL HEADER -->  
+                 <div class="slds-page-header slds-page-header_object-home">
+                     <!-- ADD GLOBAL HEADER ICON -->  
+                     <div class="slds-col slds-float--left slds-m-right--small">  
+                       <div class="slds-icon_container slds-icon-standard-case slds-icon--medium" title="ReOpen Case">
+                          <svg class="slds-icon" aria-hidden="true">
+                            <use xlink:href="{!URLFOR($Resource.JS01__SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#case')}"/>
+                          </svg>
+                        </div>
+                     </div>  
+                     <!-- ADD GLOBAL HEADER TEXT -->  
+                     <div class="slds-col">  
+                       <div class="slds-page-header__title slds-truncate">  
+                           Re-Open Case
+                       </div>  
+                    </div>  
+                </div>
+<!--------------------------------------------------------------- FORM ------------------------------------------------------------------->
+                <div class="slds-panel slds-grid slds-grid--vertical slds-nowrap slds-form--compound" aria-labelledby="caseCloseForm">
+                
+                    <apex:form >
+                        <apex:pageMessages id="err"></apex:pageMessages>
+                        <!-- Loading Image -->
+                            <apex:actionStatus id="status">
+                                <apex:facet name="start">
+                                    <div style="height : 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.75; z-index: 1000; background-color: #ececec;">
+                                        &nbsp;
+                                    </div>
+                                    <div style="height : 100%; position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 50% 50%">
+                                        <span style="color:#4a4a56;position: fixed;top: 50%;left: 50%;">
+                                            <table>
+                                                <tr>
+                                                    <td><img src="/img/loading32.gif"/>&nbsp;&nbsp;</td>
+                                                    <td><b>Loading...</b></td>
+                                                </tr>
+                                            </table>
+                                        </span>
+                                    </div>  
+                                </apex:facet> 
+                            </apex:actionStatus>
+                        <!-- Ending Load Image -->
+                        <style>
+                            .LScope input[type="checkbox"] {
+                            width: 1rem;
+                            height: 1rem;
+                            display: inline-block;
+                            position: relative;
+                            vertical-align: middle;
+                            border: 1px solid #d8dde6;
+                            border-radius: 0.125rem;
+                            background: white;
+                            transition: border 0.1s linear, background-color 0.1s linear;
+                            box-sizing: border-box;
+                            cursor: default;
+                        }
+                            
+                        </style>
+                        
+<!---------------------------------------------------------------- CASE DETAILS --------------------------------------------------------->  
+
+                        <div class="slds-text-title--caps slds-section-title--divider">Case Details</div> 
+                        <div class="slds-panel__section">  
+                            <div class="slds-size--1-of-2 slds-p-left--small slds-p-bottom--small slds-p-right--small">
+                                <div class="slds-form-element">
+                                    <apex:outputLabel styleClass="slds-form-element__label">Reason Re-Opened</apex:outputLabel> 
+                                    <apex:inputField value="{!caseRecord.Reason_Re_Opened__c}" styleClass="slds-input"/>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                        <div class="slds-panel__section slds--align-center">  
+                            <div class="slds-button-group slds-m-bottom--small ">
+                                <apex:commandButton value=" Save " action="{!save}" styleClass="slds-button slds-button--brand"/>
+                                &nbsp;
+                                <apex:commandButton value=" Cancel " action="{!cancel}" styleClass="slds-button slds-button--brand"/>
+                            </div>
+                        </div>  
+                        
+                    </apex:form>
+    
+                </div>
+            </div> 
+        </body>
+    </html>
+</apex:page>

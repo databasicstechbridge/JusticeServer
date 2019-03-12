@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Problem codes are used to categorize the type of legal case</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Case_Record_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>When converting a lead to a case this field controls which case record type will be used</description>
+        <externalId>false</externalId>
+        <label>Case Record Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Default</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Clearinghouse</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>General</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Case_Category</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Code__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Code</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Default_External_Overview__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the default description for external consumption that will be applied to cases with this problem code. The External Overview may be overwritten at the case level.</inlineHelpText>
+        <label>Default External Overview</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Intake_Questions__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Intake Questions</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Lead_Record_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Lead Record Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Default</fullName>
+                    <default>true</default>
+                </value>
+                <value>
+                    <fullName>General Intake</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Clearinghouse</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Portal_Category__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Defines the category on the JusticeServer volunteer portal that this category maps to</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Defines the category on the JusticeServer volunteer portal that this category maps to</inlineHelpText>
+        <label>Portal Category</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bankruptcy/Debtor Relief</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Collect/Repo/Def/Garnsh</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Contracts / Warranties</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Collection Practices/Creditor Harassment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Predatory Lending</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Loans/Installment Purch.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Public Utilities</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unfair Sales Practices</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Consumer / Finance.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Education</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Discipline (Exp &amp; Susp)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spec. Ed / Learn Dis.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Access (Billing, Res, Test)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Voc Education</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Student Finc. Aid</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Education Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Employment Discrimination</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wage Claims</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EITC (Earned Inc. Tax Credit)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Taxes Not EITC</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Emply. Rights</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Agr. Wrker Issues (not WC or FLSA)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Employment &amp; Ceta</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Adoption</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Custody / Visitation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Divorce / Sep. / Annul.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Adult Guardianship</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Name Change</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Parental Rights Termin.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Paternity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Domestic Abuse</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Support</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Family</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Delinquent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Neglected/Abused/Depend.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Emancipation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Minor Guardianship Conservatorship</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Juvenile</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medicaid</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medicare</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gov. Childrens Health Ins.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Home &amp; Com Based Care</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Private Health Ins.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Long Term Care Health Fac.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>State and Local Health</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Health</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fed. Subsidized Housing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Homeownership/Real Prop.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Private Landlord/Tenant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Public Housing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile Homes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Housing Discrimination</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mort. Foreclosures not Pred. Lending</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mort. Preditory Lending Practices</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Housing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AFDC / Other Welfare</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Social Security</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Food Stamps / Commodities</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SSDI</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SSI</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unemployment Compensation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Veterans Benefits</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>State and Local Income Maintenance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Income Maintanence</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Immigration / Natural.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mental Health</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prisoner&apos;s Rights</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Physically Disabled Rghts</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Civil Rights</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Human Trafficking</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Individual Rights</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Legal Assistance to Non-Profit Organization</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Indian / Tribal Law</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Licenses Drivers/Occupational/Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Torts</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wills and Estates</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Advance Directives / Powers of Atty</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Municipal Legal Needs</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tribal Court - Criminal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Miscellaneous</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Corporate Law</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Creditor&apos;s Rights</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Criminal Referrals</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Elder Law</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Employment</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Family</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Finance/Banking</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>General Business</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Immigration Law</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Intellectual Property</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Legal Assistance to Non-Profit Orga</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Merger</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Real Estate</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>TBD</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Tax/Health Care</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Tax/Tax Exempt</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Telecommunications</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+                <value>
+                    <fullName>Trust/Estates</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Problem Code</label>
+    <listViews>
+        <fullName>All_Problem_Codes</fullName>
+        <columns>NAME</columns>
+        <columns>Category__c</columns>
+        <columns>Code__c</columns>
+        <columns>Case_Record_Type__c</columns>
+        <columns>Lead_Record_Type__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Problem Codes</label>
+    </listViews>
+    <nameField>
+        <label>Problem Code Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Problem Codes</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Code__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Category__c</customTabListAdditionalFields>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>Code__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Category__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Code__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Category__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Category__c</searchFilterFields>
+        <searchFilterFields>Code__c</searchFilterFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchResultsAdditionalFields>Code__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Category__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+</CustomObject>

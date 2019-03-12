@@ -1,0 +1,310 @@
+<!--************************************************************************
+    * Name               : CaseClose                                           *
+    * Description        : JusticeServer - Case Close Screen                   *
+    * Created By         : Techbridge                                          *        
+    *************************************************************************-->
+    <apex:page standardController="Case" extensions="HCA_CaseCloseController" sidebar="false" showHeader="false">
+        <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+            <head>  
+                <!-- STYLE SHEET -->  
+                <apex:stylesheet value="{!URLFOR($Resource.JS01__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.css')}"/>
+                <style>
+                    .multiSelectPicklistRow select{
+                        background-color: white;
+                        color: #16325c;
+                        border: 1px solid #d8dde6;
+                        border-radius: 0.25rem;
+                        width: 100% !important;
+                    }
+                    td.multiSelectPicklistCell{
+                        width:30px;
+                    }
+                    .multiSelectPicklistCell img.picklistArrowRight{
+
+                      display: block;
+                      width: 0;
+                      height: 0; 
+                      border-top: 6px solid transparent;
+                      border-bottom: 6px solid transparent;
+                      border-left: 6px solid #706e6b;
+                      border-right:none;
+                      background-image:none;
+                      margin-left:12px;
+                      min-height:0;
+                      line-height:0;
+                      padding:0;
+                    }
+                    .multiSelectPicklistCell img.picklistArrowLeft{
+
+                      display: block;
+                      width: 0;
+                      height: 0; 
+                      border-top: 6px solid transparent;
+                      border-bottom: 6px solid transparent;
+                      border-right: 6px solid #706e6b;
+                      border-left:none;
+                      background-image:none;
+                      margin-left:12px;
+                      min-height:0;
+                      line-height:0;
+                      padding:0;
+                    }
+
+                    .slds-form-element__row select {
+                        background-color: white;
+                        color: #16325c;
+                        border: 1px solid #d8dde6;
+                        border-radius: 0.25rem;
+                        width: 100%;
+                        transition: border 0.1s linear, background-color 0.1s linear;
+                        display: inline-block;
+                        padding: 0 1rem 0 0.75rem;
+                        line-height: 1.875rem;
+                        min-height: calc(1.875rem + (1px * 2));
+                    }
+                    .lookupInput a {
+                        border: none !important;
+                        width: 50px !important ;
+                    }
+                </style>  
+            </head>
+            <body> 
+            <!-- REQUIRED SLDS WRAPPER - CUSTOM SCOPING CLASS USED WHEN GENERATING CUSTOM CSS -->  
+                <div class="LScope">
+                    <!-- ADD GLOBAL HEADER -->  
+                     <div class="slds-page-header slds-page-header_object-home">
+                         <!-- ADD GLOBAL HEADER ICON -->  
+                         <div class="slds-col slds-float--left slds-m-right--small">  
+                           <div class="slds-icon_container slds-icon-standard-case slds-icon--medium" title="Close Case">
+                              <svg class="slds-icon" aria-hidden="true">
+                                <use xlink:href="{!URLFOR($Resource.JS01__SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#case')}"/>
+                              </svg>
+                            </div>
+                         </div>  
+                         <!-- ADD GLOBAL HEADER TEXT -->  
+                         <div class="slds-col">  
+                           <div class="slds-page-header__title slds-truncate">  
+                           Close Case
+                           </div>  
+                     </div>  
+                </div> 
+        
+    <!--------------------------------------------------------------- FORM ------------------------------------------------------------------->
+                    <div class="slds-panel slds-grid slds-grid--vertical slds-nowrap slds-form--compound" aria-labelledby="caseCloseForm">
+                        <apex:form >
+                            <apex:pageMessages id="err"></apex:pageMessages>
+                            <!-- Loading Image -->
+                                <apex:actionStatus id="status">
+                                    <apex:facet name="start">
+                                        <div style="height : 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.75; z-index: 1000; background-color: #ececec;">
+                                            &nbsp;
+                                        </div>
+                                        <div style="height : 100%; position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 50% 50%">
+                                            <span style="color:#4a4a56;position: fixed;top: 50%;left: 50%;">
+                                                <table>
+                                                    <tr>
+                                                        <td><img src="/img/loading32.gif"/>&nbsp;&nbsp;</td>
+                                                        <td><b>Loading...</b></td>
+                                                    </tr>
+                                                </table>
+                                            </span>
+                                        </div>  
+                                    </apex:facet> 
+                                </apex:actionStatus>
+                            
+    
+    <!----------------------------------------------------------------- Common Details ----------------------------------------------------------> 
+                            <div class="slds-p-left--small slds-p-top--small slds-p-bottom--small slds-p-right--small"> 
+                                <div class="slds-panel__section"> 
+                                    <div class="slds-form-element__row">
+                                        <apex:outputText value="Case Number: " style="font-weight:bold"/>&nbsp;
+                                        <apex:outputText value=" {!caseRecord.CaseNumber}"/>
+                                    </div>
+                                    <div class="slds-form-element__row">
+                                        <apex:outputText value="Primary Client: " style="font-weight:bold"/>&nbsp;
+                                        <apex:outputText value=" {!caseRecord.Contact.Name}"/>
+                                    </div>
+                                    <div class="slds-form-element__row">
+                                        <apex:outputText value="Listed below are problems and appeals related to this case. Please provide outcomes and closing details. On the next screen you will enter closing details for the overall case." styleClass="slds-form-element__label"/>
+                                    </div> 
+                                </div>
+                            </div>
+                                        
+    <!----------------------------------------------------------------- Problem details ---------------------------------------------------------->
+                            <apex:outputpanel rendered="{!showProblemScreen}"> 
+                                    <div class="slds-panel__section"> 
+                                        <apex:variable var="c" value="{!1}" />
+                                        <apex:repeat var="problemVar" value="{!problemList}">
+                                            <div class="slds-text-title--caps slds-section-title--divider">Problem {!c} </div>
+                                            <div class="slds-form-element__row"></div>
+                                            <div class="slds-p-left--small slds-p-top--small slds-p-bottom--small slds-p-right--small">     
+                                                <div class="slds-form-element__row">
+                                                    <div class="slds-form-element">
+                                                        <apex:outputText value="Problem Name:" style="font-weight:bold"/>&nbsp;                                                     
+                                                        <apex:outputLink value="/lightning/r/Problem__c/{!problemVar.Id}/view" target="_blank" rendered="{!$User.UIThemeDisplayed == 'Theme4d'}">
+                                                            <apex:outputText value=" {!problemVar.Name}"/>
+                                                        </apex:outputLink>
+                                                        <apex:outputLink value="/{!problemVar.Id}" target="_blank" rendered="{!$User.UIThemeDisplayed != 'Theme4d'}">
+                                                            <apex:outputText value=" {!problemVar.Name}"/>
+                                                        </apex:outputLink>
+                                                
+                                                    </div>
+                                                    <div class="slds-form-element">
+                                                        <apex:outputLabel style="font-weight:bold">{!$ObjectType.Problem__c.fields.Highest_Level_of_Appeal__c.Label}:&nbsp;</apex:outputLabel> 
+                                                        <apex:outputField value="{!problemVar.Highest_Level_of_Appeal__c}" styleClass="slds-input"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-form-element__row">
+                                                    <apex:outputText value="Record Type:" style="font-weight:bold"/>&nbsp;
+                                                    <apex:outputText value=" "/>
+                                                    <apex:outputText value=" {!problemVar.RecordType.Name}"/>&nbsp;
+                                                </div>
+                                                <div class="slds-form-element__row">
+                                                    <apex:outputText value="Problem:" style="font-weight:bold"/>&nbsp;
+                                                    <apex:outputText value=" "/>
+                                                    <apex:outputText value=" {!problemVar.Problem__c}"/>
+                                                </div>
+                                                <div class="slds-form-element__row"></div>
+    
+                                                <div class="slds-form-element__row">
+                                                    <div class="slds-form-element">
+                                                        <apex:outputLabel styleClass="slds-form-element__label">{!$ObjectType.Problem__c.fields.Outcome_Type__c.Label}</apex:outputLabel> 
+                                                        <apex:inputField value="{!problemVar.Outcome_Type__c}" styleClass="slds-form-element__control slds-input"/>
+                                                    </div>
+                                                    <div class="slds-form-element">
+                                                        <apex:outputLabel styleClass="slds-form-element__label">{!$ObjectType.Problem__c.fields.Outcome_of_Appeal__c.Label}</apex:outputLabel> 
+                                                        <apex:inputField value="{!problemVar.Outcome_of_Appeal__c}" styleClass="slds-input"/>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="slds-form-element__row"></div>
+                                                <div class="slds-form-element__row">
+                                                    <div class="slds-form-element">
+                                                        <apex:outputLabel styleClass="slds-form-element__label">{!$ObjectType.Problem__c.fields.Outcome__c.Label}</apex:outputLabel> 
+                                                        <apex:inputField value="{!problemVar.Outcome__c}" styleClass="slds-form-element__control slds-input"/>
+                                                    </div>
+                                                    <div class="slds-form-element">
+                                                        <apex:outputLabel styleClass="slds-form-element__label">{!$ObjectType.Problem__c.fields.Expedited__c.Label}</apex:outputLabel> 
+                                                        <apex:inputField value="{!problemVar.Expedited__c}" styleClass="slds-input"/>
+                                                    </div>
+                                                </div>
+                                                <div class="slds-form-element__row"></div>
+                                                <div class="slds-form-element__row">
+                                                    <div class="slds-form-element">
+                                                        <apex:outputLabel styleClass="slds-form-element__label">{!$ObjectType.Problem__c.fields.Eligibility_Outcome_Detail__c.Label}</apex:outputLabel> 
+                                                        <apex:inputField value="{!problemVar.Eligibility_Outcome_Detail__c}" styleClass="slds-input"/>
+                                                    </div>
+                                                    <div class="slds-form-element"></div>
+                                                </div>
+                                                <div class="slds-form-element__row"></div>
+                                                <div class="slds-form-element__row">
+                                                    <div class="slds-form-element">
+                                                        <apex:outputLabel styleClass="slds-form-element__label">{!$ObjectType.Problem__c.fields.Service_Outcome_Detail__c.Label}</apex:outputLabel> 
+                                                        <apex:inputField value="{!problemVar.Service_Outcome_Detail__c}" styleClass="slds-input"/>
+                                                    </div>
+                                                    <div class="slds-form-element"></div>
+                                                </div>
+                                                <div class="slds-form-element__row"></div>
+                                                <div class="slds-form-element__row">
+                                                    <div class="slds-form-element">
+                                                        <apex:outputLabel styleClass="slds-form-element__label">{!$ObjectType.Problem__c.fields.Referred_To__c.Label}</apex:outputLabel> 
+                                                        <apex:inputField value="{!problemVar.Referred_To__c}" styleClass="slds-input"/>
+                                                    </div>
+                                                    <div class="slds-form-element"></div>
+                                                </div>
+                                                <div class="slds-form-element__row"></div>
+                                                <div class="slds-form-element__row">
+                                                    <div class="slds-form-element">
+                                                        <apex:outputLabel styleClass="slds-form-element__label">{!$ObjectType.Problem__c.fields.Referred_To_Other__c.Label}</apex:outputLabel> 
+                                                        <apex:inputField value="{!problemVar.Referred_To_Other__c}" styleClass="slds-input"/>
+                                                    </div>
+                                                    <div class="slds-form-element"></div>
+                                                </div>
+                                                <div class="slds-form-element__row">
+                                                    <div class="slds-form-element">
+                                                        <apex:outputLabel styleClass="slds-form-element__label">{!$ObjectType.Problem__c.fields.Outcome_Comment_Notes__c.Label}</apex:outputLabel> 
+                                                        <apex:inputField value="{!problemVar.Outcome_Comment_Notes__c}" styleClass="slds-input"/>
+                                                    </div>
+                                                    <div class="slds-form-element"></div>
+                                                </div>
+                                                <div class="slds-form-element__row"></div>
+                                                <div class="slds-form-element__row">
+                                                    <div class="slds-form-element">
+                                                         <apex:outputLabel styleClass="slds-form-element__label">{!$ObjectType.Problem__c.fields.Dollar_Amount_for_Revenue_Recovery__c.Label}</apex:outputLabel> 
+                                                        <apex:inputField value="{!problemVar.Dollar_Amount_for_Revenue_Recovery__c}" styleClass="slds-input"/> 
+                                                    </div>
+                                                    <div class="slds-form-element"></div>
+                                                </div>
+                                                <div class="slds-form-element__row"></div>
+                                            </div>
+                                            <apex:variable var="c" value="{!c+1}" />
+                                        </apex:repeat>
+                                    </div>
+                                    <br/>
+                          
+                                <div align="center" draggable="false">    
+                                    <apex:commandButton value=" Cancel " action="{!cancel}" styleClass="slds-button slds-button--brand"/>
+                                    <apex:commandButton value=" Next " action="{!next}" styleClass="slds-button slds-button--brand"/>
+                                </div>
+                            </apex:outputpanel>
+    <!----------------------------------------------------------------- CASE STATUS ----------------------------------------------------------> 
+                            <apex:outputpanel rendered="{!showCasescreen}">
+                            <div class="slds-panel__section">   
+                                    <div class="slds-form-element__row">  
+                                        <div class="slds-form-element slds-size--1-of-2 slds-p-left--small slds-p-bottom--small slds-p-right--small">
+                                            <div class="slds-form-element__control">
+                                                <apex:outputLabel styleClass="slds-form-element__label"><abbr class="slds-required" title="required">*</abbr>Case Status</apex:outputLabel> 
+                                                <div class="slds-select_container">   
+                                                     <apex:selectList label="Case Status" id="caseStatus" value="{!selectedStatus}"  required="true"  size="1" styleClass="slds-select">
+                                                        <apex:selectOptions value="{!statusValues}"/>
+                                                    </apex:selectList>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slds-form-element"></div>
+                                </div>
+                            </div>
+    <!---------------------------------------------------------------- CASE DETAILS --------------------------------------------------------->   
+                            <div class="slds-text-title--caps slds-section-title--divider">Case Details</div> 
+                            <div class="slds-panel__section">  
+                                <apex:repeat var="caseField" value="{!$ObjectType.Case.FieldSets.JS01__Close_Case_Details}">
+                                    <div class="slds-size--1-of-2 slds-p-left--small slds-p-bottom--small slds-p-right--small"> 
+                                        <div class="slds-form-element">
+                                            <apex:outputLabel styleClass="slds-form-element__label">{!caseField.Label}</apex:outputLabel> 
+                                            <apex:inputField value="{!caseRecord[caseField]}" styleClass="slds-input"/>
+                                        </div>
+                                    </div>
+                                </apex:repeat>
+                                <br/>
+                            </div>
+    <!---------------------------------------------------------------- CASE SUMMARY--------------------------------------------------------->   
+                            <div class="slds-text-title--caps slds-section-title--divider">Case Summary</div> 
+                            <div class="slds-panel__section">  
+                                <div class="slds-p-left--small slds-p-bottom--small slds-p-right--small"> 
+                                    <apex:outputText value="*You must complete the first 3 fields below OR General Comments" style="font-weight:bold"/>
+                                </div>
+                                <div class="slds-form-element__row"> </div>
+                                <apex:repeat var="caseField" value="{!$ObjectType.Case.FieldSets.Close_Case_Summary}">
+                                    <div class="slds-size--1-of-2 slds-p-left--small slds-p-bottom--small slds-p-right--small"> 
+                                        <div class="slds-form-element">
+                                            <apex:outputLabel styleClass="slds-form-element__label">{!caseField.Label}</apex:outputLabel> 
+                                            <apex:inputField value="{!caseRecord[caseField]}" styleClass="slds-input" required="{!caseField.Required}"/>
+                                        </div>
+                                    </div>
+                                </apex:repeat>
+                                <br/>
+                            </div>
+
+                           <div align="center" draggable="false">    
+                                <apex:commandButton value=" Cancel " action="{!cancel}" styleClass="slds-button slds-button--brand"/>
+                                <apex:commandButton value=" Save " action="{!save}" styleClass="slds-button slds-button--brand"/>
+                                <apex:commandButton value=" Previous " action="{!previous}" styleClass="slds-button slds-button--brand"/>
+                           </div>
+                            </apex:outputpanel>
+                        </apex:form>
+                    </div>
+                    <!--------------------------------------------------------------- FORM ------------------------------------------------------------------->
+                </div>
+            </body>
+        </html>
+    </apex:page>

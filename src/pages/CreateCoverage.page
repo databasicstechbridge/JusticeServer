@@ -1,0 +1,167 @@
+<apex:page standardController="Case" extensions="CreateCoverageController" sidebar="false" showHeader="false">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+        <head>   
+            <apex:stylesheet value="{!URLFOR($Resource.JS01__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.css')}"/>  
+            <style>
+            .multiSelectPicklistRow select{
+                    background-color: white;
+                    color: #16325c;
+                    border: 1px solid #d8dde6;
+                    border-radius: 0.25rem;
+                    width: 100% !important;
+                }
+                td.multiSelectPicklistCell{
+                    width:30px;
+                }
+                .multiSelectPicklistCell img.picklistArrowRight{
+                
+                  display: block;
+                  width: 0;
+                  height: 0; 
+                  border-top: 6px solid transparent;
+                  border-bottom: 6px solid transparent;
+                  border-left: 6px solid #706e6b;
+                  background-image:none;
+                  margin-left:12px;
+                }
+                .multiSelectPicklistCell img.picklistArrowLeft{
+                
+                  display: block;
+                  width: 0;
+                  height: 0; 
+                  border-top: 6px solid transparent;
+                  border-bottom: 6px solid transparent;
+                  border-right: 6px solid #706e6b;
+                  background-image:none;
+                  margin-left:12px;
+                }
+            </style>
+        </head>
+        <body>  
+            <!-- Loading Image -->
+        <div id="status" style="display:none;">
+            <div style="height : 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.75; z-index: 100000; background-color: #ececec;">
+                &nbsp;
+            </div>
+            <div style="height : 100%; position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 100001; margin: 50% 50%">
+                <span style="color:#4a4a56;position: fixed;top: 50%;left: 50%;">
+                    <table><tr>
+                        <td><img src="/img/loading32.gif"/>&nbsp;&nbsp;</td>
+                        </tr></table>
+                </span>
+            </div>
+        </div>
+            <div class="LScope">
+                 <div class="slds-page-header slds-page-header_object-home">
+                    <div class="slds-col slds-float--left slds-m-right--small">  
+                        <div class="slds-icon_container slds-icon-standard-case slds-icon--medium" title="Create Coverage">
+                            <svg class="slds-icon" aria-hidden="true">
+                                <use xlink:href="{!URLFOR($Resource.JS01__SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#case')}"/>
+                            </svg>
+                        </div>
+                    </div>  
+                    <div class="slds-col">  
+                        <div class="slds-page-header__title slds-truncate">  
+                            Create Coverage
+                        </div>  
+                 </div>  
+            </div> 
+                
+    <!--------------------------------------------------------------- FORM ------------------------------------------------------------------->
+            <div class="slds-panel slds-grid slds-grid--vertical slds-form--compound" aria-labelledby="CreateCoverageForm">
+                <apex:form >
+                    <apex:pageMessages id="err"></apex:pageMessages>
+                        <apex:actionStatus id="status">
+                            <apex:facet name="start">
+                                <div style="height : 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.75; z-index: 1000; background-color: #ececec;">
+                                    &nbsp;
+                                </div>
+                                <div style="height : 100%; position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 50% 50%">
+                                    <span style="color:#4a4a56;position: fixed;top: 50%;left: 50%;">
+                                        <table>
+                                            <tr>
+                                                <td><img src="/img/loading32.gif"/>&nbsp;&nbsp;</td>
+                                                <td><b>Loading...</b></td>
+                                            </tr>
+                                        </table>
+                                    </span>
+                                </div>  
+                            </apex:facet> 
+                        </apex:actionStatus>
+                        <!-- Ending Load Image -->
+                       
+    
+    <!----------------------------------------------------------------- COMMON DETAILS  ----------------------------------------------------------> 
+                        <div class="slds-p-left--small slds-p-top--small slds-p-bottom--small slds-p-right--small"> 
+                            <div class="slds-panel__section"> 
+                                <apex:outputText value="Case Number: " styleClass="slds-form-element__label"/>
+                                <apex:outputText value="{!caseNumber}"/>
+                            </div>
+                        </div>
+                                
+    <!----------------------------------------------------------------- FAMILY MEMBER DETAILS ---------------------------------------------------------->            
+                        <div class="slds-text-title--caps slds-section-title--divider">Family Members</div> 
+                        <br/>
+                        <div class="slds-panel__section">  
+                            <div class="slds-p-left--small slds-p-bottom--small slds-p-right--small"> 
+                                <apex:outputText value="Select the family members this coverage applies to"  styleClass="slds-form-element__label"/>
+                                <apex:repeat var="rpVar" value="{!relatedPartyWrapperList}">     
+                                   <div class="slds-form-element__row">  
+                                       <label class="slds-checkbox">
+                                            <apex:inputCheckbox value="{!rpVar.selectBox}" id="ifuht"/>
+                                            <span class="slds-checkbox--faux"></span>
+                                            <span class="slds-form-element__label">{!rpVar.contactName}</span>
+                                            <br/>
+                                        </label>
+                                    </div>
+                                </apex:repeat>
+                            </div>
+                        </div>
+                            
+    <!----------------------------------------------------------------- COVERAGE DETAILS  ---------------------------------------------------------->        
+                        <div class="slds-text-title--caps slds-section-title--divider">Coverage Details</div> 
+                            <div class="slds-panel__section">  
+                                <div class="slds-size--1-of-2 slds-p-left--small slds-p-bottom--small"> 
+                                    <div class="slds-form-element__row"> 
+                                        <div class="slds-form-element"> 
+                                            <apex:outputLabel styleClass="slds-form-element__label"><abbr class="slds-required" title="required">*</abbr>{!$ObjectType.Coverage__c.fields.Health_Programs__c.Label}</apex:outputLabel> 
+                                            <apex:inputField value="{!newCoverageRecDummy.Health_Programs__c}" styleClass="slds-input" onchange="AFcheckHealthProgram();">
+                                                <apex:actionFunction name="AFcheckHealthProgram" action="{!checkHealthProgram}" reRender="medicare" status="status"/>
+                                            </apex:inputField>
+                                            <br/><br/>
+                                            <apex:outputLabel styleClass="slds-form-element__label">{!$ObjectType.Coverage__c.fields.Medicare_Type_s__c.Label}</apex:outputLabel> 
+                                            <apex:inputText id="medicare" value="{!newCoverageRecDummy.Medicare_Type_s__c}" disabled="{!NOT(enableMedicare)}" styleClass="slds-input"/>
+                                            <br/><br/>
+                                            <apex:outputLabel styleClass="slds-form-element__label">{!$ObjectType.Coverage__c.fields.Exchange_Tier__c.Label}</apex:outputLabel> 
+                                            <apex:inputField value="{!newCoverageRecDummy.Exchange_Tier__c}" styleClass="slds-input"/>
+                                            <br/><br/>
+                                            <apex:outputLabel styleClass="slds-form-element__label"><abbr class="slds-required" title="required">*</abbr>{!$ObjectType.Coverage__c.fields.Managed_Care__c.Label}</apex:outputLabel> 
+                                            <apex:inputField value="{!newCoverageRecDummy.Managed_Care__c}" onchange="AFcheckManagedCare();" styleClass="slds-input">
+                                                <apex:actionFunction name="AFcheckManagedCare" action="{!checkManagedCare}" reRender="medicalGroup" status="status"/>
+                                            </apex:inputField>
+                                            <br/><br/>
+                                            <apex:outputLabel styleClass="slds-form-element__label">{!$ObjectType.Coverage__c.fields.Private_Insurance_detail__c.Label}</apex:outputLabel> 
+                                            <apex:inputField value="{!newCoverageRecDummy.Private_Insurance_detail__c}" styleClass="slds-input"/>
+                                            <br/><br/>
+                                            <apex:outputLabel styleClass="slds-form-element__label">{!$ObjectType.Coverage__c.fields.Health_Plan__c.Label}</apex:outputLabel> 
+                                            <apex:inputField value="{!newCoverageRecDummy.Health_Plan__c}" styleClass="slds-input"/>
+                                            <br/><br/>
+                                            <apex:outputLabel styleClass="slds-form-element__label">{!$ObjectType.Coverage__c.fields.Medical_Group_IPA__c.Label}</apex:outputLabel> 
+                                            <apex:inputText id="medicalGroup" value="{!newCoverageRecDummy.Medical_Group_IPA__c}" disabled="{!NOT(enableMedicalGroup)}" styleClass="slds-input"/>
+                                            <br/><br/>
+                                            <apex:outputLabel styleClass="slds-form-element__label">{!$ObjectType.Coverage__c.fields.ASO__c.Label}</apex:outputLabel> 
+                                            <apex:inputField value="{!newCoverageRecDummy.ASO__c}" styleClass="slds-input"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div align="center" draggable="false">  
+                                <apex:commandButton value=" Cancel " action="{!cancel}" styleClass="slds-button slds-button--brand" onclick="document.getElementById('loader').style.display='block';"/>
+                                <apex:commandButton value=" Save " action="{!Save}" styleClass="slds-button slds-button--brand" onclick="document.getElementById('loader').style.display='block';"/>
+                        </div>
+                    </apex:form>
+                </div>
+            </div>
+        </body>
+    </html>     
+</apex:page>

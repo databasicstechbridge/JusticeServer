@@ -1,0 +1,384 @@
+<!--************************************************************************
+* Name               : FinancialDetail                                     *
+* Description        : JusticeServer - Important Dates/Financial Details   * 
+*                                      Screen                              *
+* Created By         : Techbridge                                          *        
+*************************************************************************-->
+<apex:page standardController="Lead" extensions="JS01.FinancialDetailController" sidebar="false" showHeader="false">
+        <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+        <head>  
+            <!-- STYLE SHEET -->  
+            <apex:stylesheet value="{!URLFOR($Resource.JS01__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.css')}"/>  
+        </head>
+         <!-- Loading Image -->
+        <div id="loader" style="display:none;">
+            <div style="height : 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.75; z-index: 100000; background-color: #ececec;">
+                &nbsp;
+            </div>
+            <div style="height : 100%; position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 100001; margin: 50% 50%">
+                <span style="color:#4a4a56;position: fixed;top: 50%;left: 50%;">
+                    <table><tr>
+                        <td><img src="/img/loading32.gif"/>&nbsp;&nbsp;</td>
+                        </tr></table>
+                </span>
+            </div>
+        </div>
+        <!-- Ending Load Image -->
+        <body> 
+            <!-- REQUIRED SLDS WRAPPER - CUSTOM SCOPING CLASS USED WHEN GENERATING CUSTOM CSS -->  
+            <div class="LScope">
+                <!-- ADD GLOBAL HEADER -->  
+                 <div class="slds-page-header slds-page-header_object-home">
+                     <!-- ADD GLOBAL HEADER ICON -->  
+                     <div class="slds-col slds-float--left slds-m-right--small">  
+                       <div class="slds-icon_container slds-icon-standard-lead slds-icon--medium" title="Financial Details">
+                          <svg class="slds-icon" aria-hidden="true">
+                            <use xlink:href="{!URLFOR($Resource.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#lead')}"/>
+                          </svg>
+                        </div>
+                     </div>  
+                     <!-- ADD GLOBAL HEADER TEXT -->  
+                     <div class="slds-col">  
+                       <div class="slds-page-header__title slds-truncate">  
+                         {!$Label.LeadInfo_FinancialDetail_Hdr}
+                       </div>  
+                    </div> 
+                </div> 
+<!---------------------------------------------------------------- FORM ----------------------------------------------------->
+                <div class="slds-panel slds-grid slds-grid--vertical slds-nowrap slds-form--compound" aria-labelledby="LeadInfoForm">        
+                    <apex:form >
+                        <apex:pageMessages id="err" >
+                        </apex:pageMessages>   
+                        <!-- Loading Image -->
+                        <apex:actionStatus id="status">
+                            <apex:facet name="start">
+                                <div style="height : 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.75; z-index: 1000; background-color: #ececec;">
+                                    &nbsp;
+                                </div>
+                                <div style="height : 100%; position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 50% 50%">
+                                    <span style="color:#4a4a56;position: fixed;top: 50%;left: 50%;">
+                                        <table><tr>
+                                            <td><img src="/img/loading32.gif"/>&nbsp;&nbsp;</td>
+                                            <td><b>Loading...</b></td>
+                                            </tr></table>
+                                    </span>
+                                </div>
+                            </apex:facet>
+                        </apex:actionStatus>
+                        <apex:actionFunction name="AFcalculateYearlyIncome" action="{!calculateTotal}" rerender="TotalSection"  status="status"/>
+                        <apex:actionFunction name="AFcheckType" action="{!checkType}" status="status" rerender="pgblckTabl">
+                            <apex:param name="rowCounter" value="" assignTo="{!rowCounter}"/>
+                        </apex:actionFunction>
+                        <apex:actionFunction name="AFcheckFrequency" action="{!checkFrequency}" status="status" rerender="PgBlckTbl1,PgBlckTbl2">
+                            <apex:param name="IncomeCounter" value="" assignTo="{!IncomeCounter}"/>
+                             <apex:param name="DeductionsCounter" value="" assignTo="{!DeductionsCounter}"/>
+                        </apex:actionFunction>
+                        <style>
+                        .weeklyHourOutput{
+                            background-color:  rgb(224, 229, 238);
+                            border: 1px solid #a8b7c7;
+                            border-radius: 0.25rem;
+                            width: 100%;
+                            cursor: not-allowed;
+                            transition: border 0.1s linear, background-color 0.1s linear;
+                            display: inline-block;
+                            padding: 0 1rem 0 0.75rem;
+                            line-height: 1.875rem;
+                            min-height: calc(1.875rem + (1px * 2));
+                        }    
+                        </style>
+                        
+<!------------------------------------------------------------- IMPORTANT DATES BLOCK ------------------------------------------------------------------------------------------------->    
+                            <!------------------------------------ CRITICAL DATE ------------------------->
+                                <apex:outputPanel rendered="{!showImportantDate}">
+                                <div class="slds-text-title--caps slds-section-title--divider">IMPORTANT DATES</div> 
+                                <apex:outputPanel rendered="{!displayUpcomingCriticalDate}">
+                                <div class="slds-panel__section">  
+                                    <!-- ELEMENT GROUP -->  
+                                    <div class="form-element__group">  
+                                        <!-- ADD ROW -->  
+                                        <div class="slds-form-element__row">  
+                                            <!-- ADD FIELDS -->  
+                                            <div class="slds-form-element slds-is-required">
+                                                <div class="slds-form-element__control">
+                                                    <apex:outputLabel for="upcomingCriticalDate" styleClass="slds-form-element__label"><abbr class="slds-required" title="required">*</abbr>Do you have an upcoming critical date ?</apex:outputLabel> 
+                                                    <div class="slds-select_container">
+                                                        <apex:selectList label="{!$Label.js01__leadinfo_criticaldate}" id="upcomingCriticalDate" value="{!selectedCriticalDateOption}" size="1" styleClass="slds-select">
+                                                            <apex:selectOptions value="{!upcomingCriticalDate}"/>
+                                                        </apex:selectList>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slds-form-element"></div> 
+                                            <div class="slds-form-element"></div> 
+                                            <div class="slds-form-element"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </apex:outputPanel>                     
+                            
+                              <!------------------------------------ IMPORTANT DATES TABLE ------------------------->
+                                <div class="slds-panel__section">  
+                                <apex:dataTable var="impDates" value="{!impDateWrapperList}" id="pgblckTabl" styleClass="slds-table slds-table--bordered slds-no-row-hover">
+                                    <apex:column headerValue="Dates">
+                                        <apex:inputField value="{!impDates.iDate.JS01__Date__c}" id="ipDate" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                    </apex:column>
+                                    <apex:column headerValue="Type"> 
+                                        <apex:inputField value="{!impDates.iDate.JS01__Type__c}" onchange="AFcheckType('{!impDates.count}');" id="ipType" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                    </apex:column>
+                                    <apex:column headerValue="Other">
+                                        <apex:inputText value="{!impDates.iDate.JS01__Other__c}" disabled="{!NOT(impDates.otherFlag)}" id="ipOther" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                    </apex:column>
+                                    <apex:column headerValue="Type of Court">
+                                        <apex:inputField value="{!impDates.iDate.JS01__Type_of_Court__c}" id="ipTypeOfCourt" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                        <!--<apex:outputField value="{!impDates.iDate.JS01__Type_of_Court__c}" rendered="{!!impDates.requiredFlag}" id="opTypeOfCourt"  style="width:200px;" styleClass="weeklyHourOutput" /> -->
+                                    </apex:column>
+                                    <apex:column headerValue="Jurisdiction of Court">
+                                        <apex:selectList id="jurisdictionOfCourt" value="{!impDates.iDate.JS01__Jurisdiction_of_Court__c}" size="1" styleClass="slds-select">
+                                            <apex:selectOptions value="{!JurisdictionOfCourt}"/>
+                                        </apex:selectList>
+                                       <!-- <apex:outputField value="{!impDates.iDate.JS01__Jurisdiction_of_Court__c}" rendered="{!!impDates.requiredFlag}" id="opJurisdictionOfCourt" styleClass="weeklyHourOutput" style="width:200px;"/> -->
+                                    </apex:column>
+                                    <apex:column headerValue="Action">
+                                        <apex:commandLink value="Delete Row" action="{!deleteRowImportantDates}"  rerender="pgblckTabl" status="status">
+                                            <apex:param name="rowCounter" value="{!impDates.count}" assignTo="{!rowCounter}"/>
+                                        </apex:commandLink>
+                                    </apex:column>  
+                                </apex:dataTable>
+                            <apex:commandLink value="Add Row" action="{!addRowImportantDates}" rerender="pgblckTabl" status="status"/>
+                            </div>
+                            </apex:outputPanel>
+
+<!------------------------------------------------------------------- HOUSEHOLD MEMBERS  ------------------------------------------------------------------------------------------------->
+                             <div class="slds-text-title--caps slds-section-title--divider">Household Members</div> 
+                             <apex:outputPanel id="householdSection">
+                             <div class="slds-panel__section">    
+                                    <div class="form-element__group">  
+                                        <div class="slds-form-element__row">  
+                                            <!-- ADD FIELDS -->  
+                                            <div class="slds-form-element">
+                                                <apex:outputLabel value="Number of Adults" styleClass="slds-form-element__label"/>
+                                                <apex:inputField value="{!leadRecord.JS01__Number_of_Adults__c}" onkeyup="AFcalculateYearlyIncome();" styleClass="slds-form-element__control slds-input"/>
+                                            </div>
+                                            <div class="slds-form-element"></div>
+                                            <div class="slds-form-element">
+                                                <apex:outputLabel value="Number of Children" styleClass="slds-form-element__label"/>
+                                                <apex:inputField value="{!leadRecord.JS01__Number_of_Children__c}" onkeyup="AFcalculateYearlyIncome();" styleClass="slds-form-element__control slds-input"/>
+                                            </div>
+                                        </div>
+                                        <apex:outputPanel id="seniors" rendered="{!includeNumberOfSeniors}">
+                                            <div class="slds-form-element__row"> 
+                                                <div class="slds-form-element">
+                                                    <apex:outputLabel value="Number of Seniors" styleClass="slds-form-element__label"/>
+                                                    <apex:inputField value="{!leadRecord.JS01__Number_of_Seniors__c}" onkeyup="AFcalculateYearlyIncome();" styleClass="slds-form-element__control slds-input"/>
+                                                </div>
+                                                <div class="slds-form-element"></div>
+                                                <div class="slds-form-element"></div>
+                                            </div>
+                                        </apex:outputPanel>
+                                    </div>
+                                </div>  
+                            </apex:outputPanel>
+<!------------------------------------------------------------------- TOTAL BLOCK  ------------------------------------------------------------------------------------------------->
+                             <apex:outputPanel rendered="{!showFinancialDetails}">
+                             <div class="slds-text-title--caps slds-section-title--divider">Financial Details</div> 
+                             <apex:outputPanel id="TotalSection">
+                             <div class="slds-panel__section">  
+                                    <!-- ELEMENT GROUP -->  
+                                    <div class="form-element__group">  
+                                        <!-- ADD ROW -->  
+                                            <div class="slds-form-element__row">  
+                                                <div class="slds-form-element">
+                                                    <apex:outputText value="Total Yearly Income"></apex:outputText>
+                                                </div>
+                                                <div class="slds-form-element">
+                                                    <apex:outputText >{!totalIncome}</apex:outputText>
+                                                </div>
+                                                <div class="slds-form-element">
+                                                    <apex:outputLabel value="Total Monthly Income"/>
+                                                </div>
+                                                <div class="slds-form-element">
+                                                    <apex:outputText value="{0, number, 00.00}">
+                                                        <apex:param value="{!totalIncome/12}"/>
+                                                    </apex:outputText>
+                                                </div>
+                                            </div>
+                                            <div class="slds-form-element__row">  
+                                                <div class="slds-form-element">
+                                                    <apex:outputLabel value="Total Yearly Deductions"/>
+                                                </div>
+                                                <div class="slds-form-element">
+                                                    <apex:outputText value="{!totalDeductions}"/>
+                                                </div>
+                                                <div class="slds-form-element">
+                                                    <apex:outputLabel value="Total Assets"/>
+                                                </div>
+                                                <div class="slds-form-element">
+                                                    <apex:outputText value="{!totalAssets}"/>
+                                                </div>
+                                            </div>
+                                            <apex:outputPanel rendered="{!showPovertyCalculations}">
+                                                <div class="slds-form-element__row">    
+                                                    <div class="slds-form-element">
+                                                        <apex:outputLabel value="Poverty Level Without Deductions"/>
+                                                    </div>
+                                                    <div class="slds-form-element">
+                                                        <apex:outputText value="{0,number,###.00%}">
+                                                            <apex:param value="{!povertyLevelWithoutDeductions}"/>
+                                                        </apex:outputText>
+                                                    </div>
+                                                    <div class="slds-form-element">
+                                                        <apex:outputLabel value="Poverty Level With Deductions"/>
+                                                    </div>
+                                                    <div class="slds-form-element">
+                                                        <apex:outputText value="{0,number,###.00%}">
+                                                            <apex:param value="{!povertyLevelWithDeductions}"/>
+                                                        </apex:outputText>
+                                                    </div>
+                                                </div>
+                                            </apex:outputPanel>
+                                        </div>
+                                    </div>
+                                </apex:outputPanel>
+                            </apex:outputPanel>
+                            
+<!----------------------------------------------------- RECORDS BLOCK ------------------------------------------------------------------------------------------------->        
+<!----------------------------------------------------- INCOME TAB -------------------------------------------------------------------------------------------------->
+                                <apex:outputPanel rendered="{!showFinancialDetails}">
+                                <div class="slds-tabs--default">
+                                  <ul class="slds-tabs--default__nav" role="tablist">
+                                    <li class="slds-tabs--default__item  slds-active" title="Income" role="presentation" onclick="showIncome();" id="lineItem1">
+                                      <a  class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1">Income</a>
+                                    </li>
+                                    <li class="slds-tabs--default__item" title="Deductions" role="presentation" onclick="showDeductions();" id="lineItem2">
+                                      <a  class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="1" aria-selected="false" aria-controls="tab-default-2">Deductions</a>
+                                    </li>
+                                    <li class="slds-tabs--default__item" title="Assets" role="presentation" onclick="showAssets();" id="lineItem3">
+                                      <a  class="slds-tabs--default__link" href="javascript:void(0);" role="tab" tabindex="2" aria-selected="false" aria-controls="tab-default-3">Assets</a>
+                                    </li>
+                                  </ul>
+                                  <div class="slds-tabs--default__content slds-show" role="tabpanel" id="tab-default-1">
+                                    <div class="slds-panel__section">  
+                                        <apex:dataTable var="fdInc" value="{!incomeWrapperList}" id="PgBlckTbl1" styleClass="slds-table slds-table--bordered slds-no-row-hover">
+                                            <apex:column headerValue="Amount/Value">
+                                                <apex:inputField value="{!fdInc.fDetail.JS01__Amount_Value__c}" id="ipAmountValueInc" onchange="AFcalculateYearlyIncome();" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                            </apex:column>
+                                            <apex:column headerValue="Frequency">
+                                                <apex:inputField value="{!fdInc.fDetail.JS01__Frequency__c}" id="ipFrequencyInc" onchange="AFcalculateYearlyIncome();AFcheckFrequency('{!fdInc.fdCount}');" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                            </apex:column>
+                                            <apex:column headerValue="Weekly Hours">
+                                                <apex:inputField value="{!fdInc.fDetail.JS01__Weekly_Hours__c}" id="ipWeeklyhoursInc" rendered="{!fdInc.weeklyHourFlag}" onchange="AFcalculateYearlyIncome();" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                                <apex:outputText value=" " id="opWeeklyhoursInc" rendered="{!NOT(fdInc.weeklyHourFlag)}" styleClass="weeklyHourOutput" style="width:200px;"/>
+                                            </apex:column>
+                                            <apex:column headerValue="Type">
+                                                <apex:inputField value="{!fdInc.fDetail.JS01__Type__c}" id="ipTypeInc" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                            </apex:column>
+                                            <apex:column headerValue="Other">
+                                                <apex:inputField value="{!fdInc.fDetail.JS01__Other__c}" id="ipOtherInc" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                            </apex:column>
+                                            <apex:column headerValue="Action">
+                                                <apex:commandLink action="{!deleteRowIncome}" rerender="RecordSection,PgBlckTbl1,TotalSection,err" oncomplete="AFcalculateYearlyIncome();" status="status">Delete Row
+                                                    <apex:param name="IncomeCounter" value="{!fdInc.fdCount}" assignTo="{!IncomeCounter}"/>
+                                                </apex:commandLink>
+                                            </apex:column>
+                                        </apex:dataTable>
+                                    </div>
+                                    <apex:commandLink action="{!addRowIncome}" rerender="PgBlckTbl1,err" status="status">Add Row</apex:commandLink><br/><br/>
+                                    </div>
+<!----------------------------------------------------- DEDUCTIONS TAB -------------------------------------------------------------------------------------------------->
+                                
+                                <div class="slds-tabs--default__content slds-hide" role="tabpanel" id="tab-default-2">
+                                    <div class="slds-panel__section">  
+                                        <apex:dataTable var="fdDed" value="{!deductionsWrapperList}" id="PgBlckTbl2" styleClass="slds-table slds-table--bordered slds-no-row-hover">
+                                            <apex:column headerValue="Amount/Value">
+                                                <apex:inputField value="{!fdDed.fDetail.JS01__Amount_Value__c}" id="ipAmountValueDed" onchange="AFcalculateYearlyIncome();" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                            </apex:column>
+                                            <apex:column headerValue="Frequency">
+                                                <apex:inputField value="{!fdDed.fDetail.JS01__Frequency__c}"  id="ipFrequencyDed" onchange="AFcalculateYearlyIncome();AFcheckFrequency('{!fdDed.fdCount}');" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                            </apex:column>
+                                            <apex:column headerValue="Weekly Hours">
+                                                <apex:inputField value="{!fdDed.fDetail.JS01__Weekly_Hours__c}" id="ipWeeklyhoursDed" rendered="{!fdDed.weeklyHourFlag}" onchange="AFcalculateYearlyIncome();" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                                <apex:outputText value=" " id="opWeeklyhoursInc" rendered="{!NOT(fdDed.weeklyHourFlag)}" style="width:200px;" styleClass="weeklyHourOutput"/>
+                                            </apex:column>
+                                            <apex:column headerValue="Type">
+                                                <apex:inputField value="{!fdDed.fDetail.JS01__Type__c}" id="ipTypeDed" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                            </apex:column>
+                                            <apex:column headerValue="Other">
+                                                <apex:inputField value="{!fdDed.fDetail.JS01__Other__c}" id="ipOtherDed" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                            </apex:column>
+                                            <apex:column headerValue="Action"> 
+                                                <apex:commandLink action="{!deleteRowDeductions}"  rerender="PgBlckTbl2,err" oncomplete="AFcalculateYearlyIncome();">Delete Row
+                                                    <apex:param name="DeductionsCounter" value="{!fdDed.fdCount}" assignTo="{!DeductionsCounter}"/>
+                                                </apex:commandLink>
+                                            </apex:column>
+                                        </apex:dataTable>
+                                    </div>
+                                    <apex:commandLink action="{!addRowDeductions}" rerender="PgBlckTbl2,err" status="status">Add Row</apex:commandLink><br/><br/>
+                                </div>
+                                
+<!----------------------------------------------------- ASSETS TAB -------------------------------------------------------------------------------------------------->
+                                
+                                 <div class="slds-tabs--default__content slds-hide" role="tabpanel" id="tab-default-3">
+                                   <div class="slds-panel__section">  
+                                        <apex:dataTable var="fdAss" value="{!assetsWrapperList}" id="PgBlckTbl3" styleClass="slds-table slds-table--bordered slds-no-row-hover">
+                                            <apex:column headerValue="Amount/Value">
+                                                <apex:inputField value="{!fdAss.fDetail.JS01__Amount_Value__c}"  id="ipAmountValueAss" onchange="AFcalculateYearlyIncome();" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                            </apex:column>
+                                            <apex:column headerValue="Type">
+                                                <apex:inputField value="{!fdAss.fDetail.JS01__Type__c}"  id="ipTypeAss" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                            </apex:column>
+                                            <apex:column headerValue="Other">
+                                                <apex:inputField value="{!fdAss.fDetail.JS01__Other__c}" id="ipOtherAss" style="width:200px;" styleClass="slds-form-element__control slds-input"/>
+                                            </apex:column>
+                                            <apex:column headerValue="Action">
+                                                <apex:commandLink action="{!deleteRowAssets}" rerender="PgBlckTbl3,err" oncomplete="AFcalculateYearlyIncome();">Delete Row
+                                                    <apex:param name="AssetsCounter" value="{!fdAss.fdCount}" assignTo="{!AssetsCounter}"/>
+                                                </apex:commandLink>  
+                                            </apex:column>
+                                        </apex:dataTable>
+                                    </div>
+                                    <apex:commandLink action="{!addRowAssets}" rerender="PgBlckTbl3,err" status="status">Add Row</apex:commandLink><br/><br/> 
+                                </div>
+                            </div>
+                            </apex:outputPanel>
+                            <br/>
+                            <div align="center" draggable="false" >
+                                <apex:commandButton value="Save" action="{!save}" rerender="err,PgBlckTbl1,PgBlckTbl2,PgBlckTbl3" status="status" oncomplete="window.scrollTo(0,0);" styleClass="slds-button slds-button--brand"/>
+                                <apex:commandButton value="Cancel" action="{!cancel}" styleClass="slds-button slds-button--neutral" />
+                                <apex:commandButton value="{!$Label.js01__btn_reject}" action="{!reject}" styleClass="slds-button slds-button--neutral" oncomplete="window.scrollTo(0,0);"/>
+                            </div>
+                </apex:form>
+                </div>
+            </div>
+        </body>
+    </html>
+    <script>
+        function setFocusOnLoad() {}
+        function showIncome(){
+            document.getElementById('tab-default-1').className = 'slds-tabs--default__content slds-show';
+            document.getElementById('tab-default-2').className = 'slds-tabs--default__content slds-hide';
+            document.getElementById('tab-default-3').className = 'slds-tabs--default__content slds-hide';
+            document.getElementById('lineItem1').className = 'slds-tabs--default__item slds-active slds-has-focus';
+            document.getElementById('lineItem2').className = 'slds-tabs--default__item';
+            document.getElementById('lineItem3').className = 'slds-tabs--default__item';
+        }
+        
+        function showDeductions(){
+            document.getElementById('tab-default-1').className = 'slds-tabs--default__content slds-hide';
+            document.getElementById('tab-default-2').className = 'slds-tabs--default__content slds-show';
+            document.getElementById('tab-default-3').className = 'slds-tabs--default__content slds-hide';
+            document.getElementById('lineItem1').className = 'slds-tabs--default__item';
+            document.getElementById('lineItem2').className = 'slds-tabs--default__item slds-active slds-has-focus';
+            document.getElementById('lineItem3').className = 'slds-tabs--default__item';
+        }
+        
+        function showAssets(){
+            document.getElementById('tab-default-1').className = 'slds-tabs--default__content slds-hide';
+            document.getElementById('tab-default-2').className = 'slds-tabs--default__content slds-hide';
+            document.getElementById('tab-default-3').className = 'slds-tabs--default__content slds-show';
+            document.getElementById('lineItem1').className = 'slds-tabs--default__item';
+            document.getElementById('lineItem2').className = 'slds-tabs--default__item';
+            document.getElementById('lineItem3').className = 'slds-tabs--default__item slds-active slds-has-focus';
+        }
+    </script>
+</apex:page>

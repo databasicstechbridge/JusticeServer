@@ -1,0 +1,226 @@
+<!--************************************************************************
+* Name               : CaseSummary                                         *
+* Description        : JusticeServer - one page "Summary" of Case Details  *
+* Created By         : Techbridge                                          *        
+*************************************************************************-->
+<apex:page renderAs="PDF" standardController="Case" extensions="JS01.CaseSummaryController" showHeader="false" applyBodyTag="false" sidebar="false" applyHtmlTag="false" >
+    <head>
+         <style type="text/css">
+                @page{
+                        size: letter;
+                        margin: 5%;
+                    }
+                body{
+                        font-family: Helvetica, sans-serif;
+                        font-size:12px;
+                    }
+                table {
+                    width: 100%;
+                    }
+                
+                .centered {
+                    text-align: center;
+                }
+                
+                .right {
+                    text-align: right;
+                }
+                
+                .tableHeader {
+                    border-width: 0px 0px 1px 0px;
+                    border-color: #000;
+                    border-style: solid;
+                }
+                
+                .sectionHeader {
+                    padding-top: 50px;
+                    width: 100%;
+                    background-color: #eee;
+                    font-size: 9pt;
+                    padding: 5px;
+                    margin: 20px 0px;
+                    font-weight: bold;
+                }
+            </style>
+
+        </head>
+    
+        <body>
+        <apex:form >
+        <apex:pageBlock id="caseCloseBlock" mode="maindetail">
+<!----------------------------------------------- CASE DETAILS ------------------------------------------>          
+            <apex:pageBlockSection columns="2" >
+                <apex:repeat var="caseField" value="{!$ObjectType.Case.FieldSets.JS01__PDF_Summary_Header}">
+                    <apex:outputField value="{!caseRecord[caseField]}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>
+            
+<!----------------------------------------------- IMPORTANT DATES ---------------------------------------->         
+            <div class="sectionHeader">IMPORTANT DATES</div>
+            <apex:pageBlockSection >
+                <apex:outputText value="No Important Dates to display!"  rendered="{!ISNULL(caseRecord.Important_Dates__r)||caseRecord.Important_Dates__r.size<=0}"></apex:outputText>
+                <apex:pageBlockTable var="impDate" value="{!caseRecord.Important_Dates__r}" id="impDateTable" rendered="{!!ISNULL(caseRecord.Important_Dates__r)&&caseRecord.Important_Dates__r.size>0}"  headerClass="tableHeader">
+                    <apex:repeat var="impDateField" value="{!$ObjectType.JS01__Important_Dates__c.FieldSets.JS01__PDF_Summary}">
+                        <apex:column headerValue="{!impDateField.Label}" >
+                            <apex:outputField value="{!impDate[impDateField]}"/>
+                        </apex:column>
+                    </apex:repeat>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+            
+<!----------------------------------------------- CLIENT CONTACT INFORMATION ---------------------------------------->       
+            <div class="sectionHeader">CLIENT CONTACT INFORMATION</div>
+            <apex:pageBlockSection columns="2" rendered="{!indvidualFlag}">
+                <apex:repeat var="conField" value="{!$ObjectType.Contact.FieldSets.JS01__Case_Summary_Client_Contact}">
+                    <apex:outputField value="{!contactRecord[conField]}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection columns="2" rendered="{!!indvidualFlag}">
+                <apex:repeat var="accField" value="{!$ObjectType.Account.FieldSets.JS01__Case_Summary_Client_Account}">
+                    <apex:outputField value="{!accountRecord[accField]}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>
+
+<!----------------------------------------------- CLIENT DETAILS ---------------------------------------->       
+            <div class="sectionHeader">CLIENT DETAILS</div>
+            <apex:pageBlockSection columns="2" rendered="{!indvidualFlag}">
+                <apex:repeat var="contactField" value="{!$ObjectType.Contact.FieldSets.JS01__Case_Summary_Client_Detail}">
+                    <apex:outputField value="{!contactRecord[contactField]}"/>
+                </apex:repeat>
+            </apex:pageBlockSection> 
+            
+            <apex:pageBlockSection columns="2" rendered="{!NOT(indvidualFlag)}">
+                <apex:repeat var="accountField" value="{!$ObjectType.Account.FieldSets.JS01__Case_Summary_Client_Detail}">
+                    <apex:outputField value="{!accountRecord[accountField]}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>    
+            
+<!----------------------------------------------- ADVERSE PARTIES ---------------------------------------->      
+            <div class="sectionHeader">ADVERSE PARTIES</div>
+            <apex:pageBlockSection >
+                <apex:outputText value="No Adverse Parties to display!" rendered="{!ISNULL(caseRecord.Related_Parties__r)||caseRecord.Related_Parties__r.size<=0}"></apex:outputText>
+                <apex:pageBlockTable var="relatedParty" value="{!caseRecord.Related_Parties__r}" rendered="{!!ISNULL(caseRecord.Related_Parties__r)&&caseRecord.Related_Parties__r.size>0}" headerClass="tableHeader" id="AdvpartyTable">
+                    <apex:repeat var="rPartyField" value="{!$ObjectType.JS01__Related_Party__c.FieldSets.JS01__PDF_Summary_Adverse}">
+                        <apex:column headerValue="{!rPartyField.Label}">
+                            <apex:outputField value="{!relatedParty[rPartyField]}"/>
+                        </apex:column>
+                    </apex:repeat>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>    
+
+<!----------------------------------------------- CASE NOTES ---------------------------------------->       
+            <div class="sectionHeader">CASE NOTES</div>
+            <apex:pageBlockSection columns="1">
+                <apex:outputText value="No Notes to display!" rendered="{!ISNULL(noteWrapperList)||noteWrapperList.size<=0}" ></apex:outputText>
+                    <apex:repeat value="{!noteWrapperList}" var="noteWrap" rendered="{!!ISNULL(noteWrapperList)||noteWrapperList.size>0}" id="notePgblkTable"> 
+                        <apex:pageBlockSectionItem >
+                            <apex:outputText value="{!noteWrap.noteRec.Title}" style="font-weight:bold!important;"/>
+                        </apex:pageBlockSectionItem>
+                        <apex:pageBlockSectionItem >
+                            <apex:outputText value="{!noteWrap.noteBody}" id="noteBody" escape="false"/>
+                        </apex:pageBlockSectionItem>
+                    </apex:repeat> 
+            </apex:pageBlockSection>
+            
+<!----------------------------------------------- ELIGIBILITY INFORMATION ---------------------------------------->      
+            <div class="sectionHeader">ELIGIBILITY INFORMATION</div>
+            <apex:pageBlockSection columns="2">
+                <apex:repeat var="caseField2" value="{!$ObjectType.Case.FieldSets.JS01__PDF_Summary_Eligibility}">
+                    <apex:outputField value="{!caseRecord[caseField2]}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>            
+
+<!----------------------------------------------- INCOME SOURCES ---------------------------------------->       
+            <div class="sectionHeader">INCOME SOURCES</div>
+            <apex:pageBlockSection >
+            <apex:outputText value="No Income Sources to display!" rendered="{!ISNULL(incomeList)||incomeList.size<=0}" ></apex:outputText>
+                <apex:pageBlockTable var="incomeRec" value="{!incomeList}" rendered="{!!ISNULL(incomeList)&&incomeList.size>0}" headerClass="tableHeader" id="incomeTable">
+                    <apex:repeat var="incomeField" value="{!$ObjectType.JS01__Financial_Detail__c.FieldSets.JS01__PDF_Summary_Income}">
+                        <apex:column headerValue="{!incomeField.Label}">
+                            <apex:outputField value="{!incomeRec[incomeField]}"/>
+                        </apex:column>
+                    </apex:repeat>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>    
+
+<!----------------------------------------------- EXPENSES ---------------------------------------->         
+            <div class="sectionHeader">EXPENSES</div>
+            <apex:pageBlockSection columns="1">
+            <apex:outputText value="No Expenses to display!" rendered="{!ISNULL(deductionsList) || deductionsList.size<=0}" ></apex:outputText>
+                <apex:pageBlockTable var="deductionRec" value="{!deductionsList}" rendered="{!!ISNULL(deductionsList)&&deductionsList.size>0}" headerClass="tableHeader" id="incomeTable">
+                    <apex:repeat var="deductionField" value="{!$ObjectType.JS01__Financial_Detail__c.FieldSets.JS01__PDF_Summary_Deductions}">
+                        <apex:column headerValue="{!deductionField.Label}">
+                            <apex:outputField value="{!deductionRec[deductionField]}"/>
+                        </apex:column>
+                    </apex:repeat>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>    
+
+<!----------------------------------------------- ASSETS ---------------------------------------->       
+            <div class="sectionHeader">ASSETS</div>
+            <apex:pageBlockSection >
+            <apex:outputText value="No Assets to display!" rendered="{!ISNULL(assetsList)||assetsList.size<=0}"></apex:outputText>
+                <apex:pageBlockTable var="assetRec" value="{!assetsList}" rendered="{!!ISNULL(assetsList)&&assetsList.size>0}" headerClass="tableHeader" id="incomeTable" >
+                    <apex:repeat var="assetsField" value="{!$ObjectType.JS01__Financial_Detail__c.FieldSets.JS01__PDF_Summary_Assets}">
+                        <apex:column headerValue="{!assetsField.Label}">
+                            <apex:outputField value="{!assetRec[assetsField]}"/>
+                        </apex:column>
+                    </apex:repeat>
+                </apex:pageBlockTable>  
+            </apex:pageBlockSection>
+            
+<!----------------------------------------------- CASE TEAM ---------------------------------------->        
+            <div class="sectionHeader">CASE TEAM</div>
+            <apex:pageBlockSection columns="2">
+                <apex:outputText value="Advocate" style="font-weight:bold!important;"/>
+                <apex:pageBlockSectionItem >
+                    <apex:outputText value="{!caseRecord.Owner.Name}"/>
+                </apex:pageBlockSectionItem>
+                 <apex:repeat var="raRecord" value="{!caseRecord.Resource_Assignments__r}">
+                  <apex:pageBlockSectionItem >
+                    <apex:outputText value="{!raRecord.JS01__Role__c}" style="font-weight:bold!important;"/>
+                    </apex:pageBlockSectionItem>
+                     <apex:pageBlockSectionItem >
+                    <apex:outputField value="{!raRecord.Contact__r.Name}"/>
+                    </apex:pageBlockSectionItem>
+                </apex:repeat>
+            </apex:pageBlockSection>
+
+<!----------------------------------------------- CASE CLOSING INFORMATION ---------------------------------------->         
+            <div class="sectionHeader">CASE CLOSING INFORMATION</div>
+            <apex:pageBlockSection columns="2">
+                <apex:repeat var="caseField3" value="{!$ObjectType.Case.FieldSets.JS01__PDF_Summary_Closing}">
+                    <apex:outputField value="{!caseRecord[caseField3]}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>  
+
+<!----------------------------------------------- MONETARY BENEFITS  ---------------------------------------->       
+            <div class="sectionHeader">MONETARY BENEFITS</div>
+            <apex:pageBlockSection >
+            <apex:outputText value="No Monetary Benefits to display!" rendered="{!ISNULL(monetaryList)||monetaryList.size<=0}"></apex:outputText>
+                <apex:pageBlockTable var="monetaryRec" value="{!monetaryList}" rendered="{!!ISNULL(monetaryList)&&monetaryList.size>0}" headerClass="tableHeader" id="monetaryTable" >
+                    <apex:repeat var="monetaryField" value="{!$ObjectType.JS01__Benefits__c.FieldSets.JS01__PDF_Summary_Monetary_Benefits}">
+                        <apex:column headerValue="{!monetaryField.Label}">
+                            <apex:outputField value="{!monetaryRec[monetaryField]}"/>
+                        </apex:column>
+                    </apex:repeat>
+                </apex:pageBlockTable>  
+            </apex:pageBlockSection>
+            
+<!----------------------------------------------- NON - MONETARY BENEFITS ---------------------------------------->       
+            <div class="sectionHeader">NON-MONETARY BENEFITS</div>
+            <apex:pageBlockSection >
+            <apex:outputText value="No Non-Monetary Benefits to display!" rendered="{!ISNULL(nonMonetaryList)||nonMonetaryList.size<=0}"></apex:outputText>
+                <apex:pageBlockTable var="nonMonetaryRec" value="{!nonMonetaryList}" rendered="{!!ISNULL(nonMonetaryList)&&nonMonetaryList.size>0}" headerClass="tableHeader" id="nonMonetaryTable" >
+                    <apex:repeat var="nonMonetaryField" value="{!$ObjectType.JS01__Benefits__c.FieldSets.JS01__PDF_Summary_Non_Monetary_Benefits}">
+                        <apex:column headerValue="{!nonMonetaryField.Label}">
+                            <apex:outputField value="{!nonMonetaryRec[nonMonetaryField]}"/>
+                        </apex:column>
+                    </apex:repeat>
+                </apex:pageBlockTable>  
+            </apex:pageBlockSection>                                                                                                                                              
+            </apex:pageBlock>
+        </apex:form>
+    </body>
+</apex:page>

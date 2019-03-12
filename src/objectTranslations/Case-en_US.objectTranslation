@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>HCA Case Number</value>
+        </caseValues>
+        <name>case_number</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Actions Taken/ Advice Given --></label>
+        <name>Actions_Taken_Advice_Given__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advocate/Staff Number --></label>
+        <name>Advocate_Staff_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Review Complete? --></label>
+        <name>Case_Review_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Age at Case Close --></label>
+        <name>Client_Age_at_Case_Close__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client is open to talking to media --></label>
+        <name>Client_is_open_to_talking_to_media__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Notes --></label>
+        <name>Financial_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- General Comments --></label>
+        <name>General_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Good Story --></label>
+        <name>Good_Story__c</name>
+        <picklistValues>
+            <masterLabel>1st MH Appeal State Fair Hearing</masterLabel>
+            <translation><!-- 1st MH Appeal State Fair Hearing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duals Demonstrations issues</masterLabel>
+            <translation><!-- Duals Demonstrations issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geographic Expansion Issues</masterLabel>
+            <translation><!-- Geographic Expansion Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthy families transition issues</masterLabel>
+            <translation><!-- Healthy families transition issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immigration Status Barriers</masterLabel>
+            <translation><!-- Immigration Status Barriers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LIHP</masterLabel>
+            <translation><!-- LIHP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Language Barriers</masterLabel>
+            <translation><!-- Language Barriers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medi-Cal managed care</masterLabel>
+            <translation><!-- Medi-Cal managed care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medi-Cal share of cost barrier to care</masterLabel>
+            <translation><!-- Medi-Cal share of cost barrier to care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medi-Cal: compelling eligibility barrier</masterLabel>
+            <translation><!-- Medi-Cal: compelling eligibility barrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medi-Cal: essential for consumers</masterLabel>
+            <translation><!-- Medi-Cal: essential for consumers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical: debt and billing</masterLabel>
+            <translation><!-- Medical: debt and billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescription drug, not in Medicare</masterLabel>
+            <translation><!-- Prescription drug, not in Medicare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reimbursement issue</masterLabel>
+            <translation><!-- Reimbursement issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seniors/Disabilities in managed care</masterLabel>
+            <translation><!-- Seniors/Disabilities in managed care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes- Mental Health</masterLabel>
+            <translation><!-- Yes- Mental Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes-Board and Care</masterLabel>
+            <translation><!-- Yes-Board and Care --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is your income likely to increase? --></label>
+        <name>Is_your_income_likely_to_increase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Civil Case Number --></label>
+        <name>JS01__Civil_Case_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Name --></label>
+        <name>JS01__Client_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Type --></label>
+        <name>JS01__Client_Type__c</name>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nonprofit</masterLabel>
+            <translation><!-- Nonprofit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Conflicts Checked --></label>
+        <name>JS01__Conflicts_Checked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Case Closed --></label>
+        <name>JS01__Date_Case_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Intake --></label>
+        <name>JS01__Date_of_Intake__c</name>
+    </fields>
+    <fields>
+        <help><!-- A high level summary of the case, appropriate for Pro Bono portal --></help>
+        <label><!-- External Overview --></label>
+        <name>JS01__External_Overview__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Case Outcome --></label>
+        <name>JS01__Final_Case_Outcome__c</name>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixed Result</masterLabel>
+            <translation><!-- Mixed Result --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Won</masterLabel>
+            <translation><!-- Won --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Final Disposition --></label>
+        <name>JS01__Final_Disposition__c</name>
+        <picklistValues>
+            <masterLabel>Administrative Agency Decision</masterLabel>
+            <translation><!-- Administrative Agency Decision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brief Service</masterLabel>
+            <translation><!-- Brief Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change in Eligibility Status</masterLabel>
+            <translation><!-- Change in Eligibility Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Withdrew or Didn&apos;t Respond</masterLabel>
+            <translation><!-- Client Withdrew or Didn&apos;t Respond --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counsel &amp; Advice</masterLabel>
+            <translation><!-- Counsel &amp; Advice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Court Decision</masterLabel>
+            <translation><!-- Court Decision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Court Decision - Appeal</masterLabel>
+            <translation><!-- Court Decision - Appeal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Court Decision - Contested</masterLabel>
+            <translation><!-- Court Decision - Contested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Court Decision - Uncontested</masterLabel>
+            <translation><!-- Court Decision - Uncontested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extensive Service</masterLabel>
+            <translation><!-- Extensive Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insufficient Merit</masterLabel>
+            <translation><!-- Insufficient Merit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negotiated Settlement (with Litigation)</masterLabel>
+            <translation><!-- Negotiated Settlement (with Litigation) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negotiated Settlement (without Litigation)</masterLabel>
+            <translation><!-- Negotiated Settlement (without Litigation) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No LSC Disposition Entered</masterLabel>
+            <translation><!-- No LSC Disposition Entered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred</masterLabel>
+            <translation><!-- Referred --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Final Level of Service --></label>
+        <name>JS01__Final_Level_of_Service__c</name>
+        <picklistValues>
+            <masterLabel>Fully Served - Brief Service</masterLabel>
+            <translation><!-- Fully Served - Brief Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fully Served - Extended Service</masterLabel>
+            <translation><!-- Fully Served - Extended Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to Serve</masterLabel>
+            <translation><!-- Unable to Serve --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to Serve Fully</masterLabel>
+            <translation><!-- Unable to Serve Fully --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intake Questions --></label>
+        <name>JS01__Intake_Questions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location of Client --></label>
+        <name>JS01__Location_of_Client__c</name>
+        <relationshipLabel><!-- Cases (Location of Client) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Location of Issue --></label>
+        <name>JS01__Location_of_Issue__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mailing City as of Case Closed --></label>
+        <name>JS01__Mailing_City_as_of_Case_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Country as of Case Closed --></label>
+        <name>JS01__Mailing_Country_as_of_Case_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing State as of Case Closed --></label>
+        <name>JS01__Mailing_State_as_of_Case_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Street as of Case Closed --></label>
+        <name>JS01__Mailing_Street_as_of_Case_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mailing Zip as of Case Closed --></label>
+        <name>JS01__Mailing_Zip_as_of_Case_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Adults --></label>
+        <name>JS01__Number_of_Adults__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Children --></label>
+        <name>JS01__Number_of_Children__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Household Members --></label>
+        <name>JS01__Number_of_Household_Members__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Seniors --></label>
+        <name>JS01__Number_of_Seniors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Poverty Level (With Deductions) --></label>
+        <name>JS01__Poverty_Level_With_Deductions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Poverty Level --></label>
+        <name>JS01__Poverty_Level__c</name>
+    </fields>
+    <fields>
+        <help><!-- The status of the case on the JusticeServer Portal --></help>
+        <label><!-- Pro Bono Portal Status --></label>
+        <name>JS01__Pro_Bono_Portal_Status__c</name>
+        <picklistValues>
+            <masterLabel>Abandoned</masterLabel>
+            <translation><!-- Abandoned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Available - Private</masterLabel>
+            <translation><!-- Available - Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Available - Public</masterLabel>
+            <translation><!-- Available - Public --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conflict Passed</masterLabel>
+            <translation><!-- Conflict Passed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest Expressed</masterLabel>
+            <translation><!-- Interest Expressed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removed</masterLabel>
+            <translation><!-- Removed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Problem Code --></label>
+        <name>JS01__Problem_Code__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rejection Reason --></label>
+        <name>JS01__Rejection_Reason__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicate any special requirements the volunteer meet in order to take this case --></help>
+        <label><!-- Special Requirements --></label>
+        <name>JS01__Special_Requirements__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date on which this case will be considered stale if no update is provided on the case --></help>
+        <label><!-- Stale Case Date --></label>
+        <name>JS01__Stale_Case_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of days without an update before this case will be considered stale --></help>
+        <label><!-- Stale Case Setting --></label>
+        <name>JS01__Stale_Case_Setting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hours --></label>
+        <name>JS01__Total_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Value of Hours --></label>
+        <name>JS01__Total_Value_of_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Assets --></label>
+        <name>JS01__Total_Yearly_Assets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Yearly Deductions --></label>
+        <name>JS01__Total_Yearly_Deductions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Yearly Income --></label>
+        <name>JS01__Total_Yearly_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trust Balance --></label>
+        <name>JS01__Trust_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trust Remainder Note --></label>
+        <name>JS01__Trust_Remainder_Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local CMS Case # --></label>
+        <name>Local_CMS_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location of Client (HCA) --></label>
+        <name>Location_of_Client_HCA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location of Issue (HCA) --></label>
+        <name>Location_of_Issue_HCA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nature of Problem --></label>
+        <name>Nature_of_Problem__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Income Info --></label>
+        <name>No_Income_Info__c</name>
+        <picklistValues>
+            <masterLabel>Declined to State</masterLabel>
+            <translation><!-- Declined to State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Income</masterLabel>
+            <translation><!-- No Income --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Clients Helped --></label>
+        <name>Number_of_Clients_Helped__c</name>
+    </fields>
+    <fields>
+        <label><!-- Problem Code --></label>
+        <name>Problem_Code_HCA__c</name>
+        <picklistValues>
+            <masterLabel>51 Medicaid</masterLabel>
+            <translation><!-- 51 Medicaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>52 Medicare</masterLabel>
+            <translation><!-- 52 Medicare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>53 Gov. Childrens Health Ins.</masterLabel>
+            <translation><!-- 53 Gov. Childrens Health Ins. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>54 Home &amp; Com Based Care</masterLabel>
+            <translation><!-- 54 Home &amp; Com Based Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>55 Private Health Ins.</masterLabel>
+            <translation><!-- 55 Private Health Ins. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>56 Long Term Care Health Fac.</masterLabel>
+            <translation><!-- 56 Long Term Care Health Fac. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>57 State and Local Health</masterLabel>
+            <translation><!-- 57 State and Local Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>59 Other Health</masterLabel>
+            <translation><!-- 59 Other Health --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Re-Opened By --></label>
+        <name>Re_Opened_By__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason Case Closed --></label>
+        <name>Reason_Case_Closed__c</name>
+        <picklistValues>
+            <masterLabel>Administrative Agency Decision (H)</masterLabel>
+            <translation><!-- Administrative Agency Decision (H) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Eligible Status (J)</masterLabel>
+            <translation><!-- Change Eligible Status (J) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client Withdrew or did not return (E)</masterLabel>
+            <translation><!-- Client Withdrew or did not return (E) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counsel and Advice (A)</masterLabel>
+            <translation><!-- Counsel and Advice (A) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Court Decision (I)</masterLabel>
+            <translation><!-- Court Decision (I) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extensive Services ( not resulting in Settlement or Court or Administrative Action) (L)</masterLabel>
+            <translation><!-- Extensive Services ( not resulting in Settlement or Court or Administrative Action) (L) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insufficient Merit To Proceed (D)</masterLabel>
+            <translation><!-- Insufficient Merit To Proceed (D) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LSC Ineligible Case (X)</masterLabel>
+            <translation><!-- LSC Ineligible Case (X) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Action (B)</masterLabel>
+            <translation><!-- Limited Action (B) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negotiated Settlement with Litigation (G)</masterLabel>
+            <translation><!-- Negotiated Settlement with Litigation (G) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negotiated Settlement without Litigation (F)</masterLabel>
+            <translation><!-- Negotiated Settlement without Litigation (F) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Service (Z)</masterLabel>
+            <translation><!-- No Service (Z) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (K)</masterLabel>
+            <translation><!-- Other (K) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referred After Legal Assessment (C)</masterLabel>
+            <translation><!-- Referred After Legal Assessment (C) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restricted (R)</masterLabel>
+            <translation><!-- Restricted (R) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason Closed - Other --></label>
+        <name>Reason_Closed_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason Re-Opened --></label>
+        <name>Reason_Re_Opened__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resolution/Result --></label>
+        <name>Resolution_Result__c</name>
+    </fields>
+    <layouts>
+        <layout>Case Layout (HCA)</layout>
+        <sections>
+            <label><!-- Case Closing --></label>
+            <section>Case Closing</section>
+        </sections>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Details --></label>
+            <section>Financial Details</section>
+        </sections>
+        <sections>
+            <label><!-- Good Story --></label>
+            <section>Good Story</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Close Case Layout (HCA)</layout>
+        <layoutType>CaseClose</layoutType>
+        <sections>
+            <label><!-- Case Summary --></label>
+            <section>Case Summary</section>
+        </sections>
+        <sections>
+            <label><!-- Close Case Details --></label>
+            <section>Close Case Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Eligibility Problem --></label>
+        <name>Eligibility_Problem</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Coverage --></label>
+        <name>New_Coverage</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- JusticeServer --></label>
+        <name>JusticeServer</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You cannot update the Case once it has been closed --></errorMessage>
+        <name>Lock_the_case_record_after_closure</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Close_Case --></label>
+        <name>Close_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Coverage --></label>
+        <name>Create_Coverage</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_Problem --></label>
+        <name>Create_Problem</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Summary --></label>
+        <name>Print_Summary</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Re_Open --></label>
+        <name>Re_Open</name>
+    </webLinks>
+</CustomObjectTranslation>

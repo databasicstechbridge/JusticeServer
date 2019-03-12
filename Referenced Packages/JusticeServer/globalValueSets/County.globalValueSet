@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>OUT OF STATE</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Accomack County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Albemarle County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Alleghany County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Amelia County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Amherst County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Appomattox County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Arlington County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Augusta County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Bath County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Bedford County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Bland County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Botetourt County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Brunswick County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Buchanan County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Buckingham County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Campbell County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Caroline County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Carroll County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Charles City County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Charlotte County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Chesterfield County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Alexandria</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Bedford</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Bristol</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Buena Vista</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Charlottesville</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Chesapeake</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Colonial Heights</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Covington</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Danville</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Emporia</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Fairfax</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Falls Church</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Franklin</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Fredericksburg</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Galax</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Hampton</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Harrisonburg</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Hopewell</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Lexington</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Lynchburg</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Manassas</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Manassas Park</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Martinsville</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Newport News</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Norfolk</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Norton</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Petersburg</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Poquoson</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Portsmouth</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Radford</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Richmond</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Roanoke</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Salem</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Staunton</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Suffolk</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Virginia Beach</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Waynesboro</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Williamsburg</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>City of Winchester</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Clarke County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Craig County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Culpeper County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Cumberland County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Dickenson County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Dinwiddie County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Essex County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Fairfax County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Fauquier County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Floyd County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Fluvanna County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Franklin County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Frederick County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Giles County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Gloucester County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Goochland County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Grayson County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Greene County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Greensville County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Halifax County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Hanover County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Henrico County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Henry County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Highland County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Isle of Wight County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>James City County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>King and Queen County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>King George County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>King William County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Lancaster County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Lee County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Loudoun County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Louisa County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Lunenburg County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Madison County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Mathews County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Mecklenburg County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Middlesex County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Montgomery County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Nelson County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>New Kent County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Northampton County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Northumberland County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Nottoway County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Orange County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Page County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Patrick County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Pittsylvania County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Powhatan County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Prince Edward County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Prince George County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Prince William County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Pulaski County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Rappahannock County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Richmond County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Roanoke County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Rockbridge County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Rockingham County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Russell County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Scott County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Shenandoah County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Smyth County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Southampton County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Spotsylvania County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Stafford County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Surry County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Sussex County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Tazewell County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Warren County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Washington County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Westmoreland County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Wise County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Wythe County</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>York County</fullName>
+        <default>false</default>
+    </customValue>
+    <masterLabel>County</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

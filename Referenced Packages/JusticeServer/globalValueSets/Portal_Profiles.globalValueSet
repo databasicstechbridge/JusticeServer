@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>JusticeServer Community Login Plus User</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>JusticeServer Community Plus User</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>JusticeServer Community Login Plus</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>JusticeServer Community Plus</fullName>
+        <default>false</default>
+    </customValue>
+    <masterLabel>Portal Profiles</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

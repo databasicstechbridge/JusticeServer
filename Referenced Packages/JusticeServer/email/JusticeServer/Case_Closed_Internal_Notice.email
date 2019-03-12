@@ -1,0 +1,8 @@
+{!Resource_Assignment__c.Contact__c} has marked closed case #{!Resource_Assignment__c.00N4100000cw3QB} : <b>{!Resource_Assignment__c.00N4100000cw3QD}</b>. 
+<br/>
+<br/>
+Closing Notes: <br/>
+{!Resource_Assignment__c.Closing_Comments__c} 
+<br/>
+<br/>
+{!Resource_Assignment__c.Link}

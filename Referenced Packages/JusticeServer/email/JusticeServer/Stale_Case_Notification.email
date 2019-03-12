@@ -1,0 +1,20 @@
+{!Contact.Name},<br/><br/>
+
+Case Number: {!Case.CaseNumber}<br/>
+Case Subject: {!Case.Subject}<br/>
+Client: {!Case.00N4100000cw3MX}, {!Case.00N4100000cw3MW}<br/><br/>
+ 
+No activity or updates have been reported in {!Case.Stale_Case_Setting__c} days for the case above. Please select an option below to provide an update on the case.<br/><br/>
+ 
+I would like to update the case<br/>
+<a href={!$Setup.JusticeServer_Settings__c.Case_Portal_URL__c}{!Case.00N0a00000CfwUh}>Login to update.</a><br/><br/>
+
+ 
+Please snooze the case reminder for<br/>
+<a href={!$Setup.JusticeServer_Settings__c.Snooze_Site_URL__c}?id={!Case.Id}&duration=1&scale=Days>1 Day</a> | 
+<a href={!$Setup.JusticeServer_Settings__c.Snooze_Site_URL__c}?id={!Case.Id}&duration=1&scale=Weeks>1 Week</a> | 
+<a href={!$Setup.JusticeServer_Settings__c.Snooze_Site_URL__c}?id={!Case.Id}&duration=2&scale=Weeks>2 Weeks</a> | 
+<a href={!$Setup.JusticeServer_Settings__c.Snooze_Site_URL__c}?id={!Case.Id}&duration=3&scale=Weeks>3 Weeks</a> | 
+<a href={!$Setup.JusticeServer_Settings__c.Snooze_Site_URL__c}?id={!Case.Id}&duration=1&scale=Months>1 Month</a> | 
+<a href={!$Setup.JusticeServer_Settings__c.Snooze_Site_URL__c}?id={!Case.Id}&duration=2&scale=Months>2 Months</a> | 
+<a href={!$Setup.JusticeServer_Settings__c.Snooze_Site_URL__c}?id={!Case.Id}&duration=3&scale=Months>3 Month</a>

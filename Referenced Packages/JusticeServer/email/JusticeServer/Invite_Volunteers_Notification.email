@@ -1,0 +1,5 @@
+{!Contact.Name},<br/><br/>
+
+{!Organization.Name} has suggested a case that you might be interested in on the JusticeServer Portal. Please follow the link below to learn more about the case and express interest if you are willing to take the case.<br/><br/>
+
+<a href={!$Setup.JusticeServer_Settings__c.Case_Portal_URL__c}{!Case.00N0a00000CfwUh}>Review Case in Portal</a>

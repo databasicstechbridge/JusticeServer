@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ASO__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>*required if Health Program is: Non-exchange private insurance; Private Insurance; COBRA; County Mental Health; County Medically Indigent</inlineHelpText>
+        <label>ASO</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case__c</fullName>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Coverages</relationshipLabel>
+        <relationshipName>Coverages</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Exchange_Tier__c</fullName>
+        <externalId>false</externalId>
+        <label>Exchange Tier</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Health_Programs__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Bronze</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Silver</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gold</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Platinum</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Catastrophic</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Covered CA without premium assistance</controllingFieldValue>
+                <controllingFieldValue>Covered CA w/APTC (Advance Premium Tax Credits)</controllingFieldValue>
+                <controllingFieldValue>Covered CA w/APTC/ CSR (Cost Sharing Reductions)</controllingFieldValue>
+                <valueName>Bronze</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Covered CA without premium assistance</controllingFieldValue>
+                <controllingFieldValue>Covered CA w/APTC (Advance Premium Tax Credits)</controllingFieldValue>
+                <controllingFieldValue>Covered CA w/APTC/ CSR (Cost Sharing Reductions)</controllingFieldValue>
+                <valueName>Silver</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Covered CA without premium assistance</controllingFieldValue>
+                <controllingFieldValue>Covered CA w/APTC (Advance Premium Tax Credits)</controllingFieldValue>
+                <controllingFieldValue>Covered CA w/APTC/ CSR (Cost Sharing Reductions)</controllingFieldValue>
+                <valueName>Gold</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Covered CA without premium assistance</controllingFieldValue>
+                <controllingFieldValue>Covered CA w/APTC (Advance Premium Tax Credits)</controllingFieldValue>
+                <controllingFieldValue>Covered CA w/APTC/ CSR (Cost Sharing Reductions)</controllingFieldValue>
+                <valueName>Platinum</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Covered CA without premium assistance</controllingFieldValue>
+                <controllingFieldValue>Covered CA w/APTC (Advance Premium Tax Credits)</controllingFieldValue>
+                <controllingFieldValue>Covered CA w/APTC/ CSR (Cost Sharing Reductions)</controllingFieldValue>
+                <valueName>Catastrophic</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Covered CA without premium assistance</controllingFieldValue>
+                <controllingFieldValue>Covered CA w/APTC (Advance Premium Tax Credits)</controllingFieldValue>
+                <controllingFieldValue>Covered CA w/APTC/ CSR (Cost Sharing Reductions)</controllingFieldValue>
+                <valueName>Unknown</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Family_Member_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/lightning/r/Contact/&quot;&amp; Family_Member__r.Id &amp;&quot;/view&quot;, Family_Member__r.FirstName &amp;&quot; &quot;&amp; Family_Member__r.LastName, &quot;_self&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Family Member Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Family_Member__c</fullName>
+        <externalId>false</externalId>
+        <label>Family Member</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Coverages</relationshipLabel>
+        <relationshipName>Coverages</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Health_Plan__c</fullName>
+        <externalId>false</externalId>
+        <label>Health Plan</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Managed_Care__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>HCA_Health_Plan</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Aetna US Healthcare</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Blue Cross</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Blue Shield</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Care First</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Children’s Mental Health *(bidding)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>CIGNA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Community Health Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>D-SNP: Care 1st Total Dual Plan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>-SNP: CommuniCare Advantage (CHG)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>D-SNP: Health Net Security Plus Amber</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>D-SNP: Molina Medicare Options Plus</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>D-SNP: Senior Advantage (Kaiser)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Health Net</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>InterValley Health Plan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Kaiser Permanente</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Kern Family Healthcare</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Maxicare</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Medicare private prescription drug plan (PDP)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Medicare Special Needs Plan (SNP)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Molina Healthcare</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>PacifiCare</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Program of All-inclusive Care for the Elderly (PACE)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Prudential</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>SCAN</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Secure Horizons</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Sharp Health Care</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>TriCare</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>UBH (United Behavioral Health)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>UCSD Health Plan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>UHC Healthcare</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Universal Care</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Health_Programs__c</fullName>
+        <description>This was a table with more fields on Access. will need to explore if keeping this as a picklist will be ok</description>
+        <externalId>false</externalId>
+        <label>Health Programs</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HCA_Health_Programs</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Managed_Care__c</fullName>
+        <externalId>false</externalId>
+        <label>Managed Care</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HCA_No_Yes</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Medical_Group_IPA__c</fullName>
+        <externalId>false</externalId>
+        <label>Medical Group/IPA</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>[Customized by each org]</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Medicare_Type_s__c</fullName>
+        <externalId>false</externalId>
+        <label>Medicare Type(s)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <controllingField>Health_Programs__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetName>HCA_Medicare_Types</valueSetName>
+            <valueSettings>
+                <controllingFieldValue>Medicare</controllingFieldValue>
+                <valueName>Part A</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Medicare</controllingFieldValue>
+                <valueName>Part B</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Medicare</controllingFieldValue>
+                <valueName>Part D</valueName>
+            </valueSettings>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Private_Insurance_detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Private Insurance detail</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Health_Programs__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Non-Federal, non ERISA self insured</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>ERISA self insured</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Individual (Medically underwritten)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Individual (other guaranteed issue)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Individual (HIPAA)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Self-insured, Self-funded, Non –Federal insured plan</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Small Group</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Large Group</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Not applicable</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Private Insurance (not through an employer or the Exchange)</controllingFieldValue>
+                <controllingFieldValue>Non-exchange private insurance, through employer or individual</controllingFieldValue>
+                <valueName>Non-Federal, non ERISA self insured</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Private Insurance (not through an employer or the Exchange)</controllingFieldValue>
+                <controllingFieldValue>Non-exchange private insurance, through employer or individual</controllingFieldValue>
+                <valueName>ERISA self insured</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Private Insurance (not through an employer or the Exchange)</controllingFieldValue>
+                <controllingFieldValue>Non-exchange private insurance, through employer or individual</controllingFieldValue>
+                <valueName>Individual (Medically underwritten)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Private Insurance (not through an employer or the Exchange)</controllingFieldValue>
+                <controllingFieldValue>Non-exchange private insurance, through employer or individual</controllingFieldValue>
+                <valueName>Individual (other guaranteed issue)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Private Insurance (not through an employer or the Exchange)</controllingFieldValue>
+                <controllingFieldValue>Non-exchange private insurance, through employer or individual</controllingFieldValue>
+                <valueName>Individual (HIPAA)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Private Insurance (not through an employer or the Exchange)</controllingFieldValue>
+                <controllingFieldValue>Non-exchange private insurance, through employer or individual</controllingFieldValue>
+                <valueName>Self-insured, Self-funded, Non –Federal insured plan</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Private Insurance (not through an employer or the Exchange)</controllingFieldValue>
+                <controllingFieldValue>Non-exchange private insurance, through employer or individual</controllingFieldValue>
+                <valueName>Small Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Private Insurance (not through an employer or the Exchange)</controllingFieldValue>
+                <controllingFieldValue>Non-exchange private insurance, through employer or individual</controllingFieldValue>
+                <valueName>Large Group</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Private Insurance (not through an employer or the Exchange)</controllingFieldValue>
+                <controllingFieldValue>Non-exchange private insurance, through employer or individual</controllingFieldValue>
+                <valueName>Not applicable</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <label>Coverage</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Cov-{00000000}</displayFormat>
+        <label>Coverage Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Coverages</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Lock_coverage_record_after_case_closure</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+NOT(ISNEW()), 
+ISPICKVAL( Case__r.Status , &quot;Closed&quot;) 
+)</errorConditionFormula>
+        <errorMessage>You cannot update the coverage record once the related case has been closed</errorMessage>
+    </validationRules>
+</CustomObject>

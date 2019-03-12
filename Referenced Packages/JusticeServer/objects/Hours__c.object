@@ -1,0 +1,2334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fieldSets>
+        <fullName>Batch_Time_Fields</fullName>
+        <availableFields>
+            <field>Lead__r.Acceptance_Error_Message__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.AccountId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.AccountId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Account__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.Account__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.AnnualRevenue</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.AssetId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.AssistantName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.AssistantPhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Birthdate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Birthdate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.BusinessHoursId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.CaseNumber</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Case__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.Case__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Citizenship_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.City</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Civil_Case_Number__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Client_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Client_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.ClosedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Comments</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Company</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Conflict_Check_Passed__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Conflicts_Checked__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.ContactEmail</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.ContactFax</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.ContactId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.ContactMobile</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.ContactPhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Contact__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.Contact__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.ConvertedAccountId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.ConvertedContactId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.ConvertedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.ConvertedOpportunityId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Country</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>CreatedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Date_Case_Closed__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Date_of_Intake__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Default_Hourly_Rate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Department</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Description</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.Description__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.DoNotCall</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.DoNotCall</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Email</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Email</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.EmailBouncedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.EmailBouncedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.EmailBouncedReason</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.EmailBouncedReason</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.End_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>End_Time__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.External_Overview__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Fax</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Fax</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Final_Case_Outcome__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Final_Disposition__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Final_Level_of_Service__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Financial_Details_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.FirstName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.FirstName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.GeocodeAccuracy</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.HasOptedOutOfEmail</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.HasOptedOutOfEmail</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.HasOptedOutOfFax</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.HasOptedOutOfFax</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.HomePhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Hourly_Rate__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Hours__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Industry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Initial_Contact_Method__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Intake_Questions__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Intake_Questions__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.IsClosed</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.IsClosedOnCreate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.IsConverted</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.IsDeleted</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.IsDeleted</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.IsDeleted</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.IsDeleted</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>IsDeleted</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.IsEmailBounced</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.IsEscalated</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.IsUnreadByOwner</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Languages__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.LastActivityDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.LastActivityDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.LastActivityDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastActivityDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedById</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastModifiedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.LastName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.LastName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.LastReferencedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.LastReferencedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.LastReferencedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.LastReferencedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastReferencedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.LastTransferDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.LastViewedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.LastViewedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.LastViewedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.LastViewedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>LastViewedDate</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Latitude</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.LeadSource</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.LeadSource</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.Lead__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Legislative_Type__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Location__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Location_of_Client__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Location_of_Client__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Location_of_Issue__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Location_of_Issue__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Longitude</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.MailingCity</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.MailingCountry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.MailingGeocodeAccuracy</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.MailingLatitude</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.MailingLongitude</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.MailingPostalCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.MailingState</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.MailingStreet</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Mailing_City_as_of_Case_Closed__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Mailing_Country_as_of_Case_Closed__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Mailing_State_as_of_Case_Closed__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Mailing_Street_as_of_Case_Closed__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Mailing_Zip_as_of_Case_Closed__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.MasterRecordId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.MasterRecordId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.MiddleName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.MiddleName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.MobilePhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.MobilePhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.NumberOfEmployees</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Number_of_Adults__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Number_of_Adults__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Number_of_Adults__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Number_of_Children__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Number_of_Children__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Number_of_Children__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Number_of_Household_Members__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Number_of_Household_Members__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Number_of_Household_Members__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Number_of_Seniors__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Number_of_Seniors__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Number_of_Seniors__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Origin</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.OtherCity</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.OtherCountry</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.OtherGeocodeAccuracy</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.OtherLatitude</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.OtherLongitude</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.OtherPhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.OtherPostalCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.OtherState</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.OtherStreet</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>OwnerId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.ParentId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Phone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.PhotoUrl</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.PhotoUrl</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.PortalUserProfileOverride__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.PostalCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Poverty_Level_With_Deductions__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Poverty_Level_With_Deductions__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Poverty_Level_With_Deductions__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Poverty_Level__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Poverty_Level__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Poverty_Level__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Priority</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Pro_Bono_Coordinator__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Pro_Bono_Portal_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Pro_Bono_Portal_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Problem_Code_Category__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Problem_Code__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Problem_Code__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Rating</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Reason</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.RecordTypeId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.RecordTypeId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.RecordTypeId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.RecordTypeId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.Referred_To_Other__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.Referred_To__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Rejection_Reason__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Rejection_Reason__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.ReportsToId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Salutation</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Salutation</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Social_Security_Number__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Social_Security_Number__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Special_Requirements__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Stale_Case_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Stale_Case_Setting__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.Start_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Start_Time__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.State</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Status</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Status</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Street</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Subject</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.Suffix</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Suffix</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.SuppliedCompany</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.SuppliedEmail</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.SuppliedName</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.SuppliedPhone</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.SystemModstamp</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Contact__r.SystemModstamp</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.SystemModstamp</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.SystemModstamp</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SystemModstamp</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Title</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Total_Hours__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.Total_Hours__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Total_Value__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Total_Value_of_Hours__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Other_Service__r.Total_Value_of_Hours__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Total_Yearly_Assets__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Total_Yearly_Assets__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Total_Yearly_Deductions__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Total_Yearly_Deductions__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Total_Yearly_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Total_Yearly_Income__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Trust_Balance__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Trust_Remainder_Note__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Case__r.Type</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Type_of_Entity__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>User__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>Lead__r.Website</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <description>Used to display columns in Batch Time Entry VF&apos;s Table</description>
+        <displayedFields>
+            <field>Category__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Sub_Category__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Comments__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Batch Time Fields</label>
+    </fieldSets>
+    <fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Hours</relationshipLabel>
+        <relationshipName>Hours</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Case Work</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Matter</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Supporting Activity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Volunteer</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Hours</relationshipLabel>
+        <relationshipName>Hours</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>End_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>End Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Hourly_Rate__c</fullName>
+        <defaultValue>$Setup.JusticeServer_Settings__c.Default_Hourly_Rate__c</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Hourly Rate</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Hours__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Hours</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Lead</label>
+        <referenceTo>Lead</referenceTo>
+        <relationshipLabel>Hours</relationshipLabel>
+        <relationshipName>Hours</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Legislative_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Legislative Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Sub_Category__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Direct executive (reportable Virginia)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Direct Legislative (reportable Virginia and federal)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Executive Planning (not reportable)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Federal legislation – direct lobbying</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Federal legislation – grassroots campaign</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Federal legislation – planning a campaign</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Federal legislation – public comment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GR Executive (reportable Virginia )</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>GR Legislative (reportable Virginia and federal)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>JusticeServer Option</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Legislative Planning (reportable federal)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Local lawmaking – direct lobbying</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Local lawmaking – grassroots campaign</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Local lawmaking – planning a campaign</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Local lawmaking – public comment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Public Comment (not reportable)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>State executive order – direct lobbying</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>State executive order – grassroots campaign</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>State legislation – direct lobbying</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>State legislation – grassroots campaign</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>State legislation – planning a campaign</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>State legislation – public comment</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Legal research</controllingFieldValue>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <valueName>Direct executive (reportable Virginia)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal research</controllingFieldValue>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <valueName>Direct Legislative (reportable Virginia and federal)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal research</controllingFieldValue>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <valueName>Executive Planning (not reportable)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal research</controllingFieldValue>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <valueName>GR Executive (reportable Virginia )</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal research</controllingFieldValue>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <valueName>GR Legislative (reportable Virginia and federal)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal research</controllingFieldValue>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <valueName>Legislative Planning (reportable federal)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legal research</controllingFieldValue>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <valueName>Public Comment (not reportable)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <controllingFieldValue>Legislative/Admin Advocacy</controllingFieldValue>
+                <valueName>Federal legislation – direct lobbying</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <controllingFieldValue>Legislative/Admin Advocacy</controllingFieldValue>
+                <valueName>Federal legislation – grassroots campaign</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <controllingFieldValue>Legislative/Admin Advocacy</controllingFieldValue>
+                <valueName>Federal legislation – planning a campaign</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <controllingFieldValue>Legislative/Admin Advocacy</controllingFieldValue>
+                <valueName>Federal legislation – public comment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <controllingFieldValue>Legislative/Admin Advocacy</controllingFieldValue>
+                <valueName>JusticeServer Option</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <controllingFieldValue>Legislative/Admin Advocacy</controllingFieldValue>
+                <valueName>Local lawmaking – direct lobbying</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <controllingFieldValue>Legislative/Admin Advocacy</controllingFieldValue>
+                <valueName>Local lawmaking – grassroots campaign</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <controllingFieldValue>Legislative/Admin Advocacy</controllingFieldValue>
+                <valueName>Local lawmaking – planning a campaign</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <controllingFieldValue>Legislative/Admin Advocacy</controllingFieldValue>
+                <valueName>Local lawmaking – public comment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <controllingFieldValue>Legislative/Admin Advocacy</controllingFieldValue>
+                <valueName>State executive order – direct lobbying</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <controllingFieldValue>Legislative/Admin Advocacy</controllingFieldValue>
+                <valueName>State executive order – grassroots campaign</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <controllingFieldValue>Legislative/Admin Advocacy</controllingFieldValue>
+                <valueName>State legislation – direct lobbying</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <controllingFieldValue>Legislative/Admin Advocacy</controllingFieldValue>
+                <valueName>State legislation – grassroots campaign</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <controllingFieldValue>Legislative/Admin Advocacy</controllingFieldValue>
+                <valueName>State legislation – planning a campaign</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Legislative</controllingFieldValue>
+                <controllingFieldValue>Legislative/Admin Advocacy</controllingFieldValue>
+                <valueName>State legislation – public comment</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Other_Service__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Other Service</label>
+        <referenceTo>Other_Service__c</referenceTo>
+        <relationshipLabel>Hours</relationshipLabel>
+        <relationshipName>Hours</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Start_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Start Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Sub_Category__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Sub-Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Category__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Administrative Appearance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Annual leave</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Appellate work</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Attended Legal Training/CLE</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bereavement Leave</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Birthday/Floating Leave</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Board Related Activities</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Case consultation/supervision</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Clinic - Law School/Pro Bono/Pro Se</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Community Education</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Community work</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Comp Time Earned</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Comp Time Used</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Correspondence</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Court Duty Leave</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Drafting pleadings/briefs/etc.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Factual development/Investigation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Financial / Admin</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Formal discovery</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fund Raising</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>General Matter</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>General Supporting Activity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Health Leave</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Holiday</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Intake interview/advice &amp; counsel</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Leave Without Pay</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Legal research</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Legislative</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Legislative/Admin Advocacy</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Lunch Break (up to one hour)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Military Leave</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Misc.other case development</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Negotiations</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other/Weather Leave</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>PAI Support and Recruitment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Phone Call</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Press</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Private Bar Activities</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Provided Legal Training</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Self Help Lobbying</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Strategy and Planning</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Supervise Attorney Work</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Technical Assistance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Travel</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Trial/hearing preparations</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Trial/hearing-includes travel</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Weather Leave (per policy)</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <valueName>Administrative Appearance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <valueName>Appellate work</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <valueName>Case consultation/supervision</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <valueName>Community work</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <valueName>Correspondence</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <valueName>Drafting pleadings/briefs/etc.</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <valueName>Factual development/Investigation</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <valueName>Formal discovery</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <valueName>Intake interview/advice &amp; counsel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <valueName>Legal research</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <valueName>Legislative</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <valueName>Misc.other case development</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <valueName>Negotiations</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <valueName>Phone Call</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <controllingFieldValue>Matter</controllingFieldValue>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Press</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <valueName>Strategy and Planning</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <valueName>Travel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <valueName>Trial/hearing preparations</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Case Work</controllingFieldValue>
+                <controllingFieldValue>Volunteer</controllingFieldValue>
+                <valueName>Trial/hearing-includes travel</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Matter</controllingFieldValue>
+                <valueName>Attended Legal Training/CLE</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Matter</controllingFieldValue>
+                <valueName>Clinic - Law School/Pro Bono/Pro Se</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Matter</controllingFieldValue>
+                <valueName>Community Education</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Matter</controllingFieldValue>
+                <valueName>General Matter</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Matter</controllingFieldValue>
+                <valueName>Legislative/Admin Advocacy</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Matter</controllingFieldValue>
+                <valueName>PAI Support and Recruitment</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Matter</controllingFieldValue>
+                <valueName>Private Bar Activities</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Matter</controllingFieldValue>
+                <valueName>Provided Legal Training</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Matter</controllingFieldValue>
+                <valueName>Self Help Lobbying</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Matter</controllingFieldValue>
+                <valueName>Supervise Attorney Work</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Matter</controllingFieldValue>
+                <valueName>Technical Assistance</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Annual leave</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Bereavement Leave</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Birthday/Floating Leave</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Board Related Activities</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Comp Time Earned</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Comp Time Used</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Court Duty Leave</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Financial / Admin</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Fund Raising</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>General Supporting Activity</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Health Leave</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Holiday</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Leave Without Pay</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Lunch Break (up to one hour)</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Military Leave</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Other/Weather Leave</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Supporting Activity</controllingFieldValue>
+                <valueName>Weather Leave (per policy)</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Total_Value__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Hours__c  * Hourly_Rate__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Hours</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Hours</label>
+    <listViews>
+        <fullName>All_Hours</fullName>
+        <columns>NAME</columns>
+        <columns>Contact__c</columns>
+        <columns>Date__c</columns>
+        <columns>Hours__c</columns>
+        <columns>Case__c</columns>
+        <columns>Other_Service__c</columns>
+        <columns>Category__c</columns>
+        <columns>Sub_Category__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Hours</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Time-{00000}</displayFormat>
+        <label>Timeslip #</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Hours</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <sharingReasons>
+        <fullName>Community_Visibility__c</fullName>
+        <label>Community Visibility</label>
+    </sharingReasons>
+    <validationRules>
+        <fullName>Hour_Validation</fullName>
+        <active>true</active>
+        <description>Provide an error if start time, end time, and hours are all populated, but hours &lt;&gt; (end time – start time).</description>
+        <errorConditionFormula>NOT(ISNULL(Hours__c))
+&amp;&amp; 
+(ISCHANGED(Hours__c) || ISNEW())
+&amp;&amp; 
+IF(NOT(ISNULL(Start_Time__c)) &amp;&amp; NOT(ISNULL(End_Time__c)),
+IF((Hours__c &lt;&gt; VALUE(
+TEXT(FLOOR((End_Time__c - Start_Time__c)*24)) 
+&amp;&quot;.&quot;&amp; 
+IF( 
+ROUND(MOD((End_Time__c - Start_Time__c)*1440,60)*(100/60),0) &gt; 9, 
+TEXT(ROUND(MOD((End_Time__c - Start_Time__c)*1440,60)*(100/60),0)), 
+&quot;0&quot;&amp; TEXT(ROUND(MOD((End_Time__c - Start_Time__c)*1440,60)*(100/60),0)) 
+))),true,false),false)</errorConditionFormula>
+        <errorMessage>The number of hours is incorrect for the provided start and end time. Please clear the hours field in order to automatically recalculate hours or clear start time and end time.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>JS_Hour_Validation</fullName>
+        <active>true</active>
+        <description>Provide an error if start time, end time, and hours are all populated, but hours &lt;&gt; (end time – start time).</description>
+        <errorConditionFormula>NOT(ISNULL(Hours__c))
+&amp;&amp; 
+(ISCHANGED(Hours__c) || ISNEW())
+&amp;&amp; 
+IF(NOT(ISNULL(Start_Time__c)) &amp;&amp; NOT(ISNULL(End_Time__c)),
+IF((Hours__c &lt;&gt; VALUE(
+TEXT(FLOOR((End_Time__c - Start_Time__c)*24)) 
+&amp;&quot;.&quot;&amp; 
+IF( 
+ROUND(MOD((End_Time__c - Start_Time__c)*1440,60)*(100/60),0) &gt; 9, 
+TEXT(ROUND(MOD((End_Time__c - Start_Time__c)*1440,60)*(100/60),0)), 
+&quot;0&quot;&amp; TEXT(ROUND(MOD((End_Time__c - Start_Time__c)*1440,60)*(100/60),0)) 
+))),true,false),false)</errorConditionFormula>
+        <errorMessage>The number of hours is incorrect for the provided start and end time. Please clear the hours field in order to automatically recalculate hours or clear start time and end time.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>JS_StartTime_EndTime</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(ISNULL(Start_Time__c )) &amp;&amp; NOT(ISNULL(End_Time__c )) &amp;&amp; (Start_Time__c &gt; End_Time__c )</errorConditionFormula>
+        <errorMessage>Start Time cannot be greater than End time.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>JS_StartTime_EndTime_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>(NOT(ISNULL(Start_Time__c )) &amp;&amp; ISNULL(End_Time__c )) || (NOT(ISNULL(End_Time__c )) &amp;&amp; ISNULL(Start_Time__c ))</errorConditionFormula>
+        <errorMessage>Provide value for both start and end time.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>StartTime_EndTime</fullName>
+        <active>true</active>
+        <errorConditionFormula>NOT(ISNULL(Start_Time__c )) &amp;&amp; NOT(ISNULL(End_Time__c )) &amp;&amp; (Start_Time__c &gt; End_Time__c )</errorConditionFormula>
+        <errorMessage>Start Time cannot be greater than End time.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>StartTime_EndTime_Required</fullName>
+        <active>true</active>
+        <errorConditionFormula>(NOT(ISNULL(Start_Time__c )) &amp;&amp; ISNULL(End_Time__c )) || (NOT(ISNULL(End_Time__c )) &amp;&amp; ISNULL(Start_Time__c ))</errorConditionFormula>
+        <errorMessage>Provide value for both start and end time.</errorMessage>
+    </validationRules>
+</CustomObject>

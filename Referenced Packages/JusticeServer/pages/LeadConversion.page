@@ -1,0 +1,232 @@
+<!--************************************************************************
+* Name               : LeadConversion                                      *
+* Description        : JusticeServer - Accept Client Screen                *
+* Created By         : Techbridge                                          *        
+*************************************************************************-->
+<apex:page standardController="Lead" extensions="JS01.LeadConversionController" sidebar="false" showHeader="false">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+        <head>  
+            <!-- STYLE SHEET -->  
+            <apex:stylesheet value="{!URLFOR($Resource.JS01__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.css')}"/>  
+        </head>
+        <!-- Loading Image -->
+        <div id="loader" style="display:none;">
+            <div style="height : 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.75; z-index: 100000; background-color: #ececec;">
+                &nbsp;
+            </div>
+            <div style="height : 100%; position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 100001; margin: 50% 50%">
+                <span style="color:#4a4a56;position: fixed;top: 50%;left: 50%;">
+                    <table><tr>
+                        <td><img src="/img/loading32.gif"/>&nbsp;&nbsp;</td>
+                        </tr></table>
+                </span>
+            </div>
+        </div>  
+        <!-- Ending Load Image -->
+        <body> 
+            <!-- REQUIRED SLDS WRAPPER - CUSTOM SCOPING CLASS USED WHEN GENERATING CUSTOM CSS -->  
+            <div class="LScope">
+                <!-- ADD GLOBAL HEADER -->  
+                 <div class="slds-page-header slds-page-header_object-home">
+                     <!-- ADD GLOBAL HEADER ICON -->  
+                     <div class="slds-col slds-float--left slds-m-right--small">  
+                       <div class="slds-icon_container slds-icon-standard-lead slds-icon--medium" title="Accept Client">
+                          <svg class="slds-icon" aria-hidden="true">
+                            <use xlink:href="{!URLFOR($Resource.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#lead')}"/>
+                          </svg>
+                        </div>
+                     </div>  
+                     <!-- ADD GLOBAL HEADER TEXT -->  
+                     <div class="slds-col">  
+                       <div class="slds-page-header__title slds-truncate">  
+                         {!$Label.LeadConversion_Hdr}
+                       </div>  
+                    </div>  
+                </div> 
+<!---------------------------------------------------------------- FORM ----------------------------------------------------->
+                <div class="slds-panel slds-grid slds-grid--vertical slds-nowrap slds-form--compound" aria-labelledby="LeadConversionForm">      
+                    <apex:form >
+                        <style>
+                        .LScope .slds-table th, .LScope .slds-table td {
+                            padding : 0;
+                        }
+                        </style>  
+                    <apex:pageMessages ></apex:pageMessages>
+                    
+                     <!------------------------------------------ LEAD DETAILS ------------------------------------------------------->
+                     <!--  <div class="slds-panel__section">  
+                         <table style="width:100%;border-radius:5px;border:1px solid #ececec;padding-left: 1rem" >
+                            <tr><td><b>LEAD DETAILS : </b></td></tr>
+                            <tr><td>{!leadRecord.LastName},{!leadRecord.FirstName}</td></tr>
+                            <tr><td>Company: {!leadRecord.Company}</td></tr>
+                            <tr><td>Street: {!leadRecord.Street}</td></tr>
+                            <tr><td>{!leadRecord.City} &nbsp;&nbsp;{!leadRecord.State} &nbsp;&nbsp;{!leadRecord.PostalCode}</td></tr>
+                            <tr><td>Social Security Number: {!leadRecord.Social_Security_Number__c}</td></tr>
+                            <tr><td>Phone: {!leadRecord.Phone}</td></tr>
+                        </table>
+                    </div>-->
+                    <div class="slds-panel__section"> 
+                    <table style="width:100%;border-radius:5px;border:1px solid #ececec;padding-left: 1rem" >
+                        <tr><td><b>{!$Label.LeadConversion_LeadDetails_Hdr}</b></td></tr>
+                            <apex:repeat var="lField" value="{!$ObjectType.Lead.FieldSets.JS01__Details_on_Eligibility_Accept_Client}">
+                                <tr>
+                                    <td>{!lField.label} : &nbsp;&nbsp;<apex:outputField value="{!leadRecord[lField]}"/></td>
+                                </tr>
+                           </apex:repeat>
+                    </table>
+                    </div>
+                    <br/>  
+                    <!---------------------------------------- SELECT OWNER ------------------------------------------------------>                 
+                    <div class="slds-panel__section">  
+                            <!-- ELEMENT GROUP -->  
+                            <div class="form-element__group">  
+                                <!-- ADD ROW -->  
+                                <div class="slds-form-element__row">  
+                                    <!-- ADD FIELDS -->
+                                    <div class="slds-size--1-of-4 slds-p-left--small slds-p-bottom--small slds-p-right--small">  
+                                    <div class="slds-form-element">
+                                        <div class="slds-form-element__control">
+                                            <apex:outputLabel styleClass="slds-form-element__label">{!$Label.js01__leadconversion_owner}</apex:outputLabel> 
+                                                <apex:selectList label="Please select a case Advocate/Owner" id="owner" value="{!selectedOwner}" size="1" styleClass="slds-select">
+                                                    <apex:selectOptions value="{!allActiveUsers}"/>
+                                                </apex:selectList>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---------------------------------------- OUTPUT TEXT ------------------------------------------------------>  
+                        <div class="slds-text-heading_small" style="padding-left: 1rem">
+                        <p><b>{!$Label.LeadConversion_Intro}</b></p>
+                        </div>
+                        <br/>
+                        
+                        <!---------------------------------------- CREATE NEW CLIENT BUTTON ---------------------------------------->   
+                        <div align="center" draggable="false">
+                            <apex:commandButton action="{!createNewAccount}" value="Create As New Client" rendered="{!NOT(matchingContactFound) && NOT(matchingAccountFound)}" onclick="document.getElementById('loader').style.display = 'block';" styleClass="slds-button slds-button--brand"/>
+                        </div><br/>
+
+<!----------------------------------------------------- CONTACTS SECTION ------------------------------------------------------------------------------------------------->
+                        <div class="slds-panel__section">  
+                        <legend class="slds-form-element__label slds-text-title--caps">{!$Label.LeadConversion_Contacts_Hdr}</legend>
+                        <apex:outputPanel rendered="{!ISNULL(contactList) || contactList.size<=0}"><br/>No Matching Contacts Found!</apex:outputPanel>
+                        <apex:outputPanel rendered="{!NOT(ISNULL(contactList)) && contactList.size>0}" >
+                            <!-- ADD ROW -->  
+                            <div class="slds-form-element__row">  
+                                <!-- ADD FIELDS -->  
+                                <div class="slds-form-element">
+                                    <apex:dataTable id="contactTable" var="con" value="{!contactList}"  styleClass="slds-table slds-table--bordered slds-no-row-hover">
+                                        <apex:repeat var="conField" value="{!$ObjectType.Contact.FieldSets.JS01__Lead_Convert_Matching_Results}">
+                                            <apex:column headerValue="{!conField.label}">
+                                                <apex:outputField value="{!con[conField]}" rendered="{!conField.fieldpath != 'Name'}"/>
+                                                <apex:outputLink value="/lightning/r/Contact/{!con.Id}/view" target="_blank" rendered="{!$User.UIThemeDisplayed == 'Theme4d' && conField.fieldpath == 'Name'}">
+                                                    <apex:outputField value="{!con[conField]}" />
+                                                </apex:outputLink>
+                                                <apex:outputLink value="/{!con.Id}" target="_blank" rendered="{!$User.UIThemeDisplayed != 'Theme4d' && conField.fieldpath == 'Name'}">
+                                                    <apex:outputField value="{!con[conField]}" />
+                                                </apex:outputLink>
+                                            </apex:column>
+                                        </apex:repeat>
+            <!----------------------------------------------------- CASES ------------------------------------------------------------------------------------------------->
+                                    <apex:column headerValue="Case Number">
+                                        <apex:facet name="header">
+                                             <div style="width:25%;text-align:left;float:left;">Case Number</div> 
+                                             <div style="width:25%;text-align:left;float:left;">Status</div> 
+                                             <div style="width:25%;text-align:left;float:left;">Date Opened</div> 
+                                             <div style="width:25%;text-align:center;float:right;">Actions</div>              
+                                         </apex:facet>    
+                                         <apex:dataTable id="casesTable" var="caseRec" value="{!con.Cases}" style="width:100%;border-top:0px" styleClass="slds-table slds-no-row-hover">
+                                            <apex:column headerClass="hidehdr" width="25%">
+                                                 <apex:outputLink value="/lightning/r/Case/{!caseRec.Id}/view" target="_blank" rendered="{!$User.UIThemeDisplayed == 'Theme4d'}">
+                                                    {!caseRec.CaseNumber}
+                                                 </apex:outputLink>
+                                                  <apex:outputLink value="/{!caseRec.Id}" target="_blank" rendered="{!$User.UIThemeDisplayed != 'Theme4d'}">
+                                                    {!caseRec.CaseNumber}
+                                                 </apex:outputLink>
+                                            </apex:column>
+                                            <apex:column value="{!caseRec.Status}" headerClass="hidehdr" width="25%"/>
+                                            <apex:column value="{!caseRec.CreatedDate}" headerClass="hidehdr" width="30%"/>
+                                            <apex:column headerClass="hidehdr" width="25%" style="text-align:center;float:center;">
+                                                <apex:commandLink value="{!$Label.js01__leadconversion_reopen_button}" action="{!reopen}" style="text-decoration:none;padding:1px 10px" onclick="document.getElementById('loader').style.display = 'block';" styleClass="slds-button slds-button--brand" rendered="{!caseRec != null}">
+                                                    <apex:param value="{!caseRec.ContactId}" name="contactIdVar" assignTo="{!contactIdVar}" />
+                                                    <apex:param value="{!caseRec.Id}" name="caseId" assignTo="{!caseId}"/>
+                                                </apex:commandLink>
+                                            </apex:column>
+                                        </apex:dataTable>
+                                    </apex:column>
+                                     <apex:column width="12%">
+                                     <apex:commandLink value="{!$Label.js01__leadconversion_new_button}" action="{!newCase}" style="text-decoration:none;padding:0.5px 12px" onclick="document.getElementById('loader').style.display = 'block';" styleClass="slds-button slds-button--brand">
+                                        <apex:param value="{!con.Id}" name="contactIdVar" assignTo="{!contactIdVar}" />
+                                     </apex:commandLink>
+                                     </apex:column>
+                                </apex:dataTable>
+                                </div>
+                            </div>
+                        </apex:outputPanel>
+                        </div>      
+<!----------------------------------------------------- ACCOUNTS SECTION ------------------------------------------------------------------------------------------------->
+                        <!-- ADD SECTION -->  
+                        <div class="slds-panel__section">  
+                        <legend class="slds-form-element__label slds-text-title--caps">{!$Label.LeadConversion_Accounts_Hdr}</legend>  
+                            <apex:outputPanel rendered="{!ISNULL(accountList) || accountList.size<=0}" ><br/>No Matching Accounts Found!</apex:outputPanel>
+                            <apex:outputPanel rendered="{!NOT(ISNULL(accountList)) && accountList.size>0}" >
+                                <!-- ADD ROW -->  
+                                <div class="slds-form-element__row">  
+                                    <!-- ADD TABLE -->  
+                                    <div class="slds-form-element">  
+                                        <apex:dataTable id="accountTable" var="acc" value="{!accountList}" styleClass="slds-table slds-table--bordered slds-no-row-hover">
+                                            <apex:repeat var="accField" value="{!$ObjectType.Account.FieldSets.JS01__Lead_Convert_Matching_Results}">
+                                                <apex:column headerValue="{!accField.label}">
+                                                    <apex:outputField value="{!acc[accField]}" rendered="{!accField.fieldpath != 'Name'}"/>
+                                                    <apex:outputLink value="/lightning/r/Account/{!acc.Id}/view" target="_blank" rendered="{!$User.UIThemeDisplayed == 'Theme4d' && accField.fieldpath == 'Name'}">
+                                                        <apex:outputField value="{!acc[accField]}" />
+                                                    </apex:outputLink>
+                                                     <apex:outputLink value="/{!acc.Id}" target="_blank" rendered="{!$User.UIThemeDisplayed != 'Theme4d' && accField.fieldpath == 'Name'}">
+                                                        <apex:outputField value="{!acc[accField]}" />
+                                                    </apex:outputLink>
+                                                </apex:column>
+                                            </apex:repeat> 
+                <!----------------------------------------------------- CASES ------------------------------------------------------------------------------------------------->
+                                        <apex:column headerValue="Cases" >
+                                            <apex:facet name="header">
+                                                 <div style="width:25%;text-align:left;float:left;">Case Number</div>  
+                                                 <div style="width:25%;text-align:left;float:left;">Status</div> 
+                                                 <div style="width:25%;text-align:left;float:left;">Date Opened</div> 
+                                                 <div style="width:25%;text-align:center;float:right;">Actions</div>        
+                                             </apex:facet>  
+                                             <apex:dataTable id="caseTable" var="caseRec" value="{!acc.Cases}" style="width:100%;border:0px" styleClass="slds-table slds-no-row-hover">
+                                                <apex:column headerClass="hidehdr" width="25%">
+                                                    <apex:outputLink value="/lightning/r/Case/{!caseRec.Id}/view" target="_blank" rendered="{!$User.UIThemeDisplayed == 'Theme4d'}">
+                                                        {!caseRec.CaseNumber}
+                                                     </apex:outputLink>
+                                                      <apex:outputLink value="/{!caseRec.Id}" target="_blank" rendered="{!$User.UIThemeDisplayed != 'Theme4d'}">
+                                                        {!caseRec.CaseNumber}
+                                                     </apex:outputLink>
+                                                </apex:column>
+                                                <apex:column value="{!caseRec.Status}" headerClass="hidehdr" width="25%"/>
+                                                <apex:column value="{!caseRec.CreatedDate}" headerClass="hidehdr" width="30%"/>
+                                                <apex:column headerClass="hidehdr" width="30%"  style="text-align:center;float:center;">
+                                                    <apex:commandLink value="{!$Label.js01__leadconversion_reopen_button}" action="{!reopen}" onclick="document.getElementById('loader').style.display = 'block';" style="text-decoration:none;padding:1px 10px" styleClass="slds-button slds-button--brand" rendered="{!caseRec != null}">
+                                                        <apex:param value="{!caseRec.AccountId}" name="accIdVar" assignTo="{!accountIdVar}" />
+                                                        <apex:param value="{!caseRec.Id}" name="caseId" assignTo="{!caseId}"/>
+                                                    </apex:commandLink>
+                                                </apex:column>
+                                            </apex:dataTable>
+                                        </apex:column>
+                                        <apex:column width="10%">
+                                            <apex:commandLink value="{!$Label.js01__leadconversion_new_button}" action="{!newCase}" onclick="document.getElementById('loader').style.display = 'block';" style="text-decoration:none;padding:0.5px 12px" styleClass="slds-button slds-button--brand">
+                                                <apex:param value="{!acc.Id}" name="accIdVar" assignTo="{!accountIdVar}" />
+                                            </apex:commandLink>
+                                        </apex:column>
+                                        </apex:dataTable>
+                                    </div>
+                                </div>
+                            </apex:outputPanel>
+                        </div>
+                    </apex:form>
+                </div>
+            </div>
+        </body>
+    </html>
+</apex:page>

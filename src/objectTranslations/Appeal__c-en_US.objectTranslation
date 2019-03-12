@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Appeal</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Appeals</value>
+    </caseValues>
+    <fields>
+        <label><!-- ALJ Hearing - Detail --></label>
+        <name>ALJ_Hearing_Detail__c</name>
+        <picklistValues>
+            <masterLabel>Covered CA</masterLabel>
+            <translation><!-- Covered CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHCS</masterLabel>
+            <translation><!-- DHCS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ALJ Hearing --></label>
+        <name>ALJ_Hearing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency Appeal - Detail --></label>
+        <name>Agency_Appeal_Detail__c</name>
+        <picklistValues>
+            <masterLabel>CCI/CMC Health Care</masterLabel>
+            <translation><!-- CCI/CMC Health Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDI</masterLabel>
+            <translation><!-- CDI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>County - IHSS</masterLabel>
+            <translation><!-- County - IHSS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>County Indigent Care program</masterLabel>
+            <translation><!-- County Indigent Care program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Covered CA</masterLabel>
+            <translation><!-- Covered CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHCS</masterLabel>
+            <translation><!-- DHCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMHC Complaint</masterLabel>
+            <translation><!-- DMHC Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMHC IMR</masterLabel>
+            <translation><!-- DMHC IMR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOL</masterLabel>
+            <translation><!-- DOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare Appeal Council Review</masterLabel>
+            <translation><!-- Medicare Appeal Council Review --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agency Appeal --></label>
+        <name>Agency_Appeal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appeal Agency - Other --></label>
+        <name>Appeal_Agency_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appeal Problem - Other --></label>
+        <name>Appeal_Problem_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Problem w/Appeal (if any) --></label>
+        <name>Appeal_Problem__c</name>
+        <picklistValues>
+            <masterLabel>Agency/ health plan lost or never responded to appeal</masterLabel>
+            <translation><!-- Agency/ health plan lost or never responded to appeal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agency/Health Plan did not inform consumer of appeal rights</masterLabel>
+            <translation><!-- Agency/Health Plan did not inform consumer of appeal rights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agency/Health Plan provided unclear/incomplete notice of appeal rights</masterLabel>
+            <translation><!-- Agency/Health Plan provided unclear/incomplete notice of appeal rights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agency/health plan did not comply with timeliness for appeal</masterLabel>
+            <translation><!-- Agency/health plan did not comply with timeliness for appeal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer did not submit documentation in timely manner</masterLabel>
+            <translation><!-- Consumer did not submit documentation in timely manner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer lost at first level of appeal process</masterLabel>
+            <translation><!-- Consumer lost at first level of appeal process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health care provider unwilling to assist consumer with appeal process</masterLabel>
+            <translation><!-- Health care provider unwilling to assist consumer with appeal process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No face to face hearing</masterLabel>
+            <translation><!-- No face to face hearing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other problem</masterLabel>
+            <translation><!-- Other problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procedural problems</masterLabel>
+            <translation><!-- Procedural problems --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CTM --></label>
+        <name>CTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Escalation to Agency - Detail --></label>
+        <name>Escalation_to_Agency_Detail__c</name>
+        <picklistValues>
+            <masterLabel>County - IHSS</masterLabel>
+            <translation><!-- County - IHSS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>County Indigent Care Program</masterLabel>
+            <translation><!-- County Indigent Care Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Covered CA</masterLabel>
+            <translation><!-- Covered CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medi-Cal County</masterLabel>
+            <translation><!-- Medi-Cal County --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medi-Cal Health Care Options</masterLabel>
+            <translation><!-- Medi-Cal Health Care Options --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medi-Cal Managed Care Ombuds</masterLabel>
+            <translation><!-- Medi-Cal Managed Care Ombuds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medi-Cal Mental Health Care Ombuds</masterLabel>
+            <translation><!-- Medi-Cal Mental Health Care Ombuds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare</masterLabel>
+            <translation><!-- Medicare --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Escalation to Agency - Other --></label>
+        <name>Escalation_to_Agency_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Escalation to Agency --></label>
+        <name>Escalation_to_Agency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expedited? --></label>
+        <name>Expedited__c</name>
+    </fields>
+    <fields>
+        <label><!-- Family Member --></label>
+        <name>Family_Member__c</name>
+        <relationshipLabel><!-- Appeals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Grievance Against Plan --></label>
+        <name>Grievance_Against_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- HHS Appeal - Detail --></label>
+        <name>HHS_Appeal_Detail__c</name>
+        <picklistValues>
+            <masterLabel>HHS Tax Exemptions</masterLabel>
+            <translation><!-- HHS Tax Exemptions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HHS, Office of Civil Rights</masterLabel>
+            <translation><!-- HHS, Office of Civil Rights --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HHS Appeal --></label>
+        <name>HHS_Appeal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Informal Review with Plan --></label>
+        <name>Informal_Review_with_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Judicial Review --></label>
+        <name>Judicial_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome of Appeal --></label>
+        <name>Outcome_of_Appeal__c</name>
+        <picklistValues>
+            <masterLabel>Client Declined Our Services/Loss of Contact</masterLabel>
+            <translation><!-- Client Declined Our Services/Loss of Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client withdrew hearing request</masterLabel>
+            <translation><!-- Client withdrew hearing request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied Client Claim</masterLabel>
+            <translation><!-- Denied Client Claim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Favorable Conditional Withdrawal</masterLabel>
+            <translation><!-- Favorable Conditional Withdrawal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Granted Client Claim</masterLabel>
+            <translation><!-- Granted Client Claim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem resolved after agency escalation</masterLabel>
+            <translation><!-- Problem resolved after agency escalation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Program declined representation due to lack of merits</masterLabel>
+            <translation><!-- Program declined representation due to lack of merits --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Plan --></label>
+        <name>Plan__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which problem is this appeal tied to? --></help>
+        <label><!-- Problem --></label>
+        <name>Problem__c</name>
+        <relationshipLabel><!-- Appeals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Who Filed the Appeal - Other --></label>
+        <name>Who_Filed_the_Appeal_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who Filed the Appeal? --></label>
+        <name>Who_Filed_the_Appeal__c</name>
+        <picklistValues>
+            <masterLabel>Advocate</masterLabel>
+            <translation><!-- Advocate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Appeal Layout (HCA)</layout>
+        <sections>
+            <label><!-- Appeal Level(s) --></label>
+            <section>Appeal Level(s)</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- OUTCOME --></label>
+            <section>OUTCOME</section>
+        </sections>
+        <sections>
+            <label><!-- Plan --></label>
+            <section>Plan</section>
+        </sections>
+        <sections>
+            <label><!-- Problem with the Appeal (if any) --></label>
+            <section>Problem with the Appeal (if any)</section>
+        </sections>
+        <sections>
+            <label><!-- Who Filed the Appeal? --></label>
+            <section>Who Filed the Appeal?</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot update the appeal record once the related case has been closed --></errorMessage>
+        <name>Lock_appeal_record_after_case_closure</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Plan is required --></errorMessage>
+        <name>Plan_required</name>
+    </validationRules>
+</CustomObjectTranslation>

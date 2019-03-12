@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>No Match to Service Provided</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Outside Service Area</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Client Not Interested</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>No Ripe Legal Issue</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Does Not Meet Income Requirements</fullName>
+        <default>false</default>
+    </customValue>
+    <customValue>
+        <fullName>Failed Conflict Check</fullName>
+        <default>false</default>
+    </customValue>
+    <masterLabel>Rejection Reason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

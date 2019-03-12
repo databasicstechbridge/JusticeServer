@@ -1,0 +1,123 @@
+<!--************************************************************************
+* Name               : LeadRejectionController                             *
+* Description        : JusticeServer - Reject/Refer Screen                 *
+* Created By         : Techbridge                                          *        
+*************************************************************************-->
+<apex:page standardController="Lead" extensions="JS01.LeadRejectionController" showHeader="false" sidebar="false">
+    <head>  
+        <!-- STYLE SHEET -->  
+        <apex:stylesheet value="{!URLFOR($Resource.JS01__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.css')}"/>  
+    </head>
+     <!-- Loading Image -->
+        <div id="loader" style="display:none;">
+            <div style="height : 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.75; z-index: 100000; background-color: #ececec;">
+                &nbsp;
+            </div>
+            <div style="height : 100%; position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 100001; margin: 50% 50%">
+                <span style="color:#4a4a56;position: fixed;top: 50%;left: 50%;">
+                    <table><tr>
+                        <td><img src="/img/loading32.gif"/>&nbsp;&nbsp;</td>
+                        </tr></table>
+                </span>
+            </div>
+        </div>
+        <!-- Ending Load Image -->
+    <body> 
+    <!-- REQUIRED SLDS WRAPPER - CUSTOM SCOPING CLASS USED WHEN GENERATING CUSTOM CSS -->  
+        <div class="LScope">
+            <!-------------------------------------------- FORM ----------------------------------------------------->
+            <div class="slds-panel slds-grid slds-grid--vertical slds-nowrap slds-form--compound" aria-labelledby="caseRejectionForm">  
+                <apex:form >
+                    <apex:pageMessages id="err"/>
+                    <!-- Loading Image -->
+                    <apex:actionStatus id="status">
+                        <apex:facet name="start">
+                            <div style="height : 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.75; z-index: 1000; background-color: #ececec;">
+                                &nbsp;
+                            </div>
+                            <div style="height : 100%; position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 50% 50%">
+                                <span style="color:#4a4a56;position: fixed;top: 50%;left: 50%;">
+                                    <table><tr>
+                                        <td><img src="/img/loading32.gif"/>&nbsp;&nbsp;</td>
+                                        <td><b>Loading...</b></td>
+                                        </tr></table>
+                                </span>
+                            </div>  
+                        </apex:facet> 
+                    </apex:actionStatus>    
+                <apex:actionFunction name="AFCheckReferralAgency" action="{!checkReferralAgency}" status="status" rerender="ipReferredToOther,err">
+                    <apex:param name="rowCounter" value="" assignTo="{!rowCounter}"/>
+                </apex:actionFunction>
+<!----------------------------------------------------- REASON FOR REJECTION ------------------------------------------------------------------------------------------------->
+                <div class="slds-text-title--caps slds-section-title--divider">{!$Label.LeadRejection_Hdr}</div>
+                <div class="slds-panel__section">  
+                    <!-- ELEMENT GROUP -->  
+                    <div class="form-element__group">  
+                        <!-- ADD ROW -->  
+                        <div class="slds-form-element__row">  
+                            <!-- ADD FIELDS -->  
+                            <div class="slds-form-element slds-is-required">
+                                <div class="slds-form-element__control">
+                                <apex:outputLabel styleClass="slds-form-element__label"> <abbr class="slds-required" title="required">*</abbr>Reason for Rejection</apex:outputLabel> 
+                                <div class="slds-select_container">
+                                    <apex:selectList label="Reason for Rejection" value="{!selectedReason}" required="true" size="1" id="reasonForRejection" styleClass="slds-select">
+                                        <apex:selectOptions value="{!reasonForRejection}"/>
+                                    </apex:selectList>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-form-element"></div>
+                        <div class="slds-form-element"></div>
+                        <div class="slds-form-element"></div>
+                    </div> 
+                </div>
+            </div>
+            <!----------------------------------------------------- REFERRAL ------------------------------------------------------------------------------------------------------------>
+                    <div class="slds-text-title--caps slds-section-title--divider">REFERRAL</div>
+                    <div class="slds-panel__section">  
+                    <apex:dataTable var="othServ" value="{!otherServiceWrapperList}" id="pgblckTabl" styleClass="slds-table slds-table--bordered slds-table--striped">
+                        <apex:column headerValue="Referral Agency">
+                            <apex:selectList label="Referral Agency" id="referralAgency" value="{!othServ.selectedAgency}" onchange="AFCheckReferralAgency('{!othServ.count}');" size="1" style=" width: 200px;" styleClass="slds-form-element__control slds-input">
+                                <apex:selectOptions value="{!referralAgency}"/>
+                            </apex:selectList>
+                        </apex:column>
+                        <apex:column headerValue="Other"> 
+                            <apex:inputText label="Other" value="{!othServ.oService.JS01__Referred_To_Other__c}" id="ipReferredToOther" disabled="{!NOT(othServ.otherFlag)}" style=" width: 200px;" styleClass="slds-form-element__control slds-input"/>
+                        </apex:column>
+                </apex:dataTable>
+            <apex:commandLink action="{!addRow}" rerender="pgblckTabl,err">Add Row</apex:commandLink><br/><br/>
+            </div>
+            <!----------------------------------------------------- OTHER SERVICES ------------------------------------------------------------------------------------------------------------>
+                    <div class="slds-text-title--caps slds-section-title--divider">OTHER SERVICES</div>
+                    <div class="slds-panel__section">  
+                        <div class="form-element__group">  
+                            <div class="slds-form-element__row">  
+                                <div class="slds-form-element">
+                                    <apex:outputText >{!$Label.js01__leadrejection_otherservice_hdr}</apex:outputText>
+                                </div>
+                            </div> 
+                            <div class="slds-form-element__row">  
+                                <div class="slds-form-element">
+                                    <div class="slds-form-element__control">
+                                        <div class="slds-select_container">
+                                            <apex:selectList label="Record Types" id="recordType" value="{!selectedRecordType}" size="1" styleClass="slds-select">
+                                                <apex:selectOptions value="{!allRecordTypes}"/>
+                                            </apex:selectList>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slds-form-element"></div>
+                                <div class="slds-form-element"></div>
+                                <div class="slds-form-element"></div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="slds-panel__section slds--align-center">  
+                        <apex:commandButton value="Save" action="{!Save}" rerender="pgblckTabl,referralSection,err" styleClass="slds-button slds-button--brand" />
+                        <apex:commandButton value="Cancel" action="{!Cancel}" styleClass="slds-button slds-button--neutral"/>
+                    </div>
+                </apex:form>
+            </div>
+        </div>
+    </body>
+</apex:page>

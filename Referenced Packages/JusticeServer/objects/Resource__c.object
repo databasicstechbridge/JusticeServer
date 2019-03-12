@@ -1,0 +1,1690 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>Resources such as links, documents, and notes that are provided to volunteers and/or staff based upon the case problem code</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Description__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Detail__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Detail</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, this document will no longer be displayed in related resources lists</inlineHelpText>
+        <label>Inactive</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Problem_Codes__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Select all problem codes this resource is relevant to. The resource will display for any case matching a selected problem code</inlineHelpText>
+        <label>Problem Codes</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Access (Billing, Res, Test)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Adoption</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Adult Guardianship</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Advance Directives / Powers of Atty</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>AFDC / Other Welfare</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Agr. Wrker Issues (not WC or FLSA)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Bankruptcy/Debtor Relief</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Civil Rights</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Collect/Repo/Def/Garnsh</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Collection Practices/Creditor Harassment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Contracts / Warranties</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Corporate Law</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Creditor&apos;s Rights</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Criminal Referrals</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Custody / Visitation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Delinquent</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Discipline (Exp &amp; Susp)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Divorce / Sep. / Annul.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Domestic Abuse</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Education</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Education Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>EITC (Earned Inc. Tax Credit)</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Elder Law</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Emancipation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Employment</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Employment Discrimination</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Emply. Rights</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Family</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Fed. Subsidized Housing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Finance/Banking</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Food Stamps / Commodities</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>General Business</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Gov. Childrens Health Ins.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Home &amp; Com Based Care</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Homeownership/Real Prop.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Housing Discrimination</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Human Trafficking</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Immigration / Natural.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Immigration Law</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Indian / Tribal Law</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Intellectual Property</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Legal Assistance to Non-Profit Orga</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Licenses Drivers/Occupational/Other</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Loans/Installment Purch.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Long Term Care Health Fac.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mediation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medicaid</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medicare</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mental Health</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Merger</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Minor Guardianship Conservatorship</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mobile Homes</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mort. Foreclosures not Pred. Lending</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Mort. Preditory Lending Practices</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Municipal Legal Needs</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Name Change</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Neglected/Abused/Depend.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Consumer / Finance.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Employment &amp; Ceta</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Family</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Health</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Housing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Income Maintanence</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Individual Rights</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Juvenile</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other Miscellaneous</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Parental Rights Termin.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Paternity</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Physically Disabled Rghts</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Predatory Lending</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Prisoner&apos;s Rights</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Private Health Ins.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Private Landlord/Tenant</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Public Housing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Public Utilities</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Real Estate</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Social Security</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Spec. Ed / Learn Dis.</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SSDI</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>SSI</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>State and Local Health</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>State and Local Income Maintenance</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Student Finc. Aid</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Support</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tax/Health Care</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Tax/Tax Exempt</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Taxes Not EITC</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Telecommunications</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Torts</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Trust/Estates</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unemployment Compensation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Unfair Sales Practices</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Veterans Benefits</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Voc Education</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wage Claims</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Wills and Estates</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>URL__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <label>Resource</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Inactive__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Resource Title</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Resources</pluralLabel>
+    <recordTypes>
+        <fullName>Attachment</fullName>
+        <active>true</active>
+        <description>A resource within an attached document, such as PDF or Word document</description>
+        <label>Attachment</label>
+        <picklistValues>
+            <picklist>Problem_Codes__c</picklist>
+            <values>
+                <fullName>AFDC %2F Other Welfare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Access %28Billing%2C Res%2C Test%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adoption</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adult Guardianship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advance Directives %2F Powers of Atty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agr%2E Wrker Issues %28not WC or FLSA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bankruptcy%2FDebtor Relief</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Civil Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collect%2FRepo%2FDef%2FGarnsh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collection Practices%2FCreditor Harassment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contracts %2F Warranties</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Law</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creditor%27s Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Criminal Referrals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custody %2F Visitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delinquent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discipline %28Exp %26 Susp%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Divorce %2F Sep%2E %2F Annul%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Domestic Abuse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EITC %28Earned Inc%2E Tax Credit%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Elder Law</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emancipation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employment Discrimination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emply%2E Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fed%2E Subsidized Housing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance%2FBanking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food Stamps %2F Commodities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gov%2E Childrens Health Ins%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home %26 Com Based Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeownership%2FReal Prop%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Housing Discrimination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Trafficking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Immigration %2F Natural%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Immigration Law</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indian %2F Tribal Law</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intellectual Property</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal Assistance to Non-Profit Orga</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Licenses Drivers%2FOccupational%2FOther</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loans%2FInstallment Purch%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Long Term Care Health Fac%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mediation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicaid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mental Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merger</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minor Guardianship Conservatorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile Homes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mort%2E Foreclosures not Pred%2E Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mort%2E Preditory Lending Practices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Municipal Legal Needs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Name Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neglected%2FAbused%2FDepend%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Consumer %2F Finance%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Employment %26 Ceta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Housing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Income Maintanence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Individual Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Juvenile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parental Rights Termin%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paternity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physically Disabled Rghts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Predatory Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prisoner%27s Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private Health Ins%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private Landlord%2FTenant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Housing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Utilities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Real Estate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SSDI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SSI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spec%2E Ed %2F Learn Dis%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State and Local Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State and Local Income Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Finc%2E Aid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax%2FHealth Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax%2FTax Exempt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taxes Not EITC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Torts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trust%2FEstates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unemployment Compensation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unfair Sales Practices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veterans Benefits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voc Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wage Claims</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wills and Estates</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Rich_Text</fullName>
+        <active>true</active>
+        <description>A resource whose details are stored directly in the Salesforce record on a rich text field</description>
+        <label>Rich Text</label>
+        <picklistValues>
+            <picklist>Problem_Codes__c</picklist>
+            <values>
+                <fullName>AFDC %2F Other Welfare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Access %28Billing%2C Res%2C Test%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adoption</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adult Guardianship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advance Directives %2F Powers of Atty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agr%2E Wrker Issues %28not WC or FLSA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bankruptcy%2FDebtor Relief</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Civil Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collect%2FRepo%2FDef%2FGarnsh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collection Practices%2FCreditor Harassment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contracts %2F Warranties</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Law</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creditor%27s Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Criminal Referrals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custody %2F Visitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delinquent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discipline %28Exp %26 Susp%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Divorce %2F Sep%2E %2F Annul%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Domestic Abuse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EITC %28Earned Inc%2E Tax Credit%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Elder Law</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emancipation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employment Discrimination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emply%2E Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fed%2E Subsidized Housing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance%2FBanking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food Stamps %2F Commodities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gov%2E Childrens Health Ins%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home %26 Com Based Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeownership%2FReal Prop%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Housing Discrimination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Trafficking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Immigration %2F Natural%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Immigration Law</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indian %2F Tribal Law</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intellectual Property</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal Assistance to Non-Profit Orga</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Licenses Drivers%2FOccupational%2FOther</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loans%2FInstallment Purch%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Long Term Care Health Fac%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mediation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicaid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mental Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merger</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minor Guardianship Conservatorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile Homes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mort%2E Foreclosures not Pred%2E Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mort%2E Preditory Lending Practices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Municipal Legal Needs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Name Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neglected%2FAbused%2FDepend%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Consumer %2F Finance%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Employment %26 Ceta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Housing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Income Maintanence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Individual Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Juvenile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parental Rights Termin%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paternity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physically Disabled Rghts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Predatory Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prisoner%27s Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private Health Ins%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private Landlord%2FTenant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Housing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Utilities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Real Estate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SSDI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SSI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spec%2E Ed %2F Learn Dis%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State and Local Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State and Local Income Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Finc%2E Aid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax%2FHealth Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax%2FTax Exempt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taxes Not EITC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Torts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trust%2FEstates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unemployment Compensation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unfair Sales Practices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veterans Benefits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voc Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wage Claims</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wills and Estates</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>URL</fullName>
+        <active>true</active>
+        <description>An external resource linked to by a URL</description>
+        <label>URL</label>
+        <picklistValues>
+            <picklist>Problem_Codes__c</picklist>
+            <values>
+                <fullName>AFDC %2F Other Welfare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Access %28Billing%2C Res%2C Test%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adoption</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adult Guardianship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advance Directives %2F Powers of Atty</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Agr%2E Wrker Issues %28not WC or FLSA%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bankruptcy%2FDebtor Relief</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Civil Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collect%2FRepo%2FDef%2FGarnsh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collection Practices%2FCreditor Harassment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contracts %2F Warranties</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Law</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Creditor%27s Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Criminal Referrals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Custody %2F Visitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delinquent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discipline %28Exp %26 Susp%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Divorce %2F Sep%2E %2F Annul%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Domestic Abuse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EITC %28Earned Inc%2E Tax Credit%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Education Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Elder Law</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emancipation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employment Discrimination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emply%2E Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fed%2E Subsidized Housing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Finance%2FBanking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Food Stamps %2F Commodities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gov%2E Childrens Health Ins%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home %26 Com Based Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Homeownership%2FReal Prop%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Housing Discrimination</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Human Trafficking</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Immigration %2F Natural%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Immigration Law</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indian %2F Tribal Law</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Intellectual Property</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Legal Assistance to Non-Profit Orga</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Licenses Drivers%2FOccupational%2FOther</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loans%2FInstallment Purch%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Long Term Care Health Fac%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mediation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicaid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medicare</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mental Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merger</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minor Guardianship Conservatorship</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile Homes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mort%2E Foreclosures not Pred%2E Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mort%2E Preditory Lending Practices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Municipal Legal Needs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Name Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Neglected%2FAbused%2FDepend%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Consumer %2F Finance%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Employment %26 Ceta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Family</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Housing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Income Maintanence</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Individual Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Juvenile</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parental Rights Termin%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paternity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physically Disabled Rghts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Predatory Lending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prisoner%27s Rights</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private Health Ins%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Private Landlord%2FTenant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Housing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Utilities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Real Estate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SSDI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SSI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Social Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spec%2E Ed %2F Learn Dis%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State and Local Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State and Local Income Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Student Finc%2E Aid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax%2FHealth Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tax%2FTax Exempt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Taxes Not EITC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Telecommunications</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Torts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trust%2FEstates</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unemployment Compensation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unfair Sales Practices</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veterans Benefits</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Voc Education</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wage Claims</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wills and Estates</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

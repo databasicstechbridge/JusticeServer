@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Case Accepted - Internal Notice</name>
+    <style>none</style>
+    <subject>{!Resource_Assignment__c.Contact__c} has accepted case #{!Resource_Assignment__c.CaseNumber__c}</subject>
+    <textOnly>{!Resource_Assignment__c.Contact__c} has accepted case #{!Resource_Assignment__c.CaseNumber__c} : {!Resource_Assignment__c.00N4100000cw3QD}. 
+
+{!Resource_Assignment__c.00N4100000cw3QC}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

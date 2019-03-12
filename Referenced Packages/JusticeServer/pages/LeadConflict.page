@@ -1,0 +1,208 @@
+<!--************************************************************************
+* Name               : LeadConflict                                        *
+* Description        : JusticeServer - Conlict Screen                      *
+* Created By         : Techbridge                                          *        
+*************************************************************************-->
+<apex:page standardController="Lead" extensions="JS01.LeadCreationController"  showHeader="false" sidebar="true">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+        <head>  
+            <!-- STYLE SHEET -->  
+            <apex:stylesheet value="{!URLFOR($Resource.JS01__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.css')}"/>  
+        </head>
+         <!-- Loading Image -->
+        <div id="loader" style="display:none;">
+            <div style="height : 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.75; z-index: 100000; background-color: #ececec;">
+                &nbsp;
+            </div>
+            <div style="height : 100%; position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 100001; margin: 50% 50%">
+                <span style="color:#4a4a56;position: fixed;top: 50%;left: 50%;">
+                    <table><tr>
+                        <td><img src="/img/loading32.gif"/>&nbsp;&nbsp;</td>
+                        </tr></table>
+                </span>
+            </div>
+        </div>  
+        <!-- Ending Load Image -->
+        <body> 
+            <!-- REQUIRED SLDS WRAPPER - CUSTOM SCOPING CLASS USED WHEN GENERATING CUSTOM CSS -->  
+            <div class="LScope">
+                <!-- ADD GLOBAL HEADER -->  
+                <div class="slds-page-header slds-page-header_object-home">
+                    <!-- ADD GLOBAL HEADER ICON -->  
+                    <div class="slds-col slds-float--left slds-m-right--small">  
+                        <div class="slds-icon_container slds-icon-standard-lead slds-icon--medium" title="LeadConflict">
+                            <svg class="slds-icon" aria-hidden="true">
+                                <use xlink:href="{!URLFOR($Resource.SLDS, 'assets/icons/standard-sprite/svg/symbols.svg#lead')}"/>
+                            </svg>
+                        </div>
+                    </div>  
+                    <!-- ADD GLOBAL HEADER TEXT -->  
+                    <div class="slds-col">  
+                        <div class="slds-page-header__title slds-truncate">  
+                            {!$Label.LeadCreation_ConflictCheck_Hdr}
+                        </div>  
+                    </div>  
+                </div> 
+                
+                <!-------------------------------------------- FORM ----------------------------------------------------->
+                <div class="slds-panel slds-grid slds-grid--vertical slds-nowrap slds-form--compound" aria-labelledby="LeadIntakeForm"> 
+                    <apex:form >
+                        <!-- Loading Image -->
+                        <apex:actionStatus id="status">
+                            <apex:facet name="start">
+                                <div style="height : 100%; position: fixed; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.75; z-index: 1000; background-color: #ececec;">
+                                       &nbsp;
+                                </div>
+                                <div style="height : 100%; position: fixed; left: 0; top: 0; bottom: 0; right: 0; z-index: 1001; margin: 50% 50%">
+                                    <span style="color:#4a4a56;position: fixed;top: 50%;left: 50%;">
+                                        <table>
+                                            <tr>
+                                                <td><img src="/img/loading32.gif"/>&nbsp;&nbsp;</td>
+                                                <td><b>Loading...</b></td>
+                                            </tr>
+                                        </table>
+                                    </span>
+                                </div>  
+                               </apex:facet> 
+                           </apex:actionStatus>
+                        <apex:pageMessages id="err"></apex:pageMessages>
+                        <apex:actionFunction name="AFclearClientUseFlags" action="{!clearClientUseFlags}" reRender="clientSection" status="status">
+                            <apex:param value="" name="leadIdVar" assignTo="{!selectedLeadId}" />
+                        </apex:actionFunction>
+                        <apex:actionFunction name="AFclearContactUseFlags" action="{!clearContactUseFlags}" reRender="contactSection" status="status">
+                            <apex:param value="" name="conIdVar" assignTo="{!selectedContactId}" />
+                            <apex:param value="" name="conNameVar" assignTo="{!selectedContactName}" />
+                        </apex:actionFunction>
+                        <apex:actionFunction name="AFclearAccountUseFlags" action="{!clearAccountUseFlags}" reRender="accountSection" status="status">
+                            <apex:param value="" name="accIdVar" assignTo="{!selectedAccountId}" />
+                            <apex:param value="" name="accNameVar" assignTo="{!selectedAccountName}" />
+                        </apex:actionFunction>
+                        <!---------------------------------------- OUTPUT TEXT ------------------------------------------------------>  
+                        <div  style="margin-left: 2%" class="slds-text-heading_small">
+                        <p><b> {!$Label.LeadCreation_ConflictCheck_Intro}</b></p>
+                        </div>
+                        <br/>
+                <!----------------------------------------------------- CLIENT SECTION ------------------------------------------------------------------------------------------------->
+                        <div class="slds-text-title--caps slds-section-title--divider">Client</div> 
+                        <apex:outputPanel id="clientSection">
+                            <div class="slds-panel__section">  
+                            <div class="slds-form-element__row">  
+                                <div class="slds-form-element">
+                                <apex:outputPanel id="captionPanel" rendered="{!ISNULL(leadMatchWrapList) || leadMatchWrapList.size<=0}"><b>{!leadRecord.FirstName} {!leadRecord.LastName}</b><br/></apex:outputPanel>
+                                    <apex:outputPanel id="cCaptionPanel" rendered="{!ISNULL(leadMatchWrapList) || leadMatchWrapList.size<=0}">No Match Found</apex:outputPanel>
+                                        <apex:dataTable title="{!leadRecord.FirstName} {!leadRecord.LastName}" value="{!leadMatchWrapList}" var="leadRec" rendered="{!NOT(ISNULL(leadMatchWrapList)) && leadMatchWrapList.size>0}" styleClass="slds-table slds-table--bordered slds-table_col-bordered">
+                                            <apex:facet name="caption">
+                                                <apex:outputPanel id="leadPanel" style="float:left;">
+                                                    <apex:repeat var="lField" value="{!$ObjectType.Lead.FieldSets.JS01__Details_on_Eligibility_Accept_Client}">
+                                                    <b>{!lField.label} : &nbsp;&nbsp;<apex:outputField value="{!leadRecord[lField]}"/></b><br/>
+                                                    </apex:repeat>
+                                                </apex:outputPanel>
+                                            </apex:facet>
+                                            <apex:column headerValue="First Name" style="width:12%;"> 
+                                                <apex:outputLink value="/lightning/r/Lead/{!leadRec.recId}/view" target="_blank" rendered="{!$User.UIThemeDisplayed == 'Theme4d'}">{!leadRec.recFirstName}</apex:outputLink>
+                                                <apex:outputLink value="/{!leadRec.recId}" target="_blank" rendered="{!$User.UIThemeDisplayed != 'Theme4d'}">{!leadRec.recFirstName}</apex:outputLink>
+                                            </apex:column>
+                                            <apex:column headerValue="Middle Name" value="{!leadRec.recMiddleName}" style="width:12%;"/>
+                                            <apex:column headerValue="Last Name" value="{!leadRec.recLastName}" style="width:12%;"/>
+                                            <apex:column headerValue="Suffix" value="{!leadRec.recSuffix}" style="width:12%;"/>
+                                            <apex:column headerValue="Birthdate" style="width:16%;">
+                                                <apex:outputText value="{0,date,MM/dd/yyyy}">
+                                                    <apex:param value="{!leadRec.recBirthDate}"/>
+                                                </apex:outputText>
+                                            </apex:column>
+                                            <apex:column headerValue="Social Security Number" value="{!leadRec.recSSN}" style="width:14%;"/>
+                                            <apex:column headerValue="Match Type" value="{!leadRec.recMatchType}" style="width:14%;"/>
+                                            <apex:column headerValue="{!$Label.js01__leadcreation_use_hdr}" style="width:14%;">
+                                                <apex:inputCheckbox value="{!leadRec.recUseFlag}" onchange="AFclearClientUseFlags('{!leadRec.recId}');"/>
+                                            </apex:column>
+                                        </apex:dataTable>
+                                        <br/>
+                                    </div>
+                                </div>
+                            </div>
+                        </apex:outputPanel>        
+                 <!----------------------------------------------------- CONTACT SECTION ------------------------------------------------------------------------------------------------->
+                        <div class="slds-text-title--caps slds-section-title--divider">Adverse Contacts</div>
+                        <apex:outputPanel id="contactSection">    
+                            <div class="slds-panel__section">  
+                            <br/>
+                                <div class="slds-form-element__row">  
+                                    <div class="slds-form-element">
+                                    <apex:outputPanel id="acCaptionPanel" rendered="{!ISNULL(finalConList) || finalConList.size<=0}"><b>No Match Found</b></apex:outputPanel>
+                                    <apex:repeat value="{!finalConList}" var="finRec" rendered="{!NOT(ISNULL(finalConList)) && finalConList.size>0}">
+                                    	<apex:outputPanel id="acCaptionPanel" rendered="{!ISNULL(finRec.conMatchWrapList) || finRec.conMatchWrapList.size<=0}"><b>No Match Found</b></apex:outputPanel>
+                                        <apex:dataTable title="{!finRec.conName}" value="{!finRec.conMatchWrapList}" var="conRec" rendered="{!NOT(ISNULL(finRec.conMatchWrapList)) && finRec.conMatchWrapList.size>0}" styleClass="slds-table slds-table--bordered">
+                                             <apex:facet name="caption">
+                                                <apex:outputPanel id="contactPanel" style="float:left;"><b>{!finRec.conName}</b></apex:outputPanel>
+                                            </apex:facet>
+                                            <apex:column headerValue="First Name" style="width:12%;">
+                                                <apex:outputLink value="/lightning/r/Contact/{!conRec.recId}/view" target="_blank" rendered="{!$User.UIThemeDisplayed == 'Theme4d'}">{!conRec.recFirstName}</apex:outputLink>
+                                                <apex:outputLink value="/{!conRec.recId}" target="_blank" rendered="{!$User.UIThemeDisplayed != 'Theme4d'}">{!conRec.recFirstName}</apex:outputLink>
+                                            </apex:column>
+                                            <apex:column headerValue="Middle Name" value="{!conRec.recMiddleName}" style="width:12%;"/>
+                                            <apex:column headerValue="Last Name" value="{!conRec.recLastName}" style="width:12%;"/>
+                                            <apex:column headerValue="Street" value="{!conRec.recSuffix}" style="width:12%;"/>
+                                            <apex:column headerValue="Birthdate" style="width:16%;">
+                                                <apex:outputText value="{0,date,MM/dd/yyyy}">
+                                                    <apex:param value="{!conRec.recBirthDate}"/>
+                                                </apex:outputText>
+                                            </apex:column>
+                                            <apex:column headerValue="Social Security Number" value="{!conRec.recSSN}" style="width:14%;"/>
+                                            <apex:column headerValue="Match Type" value="{!conRec.recMatchType}" style="width:14%;"/>
+                                            <apex:column headerValue="Use?" style="width:14%;">
+                                                <apex:inputCheckbox value="{!conRec.recUseFlag}" onchange="AFclearContactUseFlags('{!conRec.recId}','{!finRec.conName}');"/>
+                                            </apex:column>
+                                        </apex:dataTable>
+                                        <br/>
+                                        <br/>
+                                    </apex:repeat>
+                                </div>
+                            </div>
+                        </div>
+                    </apex:outputPanel>
+                    
+                <!----------------------------------------------------- ACCOUNT SECTION ------------------------------------------------------------------------------------------------->
+                        <div class="slds-section-title--divider slds-text-title--caps">Adverse Accounts</div>
+                        <apex:outputPanel id="accountSection">
+                            <div class="slds-panel__section">  
+                            <br/>
+                                <!-- ADD ROW -->  
+                                <div class="slds-form-element__row">  
+                                    <!-- ADD FIELDS -->  
+                                    <div class="slds-form-element">           
+                                    <apex:outputPanel id="aaCaptionPanel" rendered="{!ISNULL(finalAccList) || finalAccList.size<=0}"><b>No Match Found</b></apex:outputPanel>
+                                    <apex:repeat value="{!finalAccList}" var="fin" rendered="{!NOT(ISNULL(finalAccList)) && finalAccList.size>0}">
+                                        <apex:outputPanel id="acCaptionPanel" rendered="{!ISNULL(fin.accMatchWrapList) || fin.accMatchWrapList.size<=0}"><b>No Match Found</b></apex:outputPanel>
+                                        <apex:dataTable title="{!fin.accName}" value="{!fin.accMatchWrapList}" var="accRec"  rendered="{!NOT(ISNULL(fin.accMatchWrapList)) && fin.accMatchWrapList.size>0}" styleClass="slds-table slds-table--bordered">
+                                            <apex:facet name="caption">
+                                                <apex:outputPanel id="accountPanel" style="float:left;"><b>{!fin.accName}</b></apex:outputPanel>
+                                            </apex:facet>
+                                            <apex:column headerValue="Name" style="width:20%;">
+                                                <apex:outputLink value="/lightning/r/Account/{!accRec.recId}/view" target="_blank" rendered="{!$User.UIThemeDisplayed == 'Theme4d'}">{!accRec.recName}</apex:outputLink>
+                                                <apex:outputLink value="/{!accRec.recId}" target="_blank" rendered="{!$User.UIThemeDisplayed != 'Theme4d'}">{!accRec.recName}</apex:outputLink>
+                                            </apex:column>
+                                            <apex:column headerValue="Street" value="{!accRec.recStreet}" style="width:20%;"/>
+                                            <apex:column headerValue="City" value="{!accRec.recCity}" style="width:20%;"/>
+                                            <apex:column headerValue="Match Type" value="{!accRec.recMatchType}" style="width:20%;"/>
+                                            <apex:column headerValue="Use?" style="width:20%;">
+                                                <apex:inputCheckbox value="{!accRec.recUseFlag}" onchange="AFclearAccountUseFlags('{!accRec.recId}','{!fin.accName}');"/>
+                                            </apex:column>
+                                        </apex:dataTable>
+                                        <br/>
+                                        <br/>
+                                    </apex:repeat>
+                                    </div>
+                                </div>
+                            </div>
+                        </apex:outputPanel>
+                        <div align="center" draggable="false">
+                            <apex:commandButton action="{!conflict}" value="{!$Label.js01__leadcreation_conflict_button}" reRender="err" styleClass="slds-button slds-button--neutral" onclick="document.getElementById('loader').style.display='block';"/>
+                            <apex:commandButton action="{!noConflict}" value="{!$Label.js01__leadcreation_noconflict_button}" reRender="err" styleClass="slds-button slds-button--brand" onclick="document.getElementById('loader').style.display='block';"/>    
+                            <apex:commandButton action="{!cancel}" value="Cancel" reRender="err" styleClass="slds-button slds-button--neutral" onclick="document.getElementById('loader').style.display = 'block';"/>
+                        </div><br/>
+                    </apex:form>
+                </div>
+            </div>
+        </body>
+    </html>
+</apex:page>

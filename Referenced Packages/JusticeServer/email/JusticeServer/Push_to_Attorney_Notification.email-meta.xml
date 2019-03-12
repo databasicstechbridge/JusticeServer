@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Push to Attorney Notification</name>
+    <style>none</style>
+    <subject>You have a new suggested case assignment</subject>
+    <textOnly>{!Contact.Name},
+
+{!Case.00N4100000cw3M3} has assigned a case to you in the JusticeServer Portal. Please review the case to confirm there are no conflicts and that you are willing to take the {!Case.00N4100000cw3MJ}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

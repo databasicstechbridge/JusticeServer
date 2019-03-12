@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Appeal_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Appeal_Compact_Layout_HCA</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Appeal_Compact_Layout_HCA</fullName>
+        <fields>Family_Member__c</fields>
+        <fields>Name</fields>
+        <fields>Problem__c</fields>
+        <fields>Outcome_of_Appeal__c</fields>
+        <label>Appeal Compact Layout (HCA)</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ALJ_Hearing_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>ALJ Hearing - Detail</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>ALJ_Hearing__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Covered CA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DHCS</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Covered CA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>DHCS</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ALJ_Hearing__c</fullName>
+        <externalId>false</externalId>
+        <label>ALJ Hearing</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HCA_No_Yes</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Agency_Appeal_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Agency Appeal - Detail</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Agency_Appeal__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>CCI/CMC Health Care</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>CDI</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>County Indigent Care program</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>County - IHSS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Covered CA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DHCS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DMHC Complaint</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DMHC IMR</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>DOL</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medicare Appeal Council Review</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>CCI/CMC Health Care</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>CDI</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>County Indigent Care program</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>County - IHSS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Covered CA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>DHCS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>DMHC Complaint</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>DMHC IMR</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>DOL</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Medicare Appeal Council Review</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Agency_Appeal__c</fullName>
+        <externalId>false</externalId>
+        <label>Agency Appeal</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HCA_No_Yes</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Appeal_Agency_Other__c</fullName>
+        <externalId>false</externalId>
+        <label>Appeal Agency - Other</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Appeal_Problem_Other__c</fullName>
+        <externalId>false</externalId>
+        <label>Appeal Problem - Other</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Appeal_Problem__c</fullName>
+        <externalId>false</externalId>
+        <label>Problem w/Appeal (if any)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agency/Health Plan did not inform consumer of appeal rights</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Agency/Health Plan provided unclear/incomplete notice of appeal rights</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Agency/ health plan lost or never responded to appeal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Agency/health plan did not comply with timeliness for appeal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Health care provider unwilling to assist consumer with appeal process</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Consumer lost at first level of appeal process</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Consumer did not submit documentation in timely manner</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>No face to face hearing</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Procedural problems</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other problem</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CTM__c</fullName>
+        <externalId>false</externalId>
+        <label>CTM</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HCA_No_Yes</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Escalation_to_Agency_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>Escalation to Agency - Detail</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Escalation_to_Agency__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>County Indigent Care Program</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>County - IHSS</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Covered CA</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medi-Cal County</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medi-Cal Managed Care Ombuds</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medi-Cal Health Care Options</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medi-Cal Mental Health Care Ombuds</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Medicare</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>County Indigent Care Program</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>County - IHSS</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Covered CA</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Medi-Cal County</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Medi-Cal Managed Care Ombuds</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Medi-Cal Health Care Options</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Medi-Cal Mental Health Care Ombuds</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>Medicare</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Escalation_to_Agency_Other__c</fullName>
+        <externalId>false</externalId>
+        <label>Escalation to Agency - Other</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Escalation_to_Agency__c</fullName>
+        <externalId>false</externalId>
+        <label>Escalation to Agency</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HCA_No_Yes</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Expedited__c</fullName>
+        <externalId>false</externalId>
+        <label>Expedited?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HCA_No_Yes</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Family_Member__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Family Member</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Appeals</relationshipLabel>
+        <relationshipName>Appeals</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Grievance_Against_Plan__c</fullName>
+        <externalId>false</externalId>
+        <label>Grievance Against Plan</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HCA_No_Yes</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HHS_Appeal_Detail__c</fullName>
+        <externalId>false</externalId>
+        <label>HHS Appeal - Detail</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>HHS_Appeal__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HHS Tax Exemptions</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>HHS, Office of Civil Rights</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>HHS Tax Exemptions</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Yes</controllingFieldValue>
+                <valueName>HHS, Office of Civil Rights</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HHS_Appeal__c</fullName>
+        <externalId>false</externalId>
+        <label>HHS Appeal</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HCA_No_Yes</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Informal_Review_with_Plan__c</fullName>
+        <externalId>false</externalId>
+        <label>Informal Review with Plan</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HCA_No_Yes</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Judicial_Review__c</fullName>
+        <externalId>false</externalId>
+        <label>Judicial Review</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HCA_No_Yes</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Outcome_of_Appeal__c</fullName>
+        <externalId>false</externalId>
+        <label>Outcome of Appeal</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Granted Client Claim</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Problem resolved after agency escalation</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Favorable Conditional Withdrawal</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Denied Client Claim</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Program declined representation due to lack of merits</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Client withdrew hearing request</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Client Declined Our Services/Loss of Contact</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Plan__c</fullName>
+        <externalId>false</externalId>
+        <label>Plan</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>HCA_Health_Plan</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Problem__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Which problem is this appeal tied to?</inlineHelpText>
+        <label>Problem</label>
+        <referenceTo>Problem__c</referenceTo>
+        <relationshipLabel>Appeals</relationshipLabel>
+        <relationshipName>Appeals</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Who_Filed_the_Appeal_Other__c</fullName>
+        <externalId>false</externalId>
+        <label>Who Filed the Appeal - Other</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Who_Filed_the_Appeal__c</fullName>
+        <externalId>false</externalId>
+        <label>Who Filed the Appeal?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Client</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Advocate</fullName>
+                    <default>false</default>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Appeal</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Appeal-{0000000}</displayFormat>
+        <label>Appeal Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Appeals</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>Lock_appeal_record_after_case_closure</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( 
+NOT(ISNEW()), 
+ISPICKVAL( Problem__r.Case__r.Status , &quot;Closed&quot;) 
+)</errorConditionFormula>
+        <errorMessage>You cannot update the appeal record once the related case has been closed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Plan_required</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISPICKVAL( Plan__c , &quot;&quot;)
+&amp;&amp;
+OR(
+   ISPICKVAL( Grievance_Against_Plan__c ,&quot;Yes&quot;),
+   ISPICKVAL( Informal_Review_with_Plan__c ,&quot;Yes&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>Plan__c</errorDisplayField>
+        <errorMessage>Plan is required</errorMessage>
+    </validationRules>
+</CustomObject>

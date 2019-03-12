@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Acceptance Error Message --></label>
+        <name>JS01__Acceptance_Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>JS01__Account__c</name>
+        <relationshipLabel><!-- Leads (Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Birthdate --></label>
+        <name>JS01__Birthdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>JS01__Case__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Conflict Check Passed --></label>
+        <name>JS01__Conflict_Check_Passed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>JS01__Contact__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Initial Contact Method --></label>
+        <name>JS01__Initial_Contact_Method__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walk-In</masterLabel>
+            <translation><!-- Walk-In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Form</masterLabel>
+            <translation><!-- Web Form --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intake Questions --></label>
+        <name>JS01__Intake_Questions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location of Client --></label>
+        <name>JS01__Location_of_Client__c</name>
+        <relationshipLabel><!-- Leads (County of Client) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Location of Issue --></label>
+        <name>JS01__Location_of_Issue__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Number of Adults --></label>
+        <name>JS01__Number_of_Adults__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Children --></label>
+        <name>JS01__Number_of_Children__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Children +
+Number of Adults +
+Number of Seniors --></help>
+        <label><!-- Number of Household Members --></label>
+        <name>JS01__Number_of_Household_Members__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Seniors --></label>
+        <name>JS01__Number_of_Seniors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Poverty Level (With Deductions) --></label>
+        <name>JS01__Poverty_Level_With_Deductions__c</name>
+    </fields>
+    <fields>
+        <help><!-- % of Poverty Level - Without Deductions --></help>
+        <label><!-- Poverty Level --></label>
+        <name>JS01__Poverty_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Problem Code Category --></label>
+        <name>JS01__Problem_Code_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Problem Code --></label>
+        <name>JS01__Problem_Code__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rejection Reason --></label>
+        <name>JS01__Rejection_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Social Security Number --></label>
+        <name>JS01__Social_Security_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Assets --></label>
+        <name>JS01__Total_Yearly_Assets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Yearly Deductions --></label>
+        <name>JS01__Total_Yearly_Deductions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Yearly Income --></label>
+        <name>JS01__Total_Yearly_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Entity --></label>
+        <name>JS01__Type_of_Entity__c</name>
+        <picklistValues>
+            <masterLabel>Business</masterLabel>
+            <translation><!-- Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nonprofit</masterLabel>
+            <translation><!-- Nonprofit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Preferred Email --></label>
+        <name>npe01__Preferred_Email__c</name>
+        <picklistValues>
+            <masterLabel>Alternate</masterLabel>
+            <translation>その他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal</masterLabel>
+            <translation>個人</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation>勤務先</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Preferred Phone --></label>
+        <name>npe01__Preferred_Phone__c</name>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation>自宅</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation>携帯</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>その他</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation>勤務先</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>このリードが作成されたバッチ。</help>
+        <label><!-- Batch --></label>
+        <name>npsp__Batch__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Company City --></label>
+        <name>npsp__CompanyCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Country --></label>
+        <name>npsp__CompanyCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Zip/Postal Code --></label>
+        <name>npsp__CompanyPostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company State/Province --></label>
+        <name>npsp__CompanyState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Street --></label>
+        <name>npsp__CompanyStreet__c</name>
+    </fields>
+    <layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label><!-- Client Information --></label>
+            <section>Client Information</section>
+        </sections>
+        <sections>
+            <label><!-- Connected Records --></label>
+            <section>Connected Records</section>
+        </sections>
+        <sections>
+            <label><!-- Eligibility --></label>
+            <section>Eligibility</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- JusticeServer --></label>
+        <name>JusticeServer</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- Accept_Client --></label>
+        <name>Accept_Client</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Eligibility --></label>
+        <name>Eligibility</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Print_Summary --></label>
+        <name>Print_Summary</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Reject --></label>
+        <name>Reject</name>
+    </webLinks>
+</CustomObjectTranslation>

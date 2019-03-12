@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Coverage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Coverages</value>
+    </caseValues>
+    <fields>
+        <help><!-- *required if Health Program is: Non-exchange private insurance; Private Insurance; COBRA; County Mental Health; County Medically Indigent --></help>
+        <label><!-- ASO --></label>
+        <name>ASO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Coverages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Exchange Tier --></label>
+        <name>Exchange_Tier__c</name>
+        <picklistValues>
+            <masterLabel>Bronze</masterLabel>
+            <translation><!-- Bronze --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Catastrophic</masterLabel>
+            <translation><!-- Catastrophic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Platinum</masterLabel>
+            <translation><!-- Platinum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Family Member Name --></label>
+        <name>Family_Member_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Family Member --></label>
+        <name>Family_Member__c</name>
+        <relationshipLabel><!-- Coverages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Health Plan --></label>
+        <name>Health_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Health Programs --></label>
+        <name>Health_Programs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Managed Care --></label>
+        <name>Managed_Care__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical Group/IPA --></label>
+        <name>Medical_Group_IPA__c</name>
+        <picklistValues>
+            <masterLabel>[Customized by each org]</masterLabel>
+            <translation><!-- [Customized by each org] --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Medicare Type(s) --></label>
+        <name>Medicare_Type_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Private Insurance detail --></label>
+        <name>Private_Insurance_detail__c</name>
+        <picklistValues>
+            <masterLabel>ERISA self insured</masterLabel>
+            <translation><!-- ERISA self insured --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual (HIPAA)</masterLabel>
+            <translation><!-- Individual (HIPAA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual (Medically underwritten)</masterLabel>
+            <translation><!-- Individual (Medically underwritten) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual (other guaranteed issue)</masterLabel>
+            <translation><!-- Individual (other guaranteed issue) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large Group</masterLabel>
+            <translation><!-- Large Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Federal, non ERISA self insured</masterLabel>
+            <translation><!-- Non-Federal, non ERISA self insured --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not applicable</masterLabel>
+            <translation><!-- Not applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Self-insured, Self-funded, Non –Federal insured plan</masterLabel>
+            <translation><!-- Self-insured, Self-funded, Non –Federal insured plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Group</masterLabel>
+            <translation><!-- Small Group --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Coverage Layout</layout>
+        <sections>
+            <label><!-- Coverage Details --></label>
+            <section>Coverage Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot update the coverage record once the related case has been closed --></errorMessage>
+        <name>Lock_coverage_record_after_case_closure</name>
+    </validationRules>
+</CustomObjectTranslation>

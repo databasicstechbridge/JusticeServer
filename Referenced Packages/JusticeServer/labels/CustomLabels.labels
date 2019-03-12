@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AccountHouseholdRecordType</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccountHouseholdRecordType</shortDescription>
+        <value>Household Account</value>
+    </labels>
+    <labels>
+        <fullName>BenefitsMonetaryRecordType</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BenefitsMonetaryRecordType</shortDescription>
+        <value>Monetary Benefit</value>
+    </labels>
+    <labels>
+        <fullName>BenefitsNonMonetaryRecordType</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BenefitsNonMonetaryRecordType</shortDescription>
+        <value>Non-Monetary Benefit</value>
+    </labels>
+    <labels>
+        <fullName>Btn_Reject</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Btn_Reject</shortDescription>
+        <value>Reject</value>
+    </labels>
+    <labels>
+        <fullName>ClientInquiry_Confirm</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ClientInquiry_Confirm</shortDescription>
+        <value>Thank you for submitting your inquiry. Someone will review your application and be in contact with you.</value>
+    </labels>
+    <labels>
+        <fullName>ContactClientRecordType</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ContactClientRecordType</shortDescription>
+        <value>Client</value>
+    </labels>
+    <labels>
+        <fullName>LeadConversion_Accounts_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadConversion_Accounts_Hdr</shortDescription>
+        <value>Matching Accounts</value>
+    </labels>
+    <labels>
+        <fullName>LeadConversion_Contacts_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadConversion_Contacts_Hdr</shortDescription>
+        <value>Matching Contacts</value>
+    </labels>
+    <labels>
+        <fullName>LeadConversion_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadConversion_Hdr</shortDescription>
+        <value>Accept Client</value>
+    </labels>
+    <labels>
+        <fullName>LeadConversion_Intro</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadConversion_Intro</shortDescription>
+        <value>Listed below are existing potential matches. If a correct match is listed choose to “reopen” an existing case or “new” to create a new case under the existing client. If no correct match is listed choose “Create As New Client” and both a new client and case record will be created.</value>
+    </labels>
+    <labels>
+        <fullName>LeadConversion_LeadDetails_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadConversion_LeadDetails_Hdr</shortDescription>
+        <value>Lead Details</value>
+    </labels>
+    <labels>
+        <fullName>LeadConversion_New_Button</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadConversion_New_Button</shortDescription>
+        <value>New Case</value>
+    </labels>
+    <labels>
+        <fullName>LeadConversion_Owner</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadConversion_Owner</shortDescription>
+        <value>Please select a case Advocate/Owner</value>
+    </labels>
+    <labels>
+        <fullName>LeadConversion_Reopen_Button</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadConversion_Reopen_Button</shortDescription>
+        <value>Reopen Case</value>
+    </labels>
+    <labels>
+        <fullName>LeadCreation_AdverseInfo_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadCreation_AdverseInfo_Hdr</shortDescription>
+        <value>Adverse Information</value>
+    </labels>
+    <labels>
+        <fullName>LeadCreation_Citizenship_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadCreation_Citizenship_Hdr</shortDescription>
+        <value>Citizenship</value>
+    </labels>
+    <labels>
+        <fullName>LeadCreation_ClientInfo_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadCreation_ClientInfo_Hdr</shortDescription>
+        <value>Client Information</value>
+    </labels>
+    <labels>
+        <fullName>LeadCreation_ClientType_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadCreation_ClientType_Hdr</shortDescription>
+        <value>Client Type</value>
+    </labels>
+    <labels>
+        <fullName>LeadCreation_ConflictCheck_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadCreation_ConflictCheck_Hdr</shortDescription>
+        <value>Conflict Check</value>
+    </labels>
+    <labels>
+        <fullName>LeadCreation_ConflictCheck_Intro</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadCreation_ConflictCheck_Intro</shortDescription>
+        <value>Listed below are any potentially matching records to the client, adverse contacts, or adverse accounts. By selecting a checkbox next to a potential adverse party match the existing record will be used. Otherwise, a new record will be created for each adverse party.</value>
+    </labels>
+    <labels>
+        <fullName>LeadCreation_Conflict_Button</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadCreation_Conflict_Button</shortDescription>
+        <value>Conflict</value>
+    </labels>
+    <labels>
+        <fullName>LeadCreation_Eligibility_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadCreation_Eligibility_Hdr</shortDescription>
+        <value>Eligibility</value>
+    </labels>
+    <labels>
+        <fullName>LeadCreation_IntakeDetails_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadCreation_IntakeDetails_Hdr</shortDescription>
+        <value>Intake Details</value>
+    </labels>
+    <labels>
+        <fullName>LeadCreation_LegalProblem_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadCreation_LegalProblem_Hdr</shortDescription>
+        <value>Type of Legal Problem</value>
+    </labels>
+    <labels>
+        <fullName>LeadCreation_Location_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadCreation_Location_Hdr</shortDescription>
+        <value>Location</value>
+    </labels>
+    <labels>
+        <fullName>LeadCreation_NoConflict_Button</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadCreation_NoConflict_Button</shortDescription>
+        <value>No Conflict</value>
+    </labels>
+    <labels>
+        <fullName>LeadCreation_Use_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadCreation_Use_Hdr</shortDescription>
+        <value>Use?</value>
+    </labels>
+    <labels>
+        <fullName>LeadDefaultRecordType</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadDefaultRecordType</shortDescription>
+        <value>JusticeServer</value>
+    </labels>
+    <labels>
+        <fullName>LeadInfo_CriticalDate</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadInfo_CriticalDate</shortDescription>
+        <value>Do you have any upcoming critical dates?</value>
+    </labels>
+    <labels>
+        <fullName>LeadInfo_FinancialDetail_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadInfo_FinancialDetail_Hdr</shortDescription>
+        <value>Financial Details</value>
+    </labels>
+    <labels>
+        <fullName>LeadRejection_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadRejection_Hdr</shortDescription>
+        <value>Reason for Rejection</value>
+    </labels>
+    <labels>
+        <fullName>LeadRejection_OtherService_Hdr</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LeadRejection_OtherService_Hdr</shortDescription>
+        <value>If you wish to create a record of Other Services, select a record type below</value>
+    </labels>
+    <labels>
+        <fullName>OtherServiceReferralRecordType</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OtherServiceReferralRecordType</shortDescription>
+        <value>Referral</value>
+    </labels>
+    <labels>
+        <fullName>RelatedPartyAdverseRecordType</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RelatedPartyAdverseRecordType</shortDescription>
+        <value>Adverse Party</value>
+    </labels>
+    <labels>
+        <fullName>RelatedPartyRelatedRecordType</fullName>
+        <categories>JusticeServer</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RelatedPartyRelatedRecordType</shortDescription>
+        <value>Related Party</value>
+    </labels>
+</CustomLabels>

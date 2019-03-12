@@ -1,0 +1,75 @@
+<!--************************************************************************
+* Name               : CaseResource                                        *
+* Description        : JusticeServer - Case widget for showing resources   *
+*                                      related to the case                 *
+* Created By         : Techbridge                                          *        
+*************************************************************************-->
+<apex:page standardController="Case" extensions="JS01.CaseResourceController">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+        <head>  
+            <!-- STYLE SHEET -->  
+            <apex:stylesheet value="{!URLFOR($Resource.JS01__SLDS, 'assets/styles/salesforce-lightning-design-system-vf.css')}"/>  
+        </head>
+        <body> 
+        <!-- REQUIRED SLDS WRAPPER - CUSTOM SCOPING CLASS USED WHEN GENERATING CUSTOM CSS -->  
+            <div class="LScope">
+                <!-------------------------------------------- FORM ----------------------------------------------------->
+                <div class="slds-panel slds-grid slds-grid--vertical slds-nowrap slds-form--compound" aria-labelledby="caseRejectionForm">    
+                    <apex:form >
+                        <style>
+                            .hidehdr{
+                                display:none;
+                            }
+                            .custPopup{
+                                background-color: white;
+                                border-width: 15px;
+                                border-color:#97c93c;
+                                border-style: solid;
+                                z-index: 9999;
+                                left: 50%;
+                                padding:10px;
+                                position: absolute;
+                                width: 600px;
+                                margin-left: -250px;
+                                top:200px;
+                            }
+                            .popupBackground{
+                                background-color:black;
+                                opacity: 0.20;
+                                filter: alpha(opacity = 50);
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                top: 0;
+                                left: 0;
+                                z-index: 9998;
+                                position: fixed;
+                            }
+                        </style>
+                        <!------------------------------------------------------------ RESOURCES ---------------------------------------------------------------->                    
+                        <div class="slds-panel__section">  
+                             <apex:outputText value="No Resources to display!" rendered="{!ISNULL(resourceWrapperList)||resourceWrapperList.size<=0}" style="font-weight:bold!important;"></apex:outputText>
+                                <apex:dataTable value="{!resourceWrapperList}" var="resWrap" id="PgBlckTblRes" rendered="{!!ISNULL(resourceWrapperList)&&resourceWrapperList.size>0}" styleClass="slds-table slds-table--bordered">
+                                    <apex:column headerValue="Title">
+                                        <apex:outputLink value="{!resWrap.resourceRec.JS01__URL__c}" rendered="{!resWrap.resType='URL'}" style="font-weight:bold;">
+                                            {!resWrap.resourceRec.Name}
+                                        </apex:outputLink>
+                                        <apex:outputLink value="/lightning/r/Resource__c/{!resWrap.resourceRec.Id}/view" rendered="{!$User.UIThemeDisplayed == 'Theme4d' && resWrap.resType='Rich_Text'}" style="font-weight:bold;">
+                                            {!resWrap.resourceRec.Name}
+                                        </apex:outputLink>
+                                        <apex:outputLink value="/{!resWrap.resourceRec.Id}" rendered="{!$User.UIThemeDisplayed != 'Theme4d' && resWrap.resType='Rich_Text'}" style="font-weight:bold;">
+                                            {!resWrap.resourceRec.Name}
+                                        </apex:outputLink>
+                                        <apex:outputLink value="/sfc/servlet.shepherd/version/download/{!resWrap.resourceFile.LatestPublishedVersionId}" rendered="{!resWrap.resType='Attachment'}" style="font-weight:bold;">
+                                            {!resWrap.resourceRec.Name}
+                                        </apex:outputLink>
+                                    </apex:column>
+                                    <apex:column headerValue="Description"  value="{!resWrap.resourceRec.JS01__Description__c}"/>
+                                </apex:dataTable>
+                            </div>
+                    </apex:form>
+                </div>
+            </div>
+        </body>
+    </html>
+</apex:page>

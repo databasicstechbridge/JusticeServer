@@ -1,0 +1,1932 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Problem</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Problems</value>
+    </caseValues>
+    <fields>
+        <label><!-- ALJ Hearing - Detail --></label>
+        <name>ALJ_Hearing_Detail__c</name>
+        <picklistValues>
+            <masterLabel>Covered CA</masterLabel>
+            <translation><!-- Covered CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHCS</masterLabel>
+            <translation><!-- DHCS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ALJ Hearing --></label>
+        <name>ALJ_Hearing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency Appeal - Detail --></label>
+        <name>Agency_Appeal_Detail__c</name>
+        <picklistValues>
+            <masterLabel>CCI/CMC Health Care</masterLabel>
+            <translation><!-- CCI/CMC Health Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CDI</masterLabel>
+            <translation><!-- CDI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>County - IHSS</masterLabel>
+            <translation><!-- County - IHSS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>County Indigent Care program</masterLabel>
+            <translation><!-- County Indigent Care program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Covered CA</masterLabel>
+            <translation><!-- Covered CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHCS</masterLabel>
+            <translation><!-- DHCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMHC Complaint</masterLabel>
+            <translation><!-- DMHC Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMHC IMR</masterLabel>
+            <translation><!-- DMHC IMR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOL</masterLabel>
+            <translation><!-- DOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare Appeal Council Review</masterLabel>
+            <translation><!-- Medicare Appeal Council Review --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agency Appeal --></label>
+        <name>Agency_Appeal__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the client has high bills or debt, what do they owe? (required if Problem is &quot;Affordability problems...&quot; or &quot;Billing/charges...&quot; --></help>
+        <label><!-- Amount Owed --></label>
+        <name>Amount_Owed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appeal Agency - Other --></label>
+        <name>Appeal_Agency_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appeal Problem - Other --></label>
+        <name>Appeal_Problem_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Assistance --></label>
+        <name>Application_Assistance__c</name>
+        <picklistValues>
+            <masterLabel>Agent/Broker</masterLabel>
+            <translation><!-- Agent/Broker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application Assister</masterLabel>
+            <translation><!-- Application Assister --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>County</masterLabel>
+            <translation><!-- County --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exchange Service Center</masterLabel>
+            <translation><!-- Exchange Service Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Application Type --></label>
+        <name>Application_Type__c</name>
+        <picklistValues>
+            <masterLabel>Automatic Enrollment</masterLabel>
+            <translation><!-- Automatic Enrollment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Breast and Cervical Cancer Treatment Program</masterLabel>
+            <translation><!-- Breast and Cervical Cancer Treatment Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CHDP Gateway</masterLabel>
+            <translation><!-- CHDP Gateway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CalHEERS online system</masterLabel>
+            <translation><!-- CalHEERS online system --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>County Welfare Office</masterLabel>
+            <translation><!-- County Welfare Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exchange service center</masterLabel>
+            <translation><!-- Exchange service center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthy-e application</masterLabel>
+            <translation><!-- Healthy-e application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-Person</masterLabel>
+            <translation><!-- In-Person --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail-in to county</masterLabel>
+            <translation><!-- Mail-in to county --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outstationed location</masterLabel>
+            <translation><!-- Outstationed location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paper SSApp</masterLabel>
+            <translation><!-- Paper SSApp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone-in</masterLabel>
+            <translation><!-- Phone-in --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSA</masterLabel>
+            <translation><!-- SSA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School lunch</masterLabel>
+            <translation><!-- School lunch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single point of entry</masterLabel>
+            <translation><!-- Single point of entry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CTM --></label>
+        <name>CTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Problems --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- 1) Reason denied, delayed or proposed for termination
+2) Reason &quot;Has not applied&quot;
+3) Affordability problems, Billing/charges detail
+4) Physical Disability Problem Details --></help>
+        <label><!-- Disability Access Issue --></label>
+        <name>Disability_Access_Issue__c</name>
+        <picklistValues>
+            <masterLabel>Application too confusing</masterLabel>
+            <translation><!-- Application too confusing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Applications made but not processed timely, including payments not processed timely</masterLabel>
+            <translation><!-- Applications made but not processed timely, including payments not processed timely --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assets/Resources</masterLabel>
+            <translation><!-- Assets/Resources --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BIC/Insurance card delay</masterLabel>
+            <translation><!-- BIC/Insurance card delay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Citizenship verification</masterLabel>
+            <translation><!-- Citizenship verification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Covered Ca/Medi-Cal disconnect</masterLabel>
+            <translation><!-- Covered Ca/Medi-Cal disconnect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Don’t know how/where to apply</masterLabel>
+            <translation><!-- Don’t know how/where to apply --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excessive verification required</masterLabel>
+            <translation><!-- Excessive verification required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failure to provide verification</masterLabel>
+            <translation><!-- Failure to provide verification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finding of non-disability</masterLabel>
+            <translation><!-- Finding of non-disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hearing Impaired</masterLabel>
+            <translation><!-- Hearing Impaired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Income</masterLabel>
+            <translation><!-- Income --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited access to internet</masterLabel>
+            <translation><!-- Limited access to internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost letter</masterLabel>
+            <translation><!-- Lost letter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs additional information</masterLabel>
+            <translation><!-- Needs additional information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs language assistance</masterLabel>
+            <translation><!-- Needs language assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-financial reasons</masterLabel>
+            <translation><!-- Non-financial reasons --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not assessed for all proper programs</masterLabel>
+            <translation><!-- Not assessed for all proper programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not aware eligible for program</masterLabel>
+            <translation><!-- Not aware eligible for program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium payment problem</masterLabel>
+            <translation><!-- Premium payment problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visually Impaired</masterLabel>
+            <translation><!-- Visually Impaired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website problems prevent application from being submitted</masterLabel>
+            <translation><!-- Website problems prevent application from being submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Website problems prevent confirmation that application is being processed</masterLabel>
+            <translation><!-- Website problems prevent confirmation that application is being processed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wheel-chair accessible</masterLabel>
+            <translation><!-- Wheel-chair accessible --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dollar Amount for Revenue Recovery --></label>
+        <name>Dollar_Amount_for_Revenue_Recovery__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligibility Outcome - Detail --></label>
+        <name>Eligibility_Outcome_Detail__c</name>
+        <picklistValues>
+            <masterLabel>Consumer assessed for appropriate program</masterLabel>
+            <translation><!-- Consumer assessed for appropriate program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer continued eligibility</masterLabel>
+            <translation><!-- Consumer continued eligibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer made eligible for program</masterLabel>
+            <translation><!-- Consumer made eligible for program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer’s application is being processed</masterLabel>
+            <translation><!-- Consumer’s application is being processed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Eligibility Problem --></label>
+        <name>Eligibility_Problem__c</name>
+        <picklistValues>
+            <masterLabel>ACA:  tax penalty exemption problem</masterLabel>
+            <translation><!-- ACA:  tax penalty exemption problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACA: Dependent Coverage to Age 26</masterLabel>
+            <translation><!-- ACA: Dependent Coverage to Age 26 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACA: Foster care extension</masterLabel>
+            <translation><!-- ACA: Foster care extension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACA: Limitations on out-of-pocket costs &amp; deductibles</masterLabel>
+            <translation><!-- ACA: Limitations on out-of-pocket costs &amp; deductibles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACA: Pre-existing condition exclusion</masterLabel>
+            <translation><!-- ACA: Pre-existing condition exclusion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affordability problems (share-of-cost, premiums, APTC calculations, etc.)</masterLabel>
+            <translation><!-- Affordability problems (share-of-cost, premiums, APTC calculations, etc.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application denied</masterLabel>
+            <translation><!-- Application denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application processing delayed</masterLabel>
+            <translation><!-- Application processing delayed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client afraid to apply because of public charge</masterLabel>
+            <translation><!-- Client afraid to apply because of public charge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client ineligible for program</masterLabel>
+            <translation><!-- Client ineligible for program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client unaware of program rules</masterLabel>
+            <translation><!-- Client unaware of program rules --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coverage is rescinded, terminated or proposed for termination</masterLabel>
+            <translation><!-- Coverage is rescinded, terminated or proposed for termination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Covered CA: APTC reconciliation problem</masterLabel>
+            <translation><!-- Covered CA: APTC reconciliation problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Has not applied</masterLabel>
+            <translation><!-- Has not applied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Language, Cultural or Racial barrier</masterLabel>
+            <translation><!-- Language, Cultural or Racial barrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liens/estate claims</masterLabel>
+            <translation><!-- Liens/estate claims --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medi-Cal: Inter-County transfer</masterLabel>
+            <translation><!-- Medi-Cal: Inter-County transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not aware of program</masterLabel>
+            <translation><!-- Not aware of program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other eligibility problem</masterLabel>
+            <translation><!-- Other eligibility problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part D LIS Reassignment</masterLabel>
+            <translation><!-- Part D LIS Reassignment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Escalation to Agency - Detail --></label>
+        <name>Escalation_to_Agency_Detail__c</name>
+        <picklistValues>
+            <masterLabel>County - IHSS</masterLabel>
+            <translation><!-- County - IHSS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>County Indigent Care Program</masterLabel>
+            <translation><!-- County Indigent Care Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Covered CA</masterLabel>
+            <translation><!-- Covered CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medi-Cal County</masterLabel>
+            <translation><!-- Medi-Cal County --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medi-Cal Health Care Options</masterLabel>
+            <translation><!-- Medi-Cal Health Care Options --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medi-Cal Managed Care Ombuds</masterLabel>
+            <translation><!-- Medi-Cal Managed Care Ombuds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medi-Cal Mental Health Care Ombuds</masterLabel>
+            <translation><!-- Medi-Cal Mental Health Care Ombuds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medicare</masterLabel>
+            <translation><!-- Medicare --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Escalation to Agency - Other --></label>
+        <name>Escalation_to_Agency_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Escalation to Agency --></label>
+        <name>Escalation_to_Agency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expedited? --></label>
+        <name>Expedited__c</name>
+    </fields>
+    <fields>
+        <label><!-- Family Member Name --></label>
+        <name>Family_Member_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Family Member --></label>
+        <name>Family_Member__c</name>
+        <relationshipLabel><!-- Problems --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Grievance Against Plan --></label>
+        <name>Grievance_Against_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- HHS Appeal - Detail --></label>
+        <name>HHS_Appeal_Detail__c</name>
+        <picklistValues>
+            <masterLabel>HHS Tax Exemptions</masterLabel>
+            <translation><!-- HHS Tax Exemptions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HHS, Office of Civil Rights</masterLabel>
+            <translation><!-- HHS, Office of Civil Rights --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HHS Appeal --></label>
+        <name>HHS_Appeal__c</name>
+    </fields>
+    <fields>
+        <label><!-- HIPPA Violation? --></label>
+        <name>HIPPA_Violation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Health Plan --></label>
+        <name>Health_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Health Program --></label>
+        <name>Health_Program__c</name>
+    </fields>
+    <fields>
+        <label><!-- Highest Level of Appeal --></label>
+        <name>Highest_Level_of_Appeal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Informal Review with Plan --></label>
+        <name>Informal_Review_with_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Judicial Review --></label>
+        <name>Judicial_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- LIS Update Problem --></label>
+        <name>LIS_Update_Problem__c</name>
+        <picklistValues>
+            <masterLabel>[TBD]</masterLabel>
+            <translation><!-- [TBD] --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Local Provider --></label>
+        <name>Local_Provider__c</name>
+        <picklistValues>
+            <masterLabel>[org specific]</masterLabel>
+            <translation><!-- [org specific] --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MLP Problem --></label>
+        <name>MLP_Problem__c</name>
+        <picklistValues>
+            <masterLabel>CalWorks</masterLabel>
+            <translation><!-- CalWorks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calworks - has not applied</masterLabel>
+            <translation><!-- Calworks - has not applied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calworks - improper benefit amount</masterLabel>
+            <translation><!-- Calworks - improper benefit amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calworks - other</masterLabel>
+            <translation><!-- Calworks - other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calworks - overpayment</masterLabel>
+            <translation><!-- Calworks - overpayment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calworks - public charge fear</masterLabel>
+            <translation><!-- Calworks - public charge fear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calworks - termination or proposed termination</masterLabel>
+            <translation><!-- Calworks - termination or proposed termination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Debt</masterLabel>
+            <translation><!-- Consumer Debt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer fraud</masterLabel>
+            <translation><!-- Consumer fraud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment</masterLabel>
+            <translation><!-- Employment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment - conditions/improper compensation (worker&apos;s rights)</masterLabel>
+            <translation><!-- Employment - conditions/improper compensation (worker&apos;s rights) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment - discrimination/wrong term</masterLabel>
+            <translation><!-- Employment - discrimination/wrong term --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment - needs job (workforce development)</masterLabel>
+            <translation><!-- Employment - needs job (workforce development) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment - other</masterLabel>
+            <translation><!-- Employment - other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment - unemployment benefits</masterLabel>
+            <translation><!-- Employment - unemployment benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment - unemployment disability benefits (SDI)</masterLabel>
+            <translation><!-- Employment - unemployment disability benefits (SDI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment - worker’s comp</masterLabel>
+            <translation><!-- Employment - worker’s comp --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Law</masterLabel>
+            <translation><!-- Family Law --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family law - child support</masterLabel>
+            <translation><!-- Family law - child support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family law - custody</masterLabel>
+            <translation><!-- Family law - custody --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family law - dependency court</masterLabel>
+            <translation><!-- Family law - dependency court --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family law - divorce</masterLabel>
+            <translation><!-- Family law - divorce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family law - dv</masterLabel>
+            <translation><!-- Family law - dv --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family law - guardianship</masterLabel>
+            <translation><!-- Family law - guardianship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family law - other</masterLabel>
+            <translation><!-- Family law - other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food Security - no place to purchase healthy foods</masterLabel>
+            <translation><!-- Food Security - no place to purchase healthy foods --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food Security - unable to afford food</masterLabel>
+            <translation><!-- Food Security - unable to afford food --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food Stamps</masterLabel>
+            <translation><!-- Food Stamps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food stamps - has not applied</masterLabel>
+            <translation><!-- Food stamps - has not applied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food stamps - improper benefit amount</masterLabel>
+            <translation><!-- Food stamps - improper benefit amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food stamps - other</masterLabel>
+            <translation><!-- Food stamps - other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food stamps - overpayment</masterLabel>
+            <translation><!-- Food stamps - overpayment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food stamps - public charge fear</masterLabel>
+            <translation><!-- Food stamps - public charge fear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food stamps - termination or proposed termination</masterLabel>
+            <translation><!-- Food stamps - termination or proposed termination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General relief</masterLabel>
+            <translation><!-- General relief --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General relief - has not applied</masterLabel>
+            <translation><!-- General relief - has not applied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General relief - improper benefit amount</masterLabel>
+            <translation><!-- General relief - improper benefit amount --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General relief - other</masterLabel>
+            <translation><!-- General relief - other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General relief - public charge fear</masterLabel>
+            <translation><!-- General relief - public charge fear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General relief - termination or proposed termination</masterLabel>
+            <translation><!-- General relief - termination or proposed termination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Has not applied</masterLabel>
+            <translation><!-- Has not applied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Homeless - temporary shelter/permanent housing need</masterLabel>
+            <translation><!-- Homeless - temporary shelter/permanent housing need --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing</masterLabel>
+            <translation><!-- Housing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing - affordability</masterLabel>
+            <translation><!-- Housing - affordability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing - conditions</masterLabel>
+            <translation><!-- Housing - conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing - eviction secondary to foreclosure</masterLabel>
+            <translation><!-- Housing - eviction secondary to foreclosure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing - evictions</masterLabel>
+            <translation><!-- Housing - evictions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing - foreclosures</masterLabel>
+            <translation><!-- Housing - foreclosures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing - other</masterLabel>
+            <translation><!-- Housing - other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing - section 8</masterLabel>
+            <translation><!-- Housing - section 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing - security deposit assistance</masterLabel>
+            <translation><!-- Housing - security deposit assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Housing - utilities</masterLabel>
+            <translation><!-- Housing - utilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Identity theft</masterLabel>
+            <translation><!-- Identity theft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immigration</masterLabel>
+            <translation><!-- Immigration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immigration - case status check</masterLabel>
+            <translation><!-- Immigration - case status check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immigration - deportation</masterLabel>
+            <translation><!-- Immigration - deportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immigration - green card</masterLabel>
+            <translation><!-- Immigration - green card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immigration - naturalization</masterLabel>
+            <translation><!-- Immigration - naturalization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immigration - other</masterLabel>
+            <translation><!-- Immigration - other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immigration - u–visa</masterLabel>
+            <translation><!-- Immigration - u–visa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immigration - vawa</masterLabel>
+            <translation><!-- Immigration - vawa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Security</masterLabel>
+            <translation><!-- Social Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Security - other</masterLabel>
+            <translation><!-- Social Security - other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Security - ssa/osdi</masterLabel>
+            <translation><!-- Social Security - ssa/osdi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Security - ssdi</masterLabel>
+            <translation><!-- Social Security - ssdi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Social Security - ssi</masterLabel>
+            <translation><!-- Social Security - ssi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Education - IEP problems</masterLabel>
+            <translation><!-- Special Education - IEP problems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Education - other</masterLabel>
+            <translation><!-- Special Education - other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Education - services refused</masterLabel>
+            <translation><!-- Special Education - services refused --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Education - testing refused</masterLabel>
+            <translation><!-- Special Education - testing refused --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax - eitc/returns</masterLabel>
+            <translation><!-- Tax - eitc/returns --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax - unpaid</masterLabel>
+            <translation><!-- Tax - unpaid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WIC</masterLabel>
+            <translation><!-- WIC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Managed Care? --></label>
+        <name>Managed_Care__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medi-Cal Type --></label>
+        <name>Medi_Cal_Type__c</name>
+        <picklistValues>
+            <masterLabel>1931 (b)</masterLabel>
+            <translation><!-- 1931 (b) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>250% Working Disabled</masterLabel>
+            <translation><!-- 250% Working Disabled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accelerated Enrollment</masterLabel>
+            <translation><!-- Accelerated Enrollment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aged, Blind or Disabled</masterLabel>
+            <translation><!-- Aged, Blind or Disabled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Breast &amp; Cervical Cancer Treatment Program (state only)</masterLabel>
+            <translation><!-- Breast &amp; Cervical Cancer Treatment Program (state only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CalFresh Express Lane Eligibility</masterLabel>
+            <translation><!-- CalFresh Express Lane Eligibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CalWORKS-linked</masterLabel>
+            <translation><!-- CalWORKS-linked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Children</masterLabel>
+            <translation><!-- Children --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Continuing Eligibility for Children</masterLabel>
+            <translation><!-- Continuing Eligibility for Children --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency-only</masterLabel>
+            <translation><!-- Emergency-only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Federal Poverty Level for aged/disabled</masterLabel>
+            <translation><!-- Federal Poverty Level for aged/disabled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Federal Poverty Level for children</masterLabel>
+            <translation><!-- Federal Poverty Level for children --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Former Foster Youth</masterLabel>
+            <translation><!-- Former Foster Youth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foster care</masterLabel>
+            <translation><!-- Foster care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home and community based waiver program</masterLabel>
+            <translation><!-- Home and community based waiver program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital PE</masterLabel>
+            <translation><!-- Hospital PE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Long term care</masterLabel>
+            <translation><!-- Long term care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medically needy/share of cost</masterLabel>
+            <translation><!-- Medically needy/share of cost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minor consent</masterLabel>
+            <translation><!-- Minor consent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Adult/expansion group VIII</masterLabel>
+            <translation><!-- New Adult/expansion group VIII --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newborn Deeming</masterLabel>
+            <translation><!-- Newborn Deeming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Special Program (Dialysis, TPN &amp; TB)</masterLabel>
+            <translation><!-- Other Special Program (Dialysis, TPN &amp; TB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parents/Caretaker Relative</masterLabel>
+            <translation><!-- Parents/Caretaker Relative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pregnant Women—Pregnancy Related</masterLabel>
+            <translation><!-- Pregnant Women—Pregnancy Related --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presumptive (disabled/pregnant)</masterLabel>
+            <translation><!-- Presumptive (disabled/pregnant) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified disabled working individual</masterLabel>
+            <translation><!-- Qualified disabled working individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refugee Medical Assistance</masterLabel>
+            <translation><!-- Refugee Medical Assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSI linked</masterLabel>
+            <translation><!-- SSI linked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>School lunch express enrollment</masterLabel>
+            <translation><!-- School lunch express enrollment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Targeted Low-income Children</masterLabel>
+            <translation><!-- Targeted Low-income Children --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transitional/Continuing</masterLabel>
+            <translation><!-- Transitional/Continuing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown or did not ask</masterLabel>
+            <translation><!-- Unknown or did not ask --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Medicare Type - Detail --></label>
+        <name>Medicare_Type_Detail__c</name>
+        <picklistValues>
+            <masterLabel>Automatic Enrollment</masterLabel>
+            <translation><!-- Automatic Enrollment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>County Welfare Office</masterLabel>
+            <translation><!-- County Welfare Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SSA</masterLabel>
+            <translation><!-- SSA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Medicare Type(s) --></label>
+        <name>Medicare_Type_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Comment/Notes --></label>
+        <name>Outcome_Comment_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Type --></label>
+        <name>Outcome_Type__c</name>
+        <picklistValues>
+            <masterLabel>Education</masterLabel>
+            <translation><!-- Education --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eligibility</masterLabel>
+            <translation><!-- Eligibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MLP</masterLabel>
+            <translation><!-- MLP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services</masterLabel>
+            <translation><!-- Services --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Outcome --></label>
+        <name>Outcome__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome of Appeal --></label>
+        <name>Outcome_of_Appeal__c</name>
+        <picklistValues>
+            <masterLabel>Client Declined Our Services/Loss of Contact</masterLabel>
+            <translation><!-- Client Declined Our Services/Loss of Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client withdrew hearing request</masterLabel>
+            <translation><!-- Client withdrew hearing request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied Client Claim</masterLabel>
+            <translation><!-- Denied Client Claim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Favorable Conditional Withdrawal</masterLabel>
+            <translation><!-- Favorable Conditional Withdrawal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Granted Client Claim</masterLabel>
+            <translation><!-- Granted Client Claim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem resolved after agency escalation</masterLabel>
+            <translation><!-- Problem resolved after agency escalation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Program declined representation due to lack of merits</masterLabel>
+            <translation><!-- Program declined representation due to lack of merits --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Plan --></label>
+        <name>Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prescription Drug - Other --></label>
+        <name>Prescription_Drug_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prescription Drug --></label>
+        <name>Prescription_Drug__c</name>
+        <picklistValues>
+            <masterLabel>Formulary Issues</masterLabel>
+            <translation><!-- Formulary Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medication therapy management</masterLabel>
+            <translation><!-- Medication therapy management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part D card did not work at pharmacy</masterLabel>
+            <translation><!-- Part D card did not work at pharmacy --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Problem - Other --></label>
+        <name>Problem_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Problem --></label>
+        <name>Problem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Problem w/Appeal (if any) --></label>
+        <name>Problem_w_Appeal_if_any__c</name>
+        <picklistValues>
+            <masterLabel>Agency/ health plan lost or never responded to appeal</masterLabel>
+            <translation><!-- Agency/ health plan lost or never responded to appeal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agency/Health Plan did not inform consumer of appeal rights</masterLabel>
+            <translation><!-- Agency/Health Plan did not inform consumer of appeal rights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agency/Health Plan provided unclear/incomplete notice of appeal rights</masterLabel>
+            <translation><!-- Agency/Health Plan provided unclear/incomplete notice of appeal rights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agency/health plan did not comply with timeliness for appeal</masterLabel>
+            <translation><!-- Agency/health plan did not comply with timeliness for appeal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer did not submit documentation in timely manner</masterLabel>
+            <translation><!-- Consumer did not submit documentation in timely manner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer lost at first level of appeal process</masterLabel>
+            <translation><!-- Consumer lost at first level of appeal process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health care provider unwilling to assist consumer with appeal process</masterLabel>
+            <translation><!-- Health care provider unwilling to assist consumer with appeal process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No face to face hearing</masterLabel>
+            <translation><!-- No face to face hearing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other problem</masterLabel>
+            <translation><!-- Other problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Procedural problems</masterLabel>
+            <translation><!-- Procedural problems --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Provider Type --></label>
+        <name>Provider_Type__c</name>
+        <picklistValues>
+            <masterLabel>Addiction medicine specialist/facility</masterLabel>
+            <translation><!-- Addiction medicine specialist/facility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All other suppliers, e.g., drug stores</masterLabel>
+            <translation><!-- All other suppliers, e.g., drug stores --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Allergy/immunology</masterLabel>
+            <translation><!-- Allergy/immunology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ambulance service provider</masterLabel>
+            <translation><!-- Ambulance service provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Anesthesiology</masterLabel>
+            <translation><!-- Anesthesiology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Audiologist</masterLabel>
+            <translation><!-- Audiologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cardiology</masterLabel>
+            <translation><!-- Cardiology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certified nurse midwife</masterLabel>
+            <translation><!-- Certified nurse midwife --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chiropractic</masterLabel>
+            <translation><!-- Chiropractic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical laboratory (billing independently)</masterLabel>
+            <translation><!-- Clinical laboratory (billing independently) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colorectal surgery (formerly proctology)</masterLabel>
+            <translation><!-- Colorectal surgery (formerly proctology) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dentist/Oral Surgeon</masterLabel>
+            <translation><!-- Dentist/Oral Surgeon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dermatology</masterLabel>
+            <translation><!-- Dermatology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diagnostic radiology</masterLabel>
+            <translation><!-- Diagnostic radiology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency medicine specialist/group</masterLabel>
+            <translation><!-- Emergency medicine specialist/group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Endocrinology</masterLabel>
+            <translation><!-- Endocrinology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gastroenterology</masterLabel>
+            <translation><!-- Gastroenterology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Practice/Family practice</masterLabel>
+            <translation><!-- General Practice/Family practice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General surgery</masterLabel>
+            <translation><!-- General surgery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geriatric medicine</masterLabel>
+            <translation><!-- Geriatric medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hematology</masterLabel>
+            <translation><!-- Hematology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home health agency</masterLabel>
+            <translation><!-- Home health agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospice and palliative care</masterLabel>
+            <translation><!-- Hospice and palliative care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital</masterLabel>
+            <translation><!-- Hospital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infectious disease</masterLabel>
+            <translation><!-- Infectious disease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Intermediate care nursing facility</masterLabel>
+            <translation><!-- Intermediate care nursing facility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal medicine</masterLabel>
+            <translation><!-- Internal medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interventional pain management</masterLabel>
+            <translation><!-- Interventional pain management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Licensed clinical social worker</masterLabel>
+            <translation><!-- Licensed clinical social worker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical supply company</masterLabel>
+            <translation><!-- Medical supply company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nephrology</masterLabel>
+            <translation><!-- Nephrology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neurology</masterLabel>
+            <translation><!-- Neurology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neurosurgery</masterLabel>
+            <translation><!-- Neurosurgery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nursing facility, other</masterLabel>
+            <translation><!-- Nursing facility, other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OB-Gyn</masterLabel>
+            <translation><!-- OB-Gyn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Obstetrics/gynecology</masterLabel>
+            <translation><!-- Obstetrics/gynecology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Occupational therapist</masterLabel>
+            <translation><!-- Occupational therapist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oncology</masterLabel>
+            <translation><!-- Oncology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ophthalmology</masterLabel>
+            <translation><!-- Ophthalmology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optician/Opthamalogist</masterLabel>
+            <translation><!-- Optician/Opthamalogist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optometry</masterLabel>
+            <translation><!-- Optometry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orthopedic surgery</masterLabel>
+            <translation><!-- Orthopedic surgery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Osteopathic manipulative medicine</masterLabel>
+            <translation><!-- Osteopathic manipulative medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Lab/Ancillary diagnostic center</masterLabel>
+            <translation><!-- Other Lab/Ancillary diagnostic center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Otolaryngology</masterLabel>
+            <translation><!-- Otolaryngology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pain management specialist/facility</masterLabel>
+            <translation><!-- Pain management specialist/facility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pathology</masterLabel>
+            <translation><!-- Pathology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pediatric medicine</masterLabel>
+            <translation><!-- Pediatric medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacy</masterLabel>
+            <translation><!-- Pharmacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical medicine and rehabilitation</masterLabel>
+            <translation><!-- Physical medicine and rehabilitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical therapist</masterLabel>
+            <translation><!-- Physical therapist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plastic and reconstructive surgery</masterLabel>
+            <translation><!-- Plastic and reconstructive surgery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Podiatry</masterLabel>
+            <translation><!-- Podiatry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ProviderType</masterLabel>
+            <translation><!-- ProviderType --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Psychiatry</masterLabel>
+            <translation><!-- Psychiatry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Psychologist</masterLabel>
+            <translation><!-- Psychologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pulmonologist</masterLabel>
+            <translation><!-- Pulmonologist --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radiation therapy center</masterLabel>
+            <translation><!-- Radiation therapy center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registered dietician/nutrition professional</masterLabel>
+            <translation><!-- Registered dietician/nutrition professional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rheumatology</masterLabel>
+            <translation><!-- Rheumatology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skilled nursing facility</masterLabel>
+            <translation><!-- Skilled nursing facility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speech language pathology</masterLabel>
+            <translation><!-- Speech language pathology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sports medicine</masterLabel>
+            <translation><!-- Sports medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown physician specialty</masterLabel>
+            <translation><!-- Unknown physician specialty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown supplier</masterLabel>
+            <translation><!-- Unknown supplier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urology</masterLabel>
+            <translation><!-- Urology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>transportation agency</masterLabel>
+            <translation><!-- transportation agency --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referred To - Other --></label>
+        <name>Referred_To_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referred To --></label>
+        <name>Referred_To__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Regulatory Agency --></label>
+        <name>Regulatory_Agency__c</name>
+        <picklistValues>
+            <masterLabel>CDI</masterLabel>
+            <translation><!-- CDI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CMS</masterLabel>
+            <translation><!-- CMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>County Mental Health</masterLabel>
+            <translation><!-- County Mental Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Covered California/Exchange</masterLabel>
+            <translation><!-- Covered California/Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DHCS</masterLabel>
+            <translation><!-- DHCS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMHC</masterLabel>
+            <translation><!-- DMHC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DOL</masterLabel>
+            <translation><!-- DOL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DSS</masterLabel>
+            <translation><!-- DSS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dept. of Veteran’s Benefits</masterLabel>
+            <translation><!-- Dept. of Veteran’s Benefits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MRMIB</masterLabel>
+            <translation><!-- MRMIB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not applicable</masterLabel>
+            <translation><!-- Not applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office of Personnel Management</masterLabel>
+            <translation><!-- Office of Personnel Management --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Outcome - Detail --></label>
+        <name>Service_Outcome_Detail__c</name>
+        <picklistValues>
+            <masterLabel>Billing problem resolved</masterLabel>
+            <translation><!-- Billing problem resolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disability Barrier Overcome</masterLabel>
+            <translation><!-- Disability Barrier Overcome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Language Barrier Overcome</masterLabel>
+            <translation><!-- Language Barrier Overcome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Discrm. Overcome</masterLabel>
+            <translation><!-- Other Discrm. Overcome --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan enrollment/disenrollment confirmed</masterLabel>
+            <translation><!-- Plan enrollment/disenrollment confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service authorized</masterLabel>
+            <translation><!-- Service authorized --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service scheduled</masterLabel>
+            <translation><!-- Service scheduled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Problem --></label>
+        <name>Service_Problem__c</name>
+        <picklistValues>
+            <masterLabel>Advanced health care directives</masterLabel>
+            <translation><!-- Advanced health care directives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Affordability problems with services, including co-payments, deductibles, donut holes</masterLabel>
+            <translation><!-- Affordability problems with services, including co-payments, deductibles, donut holes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing/charges, including out-of-network charges and problems with provider getting paid</masterLabel>
+            <translation><!-- Billing/charges, including out-of-network charges and problems with provider getting paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Care is unavailable or inaccessible, including lack of network adequacy and delays in services</masterLabel>
+            <translation><!-- Care is unavailable or inaccessible, including lack of network adequacy and delays in services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Claims coordination</masterLabel>
+            <translation><!-- Claims coordination --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client unaware how to use services</masterLabel>
+            <translation><!-- Client unaware how to use services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confidentiality</masterLabel>
+            <translation><!-- Confidentiality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conservatorship</masterLabel>
+            <translation><!-- Conservatorship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Continuity of care</masterLabel>
+            <translation><!-- Continuity of care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coordination of care</masterLabel>
+            <translation><!-- Coordination of care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer service problems (e.g., rudeness, slow or no reply)</masterLabel>
+            <translation><!-- Customer service problems (e.g., rudeness, slow or no reply) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denial of services, referrals or appointments, including reductions in services</masterLabel>
+            <translation><!-- Denial of services, referrals or appointments, including reductions in services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discharge planning</masterLabel>
+            <translation><!-- Discharge planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment/disenrollment problems(plan or provider), including marketing/solicitation problems</masterLabel>
+            <translation><!-- Enrollment/disenrollment problems(plan or provider), including marketing/solicitation problems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Language, cultural or racial barrier</masterLabel>
+            <translation><!-- Language, cultural or racial barrier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical disability accessibility problems</masterLabel>
+            <translation><!-- Physical disability accessibility problems --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quality/appropriateness of care, patient’s rights</masterLabel>
+            <translation><!-- Quality/appropriateness of care, patient’s rights --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Services Needed --></label>
+        <name>Services_Needed__c</name>
+        <picklistValues>
+            <masterLabel>Advanced Health Care Directives</masterLabel>
+            <translation><!-- Advanced Health Care Directives --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alternative therapies</masterLabel>
+            <translation><!-- Alternative therapies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ambulance/emergency transportation</masterLabel>
+            <translation><!-- Ambulance/emergency transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Board and care</masterLabel>
+            <translation><!-- Board and care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case management</masterLabel>
+            <translation><!-- Case management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Check-up preventive visit for adult</masterLabel>
+            <translation><!-- Check-up preventive visit for adult --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chiropractic</masterLabel>
+            <translation><!-- Chiropractic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dental/Orthodontic</masterLabel>
+            <translation><!-- Dental/Orthodontic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Durable Medical Equipment (DME)</masterLabel>
+            <translation><!-- Durable Medical Equipment (DME) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency/urgent care</masterLabel>
+            <translation><!-- Emergency/urgent care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Experimental treatment</masterLabel>
+            <translation><!-- Experimental treatment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home/community based care</masterLabel>
+            <translation><!-- Home/community based care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospice/terminal care</masterLabel>
+            <translation><!-- Hospice/terminal care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital care (not surgery)</masterLabel>
+            <translation><!-- Hospital care (not surgery) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immunization</masterLabel>
+            <translation><!-- Immunization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent Medical Review</masterLabel>
+            <translation><!-- Independent Medical Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LTC, institutional (SNF, etc.)</masterLabel>
+            <translation><!-- LTC, institutional (SNF, etc.) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maternity care (perinatal)</masterLabel>
+            <translation><!-- Maternity care (perinatal) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical records concern</masterLabel>
+            <translation><!-- Medical records concern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mental health care</masterLabel>
+            <translation><!-- Mental health care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Applicable</masterLabel>
+            <translation><!-- Not Applicable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office visit (not check-up or well-child)</masterLabel>
+            <translation><!-- Office visit (not check-up or well-child) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of area/non-network care</masterLabel>
+            <translation><!-- Out of area/non-network care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prescription Drug</masterLabel>
+            <translation><!-- Prescription Drug --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral</masterLabel>
+            <translation><!-- Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reproductive health (including contraceptives, STD prevention)</masterLabel>
+            <translation><!-- Reproductive health (including contraceptives, STD prevention) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second opinion</masterLabel>
+            <translation><!-- Second opinion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty care</masterLabel>
+            <translation><!-- Specialty care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Substance abuse treatment</masterLabel>
+            <translation><!-- Substance abuse treatment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supplies</masterLabel>
+            <translation><!-- Supplies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surgery</masterLabel>
+            <translation><!-- Surgery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test-HIV</masterLabel>
+            <translation><!-- Test-HIV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test-Mammogram</masterLabel>
+            <translation><!-- Test-Mammogram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test-other diagnostic (incl X-ray)</masterLabel>
+            <translation><!-- Test-other diagnostic (incl X-ray) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Therapies (OT,PT,ST, Rehab)</masterLabel>
+            <translation><!-- Therapies (OT,PT,ST, Rehab) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transition-related services</masterLabel>
+            <translation><!-- Transition-related services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation (non-emergency)</masterLabel>
+            <translation><!-- Transportation (non-emergency) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vision care</masterLabel>
+            <translation><!-- Vision care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Well-child/well-baby visit</masterLabel>
+            <translation><!-- Well-child/well-baby visit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Was a grievance/appeal filed? --></label>
+        <name>Was_a_grievance_appeal_filed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who Caused --></label>
+        <name>Who_Caused__c</name>
+        <picklistValues>
+            <masterLabel>COHS</masterLabel>
+            <translation><!-- COHS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>County agency or official</masterLabel>
+            <translation><!-- County agency or official --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Don’t know</masterLabel>
+            <translation><!-- Don’t know --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment Broker</masterLabel>
+            <translation><!-- Enrollment Broker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Federal agency or official</masterLabel>
+            <translation><!-- Federal agency or official --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health plan</masterLabel>
+            <translation><!-- Health plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical group/IPA</masterLabel>
+            <translation><!-- Medical group/IPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other health care provider</masterLabel>
+            <translation><!-- Other health care provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary care provider (PCP)</masterLabel>
+            <translation><!-- Primary care provider (PCP) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State agency or official</masterLabel>
+            <translation><!-- State agency or official --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Who Filed the Appeal - Other --></label>
+        <name>Who_Filed_the_Appeal_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who Filed the Appeal? --></label>
+        <name>Who_Filed_the_Appeal__c</name>
+        <picklistValues>
+            <masterLabel>Advocate</masterLabel>
+            <translation><!-- Advocate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Client</masterLabel>
+            <translation><!-- Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Eligibility Problem Layout (HCA)</layout>
+        <sections>
+            <label><!-- APPEAL -  Level(s) --></label>
+            <section>APPEAL -  Level(s)</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Eligibility Problem Details --></label>
+            <section>Eligibility Problem Details</section>
+        </sections>
+        <sections>
+            <label><!-- OUTCOME - Appeal --></label>
+            <section>OUTCOME - Appeal</section>
+        </sections>
+        <sections>
+            <label><!-- OUTCOME - Problem --></label>
+            <section>OUTCOME - Problem</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>MLP Problem Layout (HCA)</layout>
+        <sections>
+            <label><!-- APPEAL - Level(s) --></label>
+            <section>APPEAL - Level(s)</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- OUTCOME - Appeal --></label>
+            <section>OUTCOME - Appeal</section>
+        </sections>
+        <sections>
+            <label><!-- OUTCOME - Problem --></label>
+            <section>OUTCOME - Problem</section>
+        </sections>
+        <sections>
+            <label><!-- Problem --></label>
+            <section>Problem</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Service Problem Layout (HCA)</layout>
+        <sections>
+            <label><!-- APPEAL - Level(s) --></label>
+            <section>APPEAL - Level(s)</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- OUTCOME - Appeal --></label>
+            <section>OUTCOME - Appeal</section>
+        </sections>
+        <sections>
+            <label><!-- OUTCOME - Problem --></label>
+            <section>OUTCOME - Problem</section>
+        </sections>
+        <sections>
+            <label><!-- Service Problem Details --></label>
+            <section>Service Problem Details</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New Appeal --></label>
+        <name>New_Appeal</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Eligibility Problem --></label>
+        <name>Eligibility_Problem</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- MLP Problem --></label>
+        <name>MLP_Problem</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service Problem --></label>
+        <name>Service_Problem</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Required based on your Problem selection --></errorMessage>
+        <name>Amount_Owed_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Plan is required --></errorMessage>
+        <name>Appeal_Plan_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When selecting &quot;Yes&quot; for Managed Care, you must provide a Health Plan --></errorMessage>
+        <name>Health_Plan_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot update the problem record once the related case has been closed --></errorMessage>
+        <name>Lock_problem_record_after_case_closure</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Prescription Drug is required --></errorMessage>
+        <name>Require_Prescription_Drug</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must specify the prescription drug when selecting &quot;Other&quot; --></errorMessage>
+        <name>Require_Prescription_Drug_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only populate when Outcome Type is &quot;Eligibility&quot; --></errorMessage>
+        <name>Validate_Eligibility_Outcome_Details</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only populate when Outcome Type is &quot;Services&quot; --></errorMessage>
+        <name>Validate_Service_Outcome_Detail</name>
+    </validationRules>
+</CustomObjectTranslation>

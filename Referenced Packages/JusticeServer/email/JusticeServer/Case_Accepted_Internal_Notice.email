@@ -1,0 +1,4 @@
+{!Resource_Assignment__c.Contact__c} has accepted case #{!Resource_Assignment__c.CaseNumber__c} :  
+<b>{!Resource_Assignment__c.00N4100000cw3QD}</b>.
+<br/>
+{!Resource_Assignment__c.Link}

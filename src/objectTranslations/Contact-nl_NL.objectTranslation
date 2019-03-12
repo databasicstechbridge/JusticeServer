@@ -1,0 +1,1501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Benefits Identification Card (BIC)# --></label>
+        <name>Benefits_Identification_Card_BIC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Citizenship Detail --></label>
+        <name>Citizenship_Detail__c</name>
+        <picklistValues>
+            <masterLabel>Kennedy Amendment</masterLabel>
+            <translation><!-- Kennedy Amendment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Permanent Resident</masterLabel>
+            <translation><!-- Legal Permanent Resident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refuse to Answer</masterLabel>
+            <translation><!-- Refuse to Answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Citizenship --></label>
+        <name>Citizenship__c</name>
+        <picklistValues>
+            <masterLabel>Citizen</masterLabel>
+            <translation><!-- Citizen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eligible Non-Citizen</masterLabel>
+            <translation><!-- Eligible Non-Citizen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neither of the above</masterLabel>
+            <translation><!-- Neither of the above --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>County__c</name>
+        <picklistValues>
+            <masterLabel>Alameda</masterLabel>
+            <translation><!-- Alameda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alpine</masterLabel>
+            <translation><!-- Alpine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amador</masterLabel>
+            <translation><!-- Amador --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Butte</masterLabel>
+            <translation><!-- Butte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Calaveras</masterLabel>
+            <translation><!-- Calaveras --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colusa</masterLabel>
+            <translation><!-- Colusa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contra Costa</masterLabel>
+            <translation><!-- Contra Costa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Del Norte</masterLabel>
+            <translation><!-- Del Norte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>El Dorado</masterLabel>
+            <translation><!-- El Dorado --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fresno</masterLabel>
+            <translation><!-- Fresno --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glenn</masterLabel>
+            <translation><!-- Glenn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Humboldt</masterLabel>
+            <translation><!-- Humboldt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Imperial</masterLabel>
+            <translation><!-- Imperial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inyo</masterLabel>
+            <translation><!-- Inyo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kern</masterLabel>
+            <translation><!-- Kern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kings</masterLabel>
+            <translation><!-- Kings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lake</masterLabel>
+            <translation><!-- Lake --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lassen</masterLabel>
+            <translation><!-- Lassen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Los Angeles</masterLabel>
+            <translation><!-- Los Angeles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Madera</masterLabel>
+            <translation><!-- Madera --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marin</masterLabel>
+            <translation><!-- Marin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mariposa</masterLabel>
+            <translation><!-- Mariposa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mendocino</masterLabel>
+            <translation><!-- Mendocino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merced</masterLabel>
+            <translation><!-- Merced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modoc</masterLabel>
+            <translation><!-- Modoc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mono</masterLabel>
+            <translation><!-- Mono --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monterey</masterLabel>
+            <translation><!-- Monterey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Napa</masterLabel>
+            <translation><!-- Napa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nevada</masterLabel>
+            <translation><!-- Nevada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orange</masterLabel>
+            <translation><!-- Orange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Placer</masterLabel>
+            <translation><!-- Placer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plumas</masterLabel>
+            <translation><!-- Plumas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Riverside</masterLabel>
+            <translation><!-- Riverside --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sacramento</masterLabel>
+            <translation><!-- Sacramento --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Benito</masterLabel>
+            <translation><!-- San Benito --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Bernardino</masterLabel>
+            <translation><!-- San Bernardino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Diego</masterLabel>
+            <translation><!-- San Diego --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Francisco</masterLabel>
+            <translation><!-- San Francisco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Joaquin</masterLabel>
+            <translation><!-- San Joaquin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Luis Obispo</masterLabel>
+            <translation><!-- San Luis Obispo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Mateo</masterLabel>
+            <translation><!-- San Mateo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Santa Barbara</masterLabel>
+            <translation><!-- Santa Barbara --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Santa Clara</masterLabel>
+            <translation><!-- Santa Clara --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Santa Cruz</masterLabel>
+            <translation><!-- Santa Cruz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shasta</masterLabel>
+            <translation><!-- Shasta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sierra</masterLabel>
+            <translation><!-- Sierra --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Siskiyou</masterLabel>
+            <translation><!-- Siskiyou --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Solano</masterLabel>
+            <translation><!-- Solano --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sonoma</masterLabel>
+            <translation><!-- Sonoma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stanislaus</masterLabel>
+            <translation><!-- Stanislaus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sutter</masterLabel>
+            <translation><!-- Sutter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tehama</masterLabel>
+            <translation><!-- Tehama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trinity</masterLabel>
+            <translation><!-- Trinity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tulare</masterLabel>
+            <translation><!-- Tulare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuolumne</masterLabel>
+            <translation><!-- Tuolumne --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ventura</masterLabel>
+            <translation><!-- Ventura --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yolo</masterLabel>
+            <translation><!-- Yolo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yuba</masterLabel>
+            <translation><!-- Yuba --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Disabled? --></label>
+        <name>Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment Status --></label>
+        <name>Employment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Consumer declined to answer</masterLabel>
+            <translation><!-- Consumer declined to answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Time,  More than one job</masterLabel>
+            <translation><!-- Full Time,  More than one job --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Time, One job</masterLabel>
+            <translation><!-- Full Time, One job --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not working, Disabled</masterLabel>
+            <translation><!-- Not working, Disabled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Leave</masterLabel>
+            <translation><!-- On Leave --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part-Time</masterLabel>
+            <translation><!-- Part-Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retired</masterLabel>
+            <translation><!-- Retired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unemployed, Looking for work</masterLabel>
+            <translation><!-- Unemployed, Looking for work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unemployed, Not looking for work</masterLabel>
+            <translation><!-- Unemployed, Not looking for work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity Sub Category --></label>
+        <name>Ethnicity_Sub_Category__c</name>
+        <picklistValues>
+            <masterLabel>Caribbean</masterLabel>
+            <translation><!-- Caribbean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guatemalan</masterLabel>
+            <translation><!-- Guatemalan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mexican</masterLabel>
+            <translation><!-- Mexican --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mixteca</masterLabel>
+            <translation><!-- Mixteca --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nicaraguan</masterLabel>
+            <translation><!-- Nicaraguan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Central American</masterLabel>
+            <translation><!-- Other Central American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other South American</masterLabel>
+            <translation><!-- Other South American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salvadoran</masterLabel>
+            <translation><!-- Salvadoran --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ethnicity --></label>
+        <name>Ethnicity__c</name>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hispanic/Latino</masterLabel>
+            <translation><!-- Hispanic/Latino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Hispanic/Latino</masterLabel>
+            <translation><!-- Non-Hispanic/Latino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unavailable/Unknown</masterLabel>
+            <translation><!-- Unavailable/Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Client</masterLabel>
+            <translation><!-- Group Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transgender</masterLabel>
+            <translation><!-- Transgender --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Health Condition --></label>
+        <name>Health_Condition__c</name>
+        <picklistValues>
+            <masterLabel>Alcohol and Drug Abuse</masterLabel>
+            <translation><!-- Alcohol and Drug Abuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Allergy Conditions</masterLabel>
+            <translation><!-- Allergy Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Birth Defects</masterLabel>
+            <translation><!-- Birth Defects --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blood Conditions</masterLabel>
+            <translation><!-- Blood Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancer - All other</masterLabel>
+            <translation><!-- Cancer - All other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancer - Breast</masterLabel>
+            <translation><!-- Cancer - Breast --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancer - Lung</masterLabel>
+            <translation><!-- Cancer - Lung --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancer - Prostate</masterLabel>
+            <translation><!-- Cancer - Prostate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Childbirth Complications</masterLabel>
+            <translation><!-- Childbirth Complications --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Circulatory Conditions</masterLabel>
+            <translation><!-- Circulatory Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connective Tissue Conditions</masterLabel>
+            <translation><!-- Connective Tissue Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dental Conditions</masterLabel>
+            <translation><!-- Dental Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developmental Conditions</masterLabel>
+            <translation><!-- Developmental Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Developmental Disability</masterLabel>
+            <translation><!-- Developmental Disability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diabetes</masterLabel>
+            <translation><!-- Diabetes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digestive Conditions</masterLabel>
+            <translation><!-- Digestive Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eating Disorders</masterLabel>
+            <translation><!-- Eating Disorders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Endocrine and Metabolic Conditions</masterLabel>
+            <translation><!-- Endocrine and Metabolic Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Endocrine, Immunology</masterLabel>
+            <translation><!-- Endocrine, Immunology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Epilepsy</masterLabel>
+            <translation><!-- Epilepsy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gastrointestinal Conditions</masterLabel>
+            <translation><!-- Gastrointestinal Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gynecological Conditions</masterLabel>
+            <translation><!-- Gynecological Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HIV/AIDS</masterLabel>
+            <translation><!-- HIV/AIDS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hearing Impairment</masterLabel>
+            <translation><!-- Hearing Impairment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heart Conditions</masterLabel>
+            <translation><!-- Heart Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Blood Pressure</masterLabel>
+            <translation><!-- High Blood Pressure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immunologic Conditions</masterLabel>
+            <translation><!-- Immunologic Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Infectious Diseases (not HIV/AIDS)</masterLabel>
+            <translation><!-- Infectious Diseases (not HIV/AIDS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Injuries/Poisoning</masterLabel>
+            <translation><!-- Injuries/Poisoning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kidney Conditions</masterLabel>
+            <translation><!-- Kidney Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mental Health Conditions</masterLabel>
+            <translation><!-- Mental Health Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Musculoskeletal Conditions</masterLabel>
+            <translation><!-- Musculoskeletal Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neurological Conditions</masterLabel>
+            <translation><!-- Neurological Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pregnancy</masterLabel>
+            <translation><!-- Pregnancy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preventive Care</masterLabel>
+            <translation><!-- Preventive Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refused to Answer</masterLabel>
+            <translation><!-- Refused to Answer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Respiratory Conditions</masterLabel>
+            <translation><!-- Respiratory Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rheumatological Conditions</masterLabel>
+            <translation><!-- Rheumatological Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skin Conditions</masterLabel>
+            <translation><!-- Skin Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stroke</masterLabel>
+            <translation><!-- Stroke --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surgical Procedures</masterLabel>
+            <translation><!-- Surgical Procedures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transition-related services</masterLabel>
+            <translation><!-- Transition-related services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undiagnosed Condition</masterLabel>
+            <translation><!-- Undiagnosed Condition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urinary Tract Conditions</masterLabel>
+            <translation><!-- Urinary Tract Conditions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vision Conditions</masterLabel>
+            <translation><!-- Vision Conditions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- How did you hear about us? --></label>
+        <name>How_did_you_hear_about_us__c</name>
+        <picklistValues>
+            <masterLabel>Attended education event</masterLabel>
+            <translation><!-- Attended education event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>California Department of Insurance</masterLabel>
+            <translation><!-- California Department of Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Covered California/Exchange</masterLabel>
+            <translation><!-- Covered California/Exchange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMHC Help Center – client reported</masterLabel>
+            <translation><!-- DMHC Help Center – client reported --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMHC Help Center – warm transfer from DMHC</masterLabel>
+            <translation><!-- DMHC Help Center – warm transfer from DMHC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct Mail</masterLabel>
+            <translation><!-- Direct Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal referral from other unit in legal services</masterLabel>
+            <translation><!-- Internal referral from other unit in legal services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OPA</masterLabel>
+            <translation><!-- OPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organization/provider referral</masterLabel>
+            <translation><!-- Organization/provider referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outstation</masterLabel>
+            <translation><!-- Outstation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous Health Client</masterLabel>
+            <translation><!-- Previous Health Client --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral from a friend, family, individual</masterLabel>
+            <translation><!-- Referral from a friend, family, individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saw or heard media piece, ad, etc</masterLabel>
+            <translation><!-- Saw or heard media piece, ad, etc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State or County Agency (other than DMHC, CDI, Covered California or OPA)</masterLabel>
+            <translation><!-- State or County Agency (other than DMHC, CDI, Covered California or OPA) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interview Language --></label>
+        <name>Interview_Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Citizenship Status --></label>
+        <name>JS01__Citizenship_Status__c</name>
+        <picklistValues>
+            <masterLabel>Nonresident Alien</masterLabel>
+            <translation><!-- Nonresident Alien --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permanent Resident</masterLabel>
+            <translation><!-- Permanent Resident --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>U.S. Citizen</masterLabel>
+            <translation><!-- U.S. Citizen --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Hourly Rate --></label>
+        <name>JS01__Default_Hourly_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Financial Details Date --></label>
+        <name>JS01__Financial_Details_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Languages --></label>
+        <name>JS01__Languages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>JS01__Location__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Number of Adults --></label>
+        <name>JS01__Number_of_Adults__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Children --></label>
+        <name>JS01__Number_of_Children__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Adults +
+Number of Children +
+Number of Seniors --></help>
+        <label><!-- Number of Household Members --></label>
+        <name>JS01__Number_of_Household_Members__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Seniors --></label>
+        <name>JS01__Number_of_Seniors__c</name>
+    </fields>
+    <fields>
+        <label><!-- PortalUserProfileOverride --></label>
+        <name>JS01__PortalUserProfileOverride__c</name>
+    </fields>
+    <fields>
+        <label><!-- Poverty Level (With Deductions) --></label>
+        <name>JS01__Poverty_Level_With_Deductions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Poverty Level --></label>
+        <name>JS01__Poverty_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pro Bono Coordinator --></label>
+        <name>JS01__Pro_Bono_Coordinator__c</name>
+        <relationshipLabel><!-- Pro_Bono_Coordinators --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pro Bono Portal Status --></label>
+        <name>JS01__Pro_Bono_Portal_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Social Security Number --></label>
+        <name>JS01__Social_Security_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Hours --></label>
+        <name>JS01__Total_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Value of Hours --></label>
+        <name>JS01__Total_Value_of_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Assets --></label>
+        <name>JS01__Total_Yearly_Assets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Yearly Deductions --></label>
+        <name>JS01__Total_Yearly_Deductions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Yearly Income --></label>
+        <name>JS01__Total_Yearly_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- UserId --></label>
+        <name>JS01__UserId__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>JS01__User__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Local CMS Contact ID --></label>
+        <name>Local_CMS_Contact_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marital Status --></label>
+        <name>Marital_Status__c</name>
+        <picklistValues>
+            <masterLabel>Divorced</masterLabel>
+            <translation><!-- Divorced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Domestic partner</masterLabel>
+            <translation><!-- Domestic partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Married</masterLabel>
+            <translation><!-- Married --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Never Married</masterLabel>
+            <translation><!-- Never Married --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Separated</masterLabel>
+            <translation><!-- Separated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Widowed</masterLabel>
+            <translation><!-- Widowed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mental Health? --></label>
+        <name>Mental_Health__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Spoken Language --></label>
+        <name>Primary_Spoken_Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Written Language --></label>
+        <name>Primary_Written_Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Race Sub Category --></label>
+        <name>Race_Sub_Category__c</name>
+        <picklistValues>
+            <masterLabel>African</masterLabel>
+            <translation><!-- African --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cambodian</masterLabel>
+            <translation><!-- Cambodian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese</masterLabel>
+            <translation><!-- Chinese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eastern European</masterLabel>
+            <translation><!-- Eastern European --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Filipino</masterLabel>
+            <translation><!-- Filipino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hawaiian</masterLabel>
+            <translation><!-- Hawaiian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hmong</masterLabel>
+            <translation><!-- Hmong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indian</masterLabel>
+            <translation><!-- Indian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese</masterLabel>
+            <translation><!-- Japanese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laotian</masterLabel>
+            <translation><!-- Laotian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle Eastern</masterLabel>
+            <translation><!-- Middle Eastern --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Asian</masterLabel>
+            <translation><!-- Other Asian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Pacific Islander</masterLabel>
+            <translation><!-- Other Pacific Islander --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian</masterLabel>
+            <translation><!-- Russian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Samoan</masterLabel>
+            <translation><!-- Samoan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese</masterLabel>
+            <translation><!-- Vietnamese --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Race --></label>
+        <name>Race__c</name>
+        <picklistValues>
+            <masterLabel>American Indian/Alaska Native</masterLabel>
+            <translation><!-- American Indian/Alaska Native --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asian</masterLabel>
+            <translation><!-- Asian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Black/African-American</masterLabel>
+            <translation><!-- Black/African-American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined</masterLabel>
+            <translation><!-- Declined --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Native Hawaiian/Pacific Islander</masterLabel>
+            <translation><!-- Native Hawaiian/Pacific Islander --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Some Other Race</masterLabel>
+            <translation><!-- Some Other Race --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unavailable/Unknown</masterLabel>
+            <translation><!-- Unavailable/Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>White</masterLabel>
+            <translation><!-- White --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unborn --></label>
+        <name>Unborn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Veteran? --></label>
+        <name>Veteran__c</name>
+    </fields>
+    <fields>
+        <help>Alternatieve E-mail is een optionele vierde E-mail: Niet persoonlijk, voorkeur, of werk E-mail</help>
+        <label><!-- Alternate Email --></label>
+        <name>npe01__AlternateEmail__c</name>
+    </fields>
+    <fields>
+        <help>Zie Voorkeur E-mail veld.</help>
+        <label><!-- Personal Email --></label>
+        <name>npe01__HomeEmail__c</name>
+    </fields>
+    <fields>
+        <help>Formule: Gebruik het primaire adres type veld om het Thuis Adres van Verzenden of Anders Adres te bepalen.</help>
+        <label><!-- Home Address --></label>
+        <name>npe01__Home_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- WARNING - This field may not accurately reflect the donation history. Please use the Last Gift Date field instead. --></help>
+        <label><!-- DEPRECATED - Last Transaction Date --></label>
+        <name>npe01__Last_Donation_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- WARNING- This field may not accurately reflect donation histories. Please use the Total Amount field on the Contact record instead. --></help>
+        <label><!-- Lifetime Transaction Total --></label>
+        <name>npe01__Lifetime_Giving_History_Amount__c</name>
+    </fields>
+    <fields>
+        <help>Formule: In volgorde van voorkeur, het SYSTEEM_AccountType veld, het Account Type veld, en &quot;Organisatie&quot;.</help>
+        <label><!-- Organization Type --></label>
+        <name>npe01__Organization_Type__c</name>
+    </fields>
+    <fields>
+        <help>Formule: Als het Primaire Adres gelijk is aan Anders, het Verzendadres. Als het Secundaire Adres type gelijk is aan Anders, het Anders Adres.</help>
+        <label><!-- Other Address --></label>
+        <name>npe01__Other_Address__c</name>
+    </fields>
+    <fields>
+        <help>Welk telefoonnummer moet er gebruikt worden met betrekking tot dit contactpersoon?</help>
+        <label><!-- Preferred Phone --></label>
+        <name>npe01__PreferredPhone__c</name>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation><!-- Home --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation><!-- Mobile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation><!-- Work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Welk E-mailadres moet er gebruikt worden met betrekking tot dit contactpersoon?</help>
+        <label><!-- Preferred Email --></label>
+        <name>npe01__Preferred_Email__c</name>
+        <picklistValues>
+            <masterLabel>Alternate</masterLabel>
+            <translation><!-- Alternate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Personal</masterLabel>
+            <translation><!-- Personal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation><!-- Work --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Welk type adres is het postadres?</help>
+        <label><!-- Primary Address Type --></label>
+        <name>npe01__Primary_Address_Type__c</name>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation>Thuis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Anders</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation>Werk</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Maakt één-op-één of bucket account processing niet mogelijk voor deze contactpersoon.</help>
+        <label><!-- Private --></label>
+        <name>npe01__Private__c</name>
+    </fields>
+    <fields>
+        <help>Welk type adres is het andere adres?</help>
+        <label><!-- Secondary Address Type --></label>
+        <name>npe01__Secondary_Address_Type__c</name>
+        <picklistValues>
+            <masterLabel>Home</masterLabel>
+            <translation>Thuis</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Anders</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work</masterLabel>
+            <translation>Werk</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Geeft aan welk model zorgt voor Account relatie gedrag. Individueel (Bucket) of één-op-één</help>
+        <label><!-- DEPRECATED - _SYSTEM: ACCOUNT PROCESSOR --></label>
+        <name>npe01__SystemAccountProcessor__c</name>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation>Individueel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One-to-One</masterLabel>
+            <translation><!-- One-to-One --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Formule: &quot;Individueel&quot; of &quot;Organisatie&quot; hangt af van Account instellingen.</help>
+        <label><!-- Type of Account --></label>
+        <name>npe01__Type_of_Account__c</name>
+    </fields>
+    <fields>
+        <help>Zie Voorkeur E-mail veld.</help>
+        <label><!-- Work Email --></label>
+        <name>npe01__WorkEmail__c</name>
+    </fields>
+    <fields>
+        <help>Zie &apos;Voorkeur Telefoon&apos; veld.</help>
+        <label><!-- Work Phone --></label>
+        <name>npe01__WorkPhone__c</name>
+    </fields>
+    <fields>
+        <help>Formule: Als het Primaire Adres type gelijk is aan Werk, het Verzendadres. Als het Secundaire Adres type gelijk is aan Werk, het Anders Adres.</help>
+        <label><!-- Work Address --></label>
+        <name>npe01__Work_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Gift --></label>
+        <name>npo02__AverageAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Best Gift Year Total --></label>
+        <name>npo02__Best_Gift_Year_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Best Gift Year --></label>
+        <name>npo02__Best_Gift_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Gift Date --></label>
+        <name>npo02__FirstCloseDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household Mailing Address --></label>
+        <name>npo02__Formula_HouseholdMailingAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household Phone --></label>
+        <name>npo02__Formula_HouseholdPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household Naming Order --></label>
+        <name>npo02__Household_Naming_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Household --></label>
+        <name>npo02__Household__c</name>
+        <relationshipLabel><!-- Household Members --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Largest Gift --></label>
+        <name>npo02__LargestAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Household Gift Date --></label>
+        <name>npo02__LastCloseDateHH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Gift Date --></label>
+        <name>npo02__LastCloseDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Membership Amount --></label>
+        <name>npo02__LastMembershipAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Membership Date --></label>
+        <name>npo02__LastMembershipDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Membership Level --></label>
+        <name>npo02__LastMembershipLevel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Membership Origin --></label>
+        <name>npo02__LastMembershipOrigin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Gift Amount --></label>
+        <name>npo02__LastOppAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership End Date --></label>
+        <name>npo02__MembershipEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Membership Join Date --></label>
+        <name>npo02__MembershipJoinDate__c</name>
+    </fields>
+    <fields>
+        <help>Bepaald welke namen van het huishouden deze Contactpersoon NIET bijhoort.</help>
+        <label><!-- Naming Exclusions --></label>
+        <name>npo02__Naming_Exclusions__c</name>
+        <picklistValues>
+            <masterLabel>Household__c.Formal_Greeting__c</masterLabel>
+            <translation>Huishouden__c.Formele_Begroeting__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household__c.Informal_Greeting__c</masterLabel>
+            <translation>Huishouden__c.Informele_Begroeting__c</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Household__c.Name</masterLabel>
+            <translation>Huishouden__c.Naam</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Gifts --></label>
+        <name>npo02__NumberOfClosedOpps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Memberships --></label>
+        <name>npo02__NumberOfMembershipOpps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Gifts Two Years Ago --></label>
+        <name>npo02__OppAmount2YearsAgo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Gifts Last N Days --></label>
+        <name>npo02__OppAmountLastNDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Household Gifts Last Year --></label>
+        <name>npo02__OppAmountLastYearHH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Gifts Last Year --></label>
+        <name>npo02__OppAmountLastYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Household Gifts This Year --></label>
+        <name>npo02__OppAmountThisYearHH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Gifts This Year --></label>
+        <name>npo02__OppAmountThisYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Gifts Two Years Ago --></label>
+        <name>npo02__OppsClosed2YearsAgo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Gifts Last N Days --></label>
+        <name>npo02__OppsClosedLastNDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Gifts Last Year --></label>
+        <name>npo02__OppsClosedLastYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Gifts This Year --></label>
+        <name>npo02__OppsClosedThisYear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Smallest Gift --></label>
+        <name>npo02__SmallestAmount__c</name>
+    </fields>
+    <fields>
+        <help>Totale soft credit hoeveelheid vorig jaar.</help>
+        <label><!-- Soft Credit Last Year --></label>
+        <name>npo02__Soft_Credit_Last_Year__c</name>
+    </fields>
+    <fields>
+        <help>Totale soft credit hoeveelheid dit jaar.</help>
+        <label><!-- Soft Credit This Year --></label>
+        <name>npo02__Soft_Credit_This_Year__c</name>
+    </fields>
+    <fields>
+        <help>Totaal hoeveelheid soft credits voor het leven van deze Contactpersoon. Gedefinieerd in de Huishouden Instellingen tab.</help>
+        <label><!-- Soft Credit Total --></label>
+        <name>npo02__Soft_Credit_Total__c</name>
+    </fields>
+    <fields>
+        <help>Totale soft credit hoeveelheid twee jaar geleden.</help>
+        <label><!-- Soft Credit Two Years Ago --></label>
+        <name>npo02__Soft_Credit_Two_Years_Ago__c</name>
+    </fields>
+    <fields>
+        <label><!-- _SYSTEM: HOUSEHOLD PROCESSOR-DEPRECATED --></label>
+        <name>npo02__SystemHouseholdProcessor__c</name>
+        <picklistValues>
+            <masterLabel>All Individual Contacts</masterLabel>
+            <translation><!-- All Individual Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All New or Edited Contacts</masterLabel>
+            <translation><!-- All New or Edited Contacts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Contacts</masterLabel>
+            <translation><!-- No Contacts --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Membership Amount --></label>
+        <name>npo02__TotalMembershipOppAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Gifts --></label>
+        <name>npo02__TotalOppAmount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Household Gifts --></label>
+        <name>npo02__Total_Household_Gifts__c</name>
+    </fields>
+    <fields>
+        <help>Als dit adres verificatie vereist, klik de Verifieer Adres knop bovenin de Adres pagina. Zie de Help documentatie in de &quot;Power of Us Hub&quot; voor meer informatie</help>
+        <label><!-- Address Verification Status --></label>
+        <name>npsp__Address_Verification_Status__c</name>
+    </fields>
+    <fields>
+        <help>Opzoekrelatie naar de Batch waarin dit contact is gemaakt.</help>
+        <label><!-- Batch --></label>
+        <name>npsp__Batch__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Het huidige Postadres van de Contactpersoon.</help>
+        <label><!-- Current Address --></label>
+        <name>npsp__Current_Address__c</name>
+        <relationshipLabel><!-- Contacts (Current Address) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Indien aangevinkt, deze optie markeert het contact als overleden, en sluit deze persoon uit van huishoud benaming, e-mails, en telefoongesprekken</help>
+        <label><!-- Deceased --></label>
+        <name>npsp__Deceased__c</name>
+    </fields>
+    <fields>
+        <help>Indien aangevinkt wordt deze contactpersoon uitgesloten van e-mails en telefoongesprekken.</help>
+        <label><!-- Do Not Contact --></label>
+        <name>npsp__Do_Not_Contact__c</name>
+    </fields>
+    <fields>
+        <help>Indien aangevinkt wordt de Contactpersoon uitgesloten van de Formele Begroeting.</help>
+        <label><!-- Exclude from Household Formal Greeting --></label>
+        <name>npsp__Exclude_from_Household_Formal_Greeting__c</name>
+    </fields>
+    <fields>
+        <help>Indien aangevinkt wordt de Contactpersoon uitgesloten van de Informele Begroeting.</help>
+        <label><!-- Exclude from Household Informal Greeting --></label>
+        <name>npsp__Exclude_from_Household_Informal_Greeting__c</name>
+    </fields>
+    <fields>
+        <help>Indien aangevinkt wordt de Contactpersoon uitgesloten van de Naam van het Huishouden.</help>
+        <label><!-- Exclude from Household Name --></label>
+        <name>npsp__Exclude_from_Household_Name__c</name>
+    </fields>
+    <fields>
+        <help>De hoeveelheid van de eerste soft credit</help>
+        <label><!-- First Soft Credit Amount --></label>
+        <name>npsp__First_Soft_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <help>De datum van de eerste soft credit.</help>
+        <label><!-- First Soft Credit Date --></label>
+        <name>npsp__First_Soft_Credit_Date__c</name>
+    </fields>
+    <fields>
+        <help>Houdt het ID van het huidige huishouden, of het nu een Huishoud Account is of een Huishoud Object.</help>
+        <label><!-- HHId --></label>
+        <name>npsp__HHId__c</name>
+    </fields>
+    <fields>
+        <help>De hoeveelheid van de grootste soft credit.</help>
+        <label><!-- Largest Soft Credit Amount --></label>
+        <name>npsp__Largest_Soft_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <help>De datum van de grootste soft credit.</help>
+        <label><!-- Largest Soft Credit Date --></label>
+        <name>npsp__Largest_Soft_Credit_Date__c</name>
+    </fields>
+    <fields>
+        <help>De hoeveelheid van de meest recente soft credit.</help>
+        <label><!-- Last Soft Credit Amount --></label>
+        <name>npsp__Last_Soft_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <help>De datum van de meest recente soft credit</help>
+        <label><!-- Last Soft Credit Date --></label>
+        <name>npsp__Last_Soft_Credit_Date__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal soft credits, gesloten in de laatste nummer van dagen gedefinieerd in de NPSP Instellingen.</help>
+        <label><!-- Number of Soft Credits Last N Days --></label>
+        <name>npsp__Number_of_Soft_Credits_Last_N_Days__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal soft credits van vorig jaar.</help>
+        <label><!-- Number of Soft Credits Last Year --></label>
+        <name>npsp__Number_of_Soft_Credits_Last_Year__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal soft credits van dit jaar.</help>
+        <label><!-- Number of Soft Credits This Year --></label>
+        <name>npsp__Number_of_Soft_Credits_This_Year__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal soft credits van twee jaar geleden.</help>
+        <label><!-- Number of Soft Credits Two Years Ago --></label>
+        <name>npsp__Number_of_Soft_Credits_Two_Years_Ago__c</name>
+    </fields>
+    <fields>
+        <help>Het aantal soft credits.</help>
+        <label><!-- Number of Soft Credits --></label>
+        <name>npsp__Number_of_Soft_Credits__c</name>
+    </fields>
+    <fields>
+        <help>Wordt gebruikt om het primaire verwante account te volgen van de desbetreffende contactpersoon.</help>
+        <label><!-- Primary Affiliation --></label>
+        <name>npsp__Primary_Affiliation__c</name>
+        <relationshipLabel><!-- Do Not Use.  Use Organization Affiliations. --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Deze is aangevinkt wanneer de gebruiker de primaire contact is op zijn Account. De primaire contactpersoon kan gewijzigd worden op de account.</help>
+        <label><!-- Primary Contact --></label>
+        <name>npsp__Primary_Contact__c</name>
+    </fields>
+    <fields>
+        <help>De totale hoeveelheid van soft credit, gesloten in het laatste nummer van dagen gedefinieerd in de Huishoud Instellingen.</help>
+        <label><!-- Soft Credit Last N Days --></label>
+        <name>npsp__Soft_Credit_Last_N_Days__c</name>
+    </fields>
+    <fields>
+        <help>Indien aangevinkt, dan overschrijft het huidige adres opzoekrelatie van de contactpersoon het adres van het Huishouden of het seizoensgebonden adres.</help>
+        <label><!-- Address Override --></label>
+        <name>npsp__is_Address_Override__c</name>
+    </fields>
+    <layouts>
+        <layout>Advocate Layout (HCA)</layout>
+        <sections>
+            <label><!-- Contact Details --></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label><!-- Misc --></label>
+            <section>Misc</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Client Layout (HCA)</layout>
+        <sections>
+            <label><!-- Contact Details --></label>
+            <section>Contact Details</section>
+        </sections>
+        <sections>
+            <label><!-- Demographical Information --></label>
+            <section>Demographical Information</section>
+        </sections>
+        <sections>
+            <label><!-- Health Condition --></label>
+            <section>Health Condition</section>
+        </sections>
+        <sections>
+            <label><!-- Misc --></label>
+            <section>Misc</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New Opportunity --></label>
+        <name>NewDonation</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Opportunity --></label>
+        <name>NewInKind</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Opportunity --></label>
+        <name>NewMajorGift</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Opportunity --></label>
+        <name>NewMembership</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Coverage --></label>
+        <name>New_Coverage</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Open Recurring Donation --></label>
+        <name>New_Open_Recurring_Donation</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Phone --></label>
+        <name>New_Phone</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Adverse --></label>
+        <name>Adverse</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Client --></label>
+        <name>Client</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Contact --></label>
+        <name>Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Resource --></label>
+        <name>Resource</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please select a Preferred Email --></errorMessage>
+        <name>Contact_Preferred_Email</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select a Preferred Phone --></errorMessage>
+        <name>Contact_Preferred_Phone</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Relationships_Viewer --></label>
+        <name>npe4__Relationships_Viewer</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Copy_Address_to_Household --></label>
+        <name>npo02__Copy_Address_to_Household</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Household --></label>
+        <name>npo02__Household</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Merge_Contacts --></label>
+        <name>npsp__Merge_Contacts</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Recalculate_Rollups --></label>
+        <name>npsp__Recalculate_Rollups</name>
+    </webLinks>
+</CustomObjectTranslation>

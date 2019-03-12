@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to send volunteers a reminder to update their case if no updates have been provided within the stale case period</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Stale Case Notification</name>
+    <style>none</style>
+    <subject>Case Update Request</subject>
+    <textOnly>{!Contact.Name},
+
+Case Number: {!Case.CaseNumber}
+Case Subject: {!Case.Subject}
+Client: {!Case.00N4100000cw3MX}, {!Case.00N4100000cw3MW}
+
+No activity or updates have been reported in {!Case.Stale_Case_Setting__c} days for the case above. Please select an option below to provide an update on the case.
+
+I would like to update the case:
+{!$Setup.JusticeServer_Settings__c.Case_Portal_URL__c}{!Case.00N0a00000CfwUh}
+
+Please snooze the case reminder for
+
+1 Day:
+{!$Setup.JusticeServer_Settings__c.Snooze_Site_URL__c}?id={!Case.Id}&amp;duration=1&amp;scale=Days
+
+1 Week:
+{!$Setup.JusticeServer_Settings__c.Snooze_Site_URL__c}?id={!Case.Id}&amp;duration=1&amp;scale=Weeks
+
+2 Weeks:
+{!$Setup.JusticeServer_Settings__c.Snooze_Site_URL__c}?id={!Case.Id}&amp;duration=2&amp;scale=Weeks
+
+3 Weeks:
+{!$Setup.JusticeServer_Settings__c.Snooze_Site_URL__c}?id={!Case.Id}&amp;duration=3&amp;scale=Weeks
+
+1 Month:
+{!$Setup.JusticeServer_Settings__c.Snooze_Site_URL__c}?id={!Case.Id}&amp;duration=1&amp;scale=Months
+
+2 Months:
+{!$Setup.JusticeServer_Settings__c.Snooze_Site_URL__c}?id={!Case.Id}&amp;duration=2&amp;scale=Months
+
+3 Months:
+{!$Setup.JusticeServer_Settings__c.Snooze_Site_URL__c}?id={!Case.Id}&amp;duration=3&amp;scale=Months</textOnly>
+    <type>custom</type>
+</EmailTemplate>
